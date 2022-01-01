@@ -48,6 +48,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'wagtail.contrib.sitemaps',
+    'wagtail.contrib.routable_page',
+    'django_social_share',
+    'puput',
+    'colorful',
 ]
 
 MIDDLEWARE = [
@@ -168,3 +174,5 @@ WAGTAILSEARCH_BACKENDS = {
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://example.com'
+
+PUPUT_AS_PLUGIN = True
