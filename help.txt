@@ -1,0 +1,17 @@
+ 1288  ls
+ 1289  python manage.py runserver
+ 1290  history | grep venv
+ 1291  history
+ 1292  python manage.py install requirements.txt
+ 1293  python manage.py requirements.txt
+ 1294  python manage.py
+ 1295  ls
+ 1296  cd ../
+ 1297  ls
+ 1298  cd ../
+ 1299  ls
+ 1300  cd cms
+ 1301  ls
+ 1302  cd ob-cms
+ 1303  touch help.txt
+vi touch.tct
