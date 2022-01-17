@@ -119,8 +119,13 @@ svg:not(:root) {
 }
 
 .main-text {
-    max-width: 400px;
     margin: 5px auto;
+}
+
+.open-source {
+    width: 100%;
+    margin: 5px auto;
+    border: 2px solid #e6e6e6;
 }
 
 .main-text h1 {
