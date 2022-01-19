@@ -9,9 +9,20 @@ html {
     box-sizing: inherit;
 }
 
-body {
+aside{
+    float: right;
+    position: fixed;
+    right: 20px;
+    margin-top: 25vh;
+}
+.logosocialmed{
+    width: 30px;
+    padding: 0px;
+    border-radius: 4px;
+}
+ 
+header, main, section, footer{
     max-width: 960px;
-    min-height: 100vh;
     margin: 0 auto;
     padding: 0 15px;
     color: #231f20;
@@ -22,7 +33,7 @@ body {
 a {
     background-color: transparent;
     color: #308282;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover {

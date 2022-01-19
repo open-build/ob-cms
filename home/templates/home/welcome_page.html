@@ -4,7 +4,7 @@
 <header class="header">
   <div class="logo">
     <a href="https://open.build/">
-      <img src="{% static 'img/logo.png' %}" alt="">
+      <img class="logo" src="{% static 'img/logo.png' %}" alt="">
     </a>
   </div>
   <div class="header-link">
@@ -16,20 +16,65 @@
     </a>
   </div>
 </header>
+<!--  -->
+<aside>
+  <div> 
+    <a href="https://twitter.com/open_build" target="_blank">
+      <img class="logosocialmed" src="{% static 'img/twt.png' %}" alt="">
+    </a>
+  </div>
+  <div> 
+    <a href="https://www.linkedin.com/company/openbuild/" target="_blank">
+      <img class="logosocialmed" src="{% static 'img/linkedin.png' %}" alt="">
+    </a>
+  </div>
+  <div> 
+    <a href="https://www.facebook.com/OpenBuildSTEM" target="_blank">
+      <img class="logosocialmed" src="{% static 'img/facebook.png' %}" alt="">
+    </a>
+  </div>
+</aside>
+
 <main class="main">
   <div class="main-text">
 
    <div class="open-source">
     <h1>{% trans "Open Source" %}</h1>
     <p>At its core, OpenBuild helps to build and support new and existing Open Source software for corporate, nonprofits, government and startups who want to build fast, open and quality. <br/>
+      <br/>
       This includes supporting the development and implementation of a Open Source data management platforms <br/>
+      <br/>
       Our teams of two or more provide dedicated support to clients that either directly contract us to support their data management process, development process improvements, migrating to cloud infrastucture and host their Open Source projects/systems.<br/>
+      <br/>
       In addition to our Open Source projects, OpenBuild has two initiatives that promote the use of open data standards and technologies.</p>
+    <p>{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>, or get started with one of the links below.' %}</p>
+  </div>
+
+  <div class="open-source">
+    <h1>{% trans "STEM Teaching and Training" %}</h1>
+    <p>With OpenBuild being an active member in the Open Source community, we are deeply passionate about contributing to the spread of learning and knowledge of Open Source technologies, both software and hardware in our local communities. <br/>
+      <br/>
+      Our developers, technical specialists, and analysts volunteer their time to work with local organizations and schools to teach STEM based courses.<br/>
+      <br/>
+      In addition, we have on-the job and job retrainig programs just starting in the US to help disenfranchised communites or individuals just needing a fresh career start learn to help manage and support software in cloud infrastructure.<br/>
+      <br/>
+      For more information on ways to get involved with our STEM Teaching program, please contact us at: info@open.build</p>
     <p>{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>, or get started with one of the links below.' %}</p>
   </div>
 
   </div>
 </main>
+
+<section>
+  <h1>Contact us</h1>
+  <form action="">
+    <input type="text" name="name" id="name" value="Your name">
+    <input type="text" name="subjet" id="subjet" value="Subjet">
+    <input type="email" name="email" id="email" value="Email adress">
+    
+  </form>
+
+</section>
 
 <footer class="footer" role="contentinfo">
   <a class="option option-one" href="{% wagtail_documentation_path %}/">
