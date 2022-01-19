@@ -9,26 +9,29 @@
   </div>
   <div class="header-link">
     {% comment %}
-      This works for all cases but prerelease versions:
+    This works for all cases but prerelease versions:
     {% endcomment %}
     <a href="/news/">
       {% trans "Blog" %}
+    </a>
+    <a href="#contact">
+      {% trans "Contact" %}
     </a>
   </div>
 </header>
 <!--  -->
 <aside>
-  <div> 
+  <div>
     <a href="https://twitter.com/open_build" target="_blank">
       <img class="logosocialmed" src="{% static 'img/twt.png' %}" alt="">
     </a>
   </div>
-  <div> 
+  <div>
     <a href="https://www.linkedin.com/company/openbuild/" target="_blank">
       <img class="logosocialmed" src="{% static 'img/linkedin.png' %}" alt="">
     </a>
   </div>
-  <div> 
+  <div>
     <a href="https://www.facebook.com/OpenBuildSTEM" target="_blank">
       <img class="logosocialmed" src="{% static 'img/facebook.png' %}" alt="">
     </a>
@@ -38,50 +41,66 @@
 <main class="main">
   <div class="main-text">
 
-   <div class="open-source">
-    <h1>{% trans "Open Source" %}</h1>
-    <p>At its core, OpenBuild helps to build and support new and existing Open Source software for corporate, nonprofits, government and startups who want to build fast, open and quality. <br/>
-      <br/>
-      This includes supporting the development and implementation of a Open Source data management platforms <br/>
-      <br/>
-      Our teams of two or more provide dedicated support to clients that either directly contract us to support their data management process, development process improvements, migrating to cloud infrastucture and host their Open Source projects/systems.<br/>
-      <br/>
-      In addition to our Open Source projects, OpenBuild has two initiatives that promote the use of open data standards and technologies.</p>
-    <p>{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>, or get started with one of the links below.' %}</p>
-  </div>
+    <div class="open-source">
+      <h1>{% trans "Open Source" %}</h1>
+      <p>At its core, OpenBuild helps to build and support new and existing Open Source software for corporate,
+        nonprofits, government and startups who want to build fast, open and quality. <br />
+        <br />
+        This includes supporting the development and implementation of a Open Source data management platforms <br />
+        <br />
+        Our teams of two or more provide dedicated support to clients that either directly contract us to support their
+        data management process, development process improvements, migrating to cloud infrastucture and host their Open
+        Source projects/systems.<br />
+        <br />
+        In addition to our Open Source projects, OpenBuild has two initiatives that promote the use of open data
+        standards and technologies.
+      </p>
+      <p>{% trans "Please feel free to <a href='https://github.com/open-build/'>join our community</a>, or get started with one of the links below."%}</p>
+    </div>
 
-  <div class="open-source">
-    <h1>{% trans "STEM Teaching and Training" %}</h1>
-    <p>With OpenBuild being an active member in the Open Source community, we are deeply passionate about contributing to the spread of learning and knowledge of Open Source technologies, both software and hardware in our local communities. <br/>
-      <br/>
-      Our developers, technical specialists, and analysts volunteer their time to work with local organizations and schools to teach STEM based courses.<br/>
-      <br/>
-      In addition, we have on-the job and job retrainig programs just starting in the US to help disenfranchised communites or individuals just needing a fresh career start learn to help manage and support software in cloud infrastructure.<br/>
-      <br/>
-      For more information on ways to get involved with our STEM Teaching program, please contact us at: info@open.build</p>
-    <p>{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>, or get started with one of the links below.' %}</p>
-  </div>
+    <div class="open-source">
+      <h1>{% trans "STEM Teaching and Training" %}</h1>
+      <p>With OpenBuild being an active member in the Open Source community, we are deeply passionate about contributing
+        to the spread of learning and knowledge of Open Source technologies, both software and hardware in our local
+        communities. <br />
+        <br />
+        Our developers, technical specialists, and analysts volunteer their time to work with local organizations and
+        schools to teach STEM based courses.<br />
+        <br />
+        In addition, we have on-the job and job retrainig programs just starting in the US to help disenfranchised
+        communites or individuals just needing a fresh career start learn to help manage and support software in cloud
+        infrastructure.<br />
+        <br />
+        For more information on ways to get involved with our STEM Teaching program, please contact us at:
+        info@open.build
+      </p>
+      <p>{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>, or get started with one of the links below.' %}</p>
+    </div>
+
+    <section id="contact">
+      <div class="contact">
+        <h1>Contact us</h1>
+        <form action="mailto:info@open.build" method="get">
+          <div><input type="text" name="name" id="name" placeholder="Your name"></div>
+          <div><input type="text" name="subjet" id="subjet" placeholder="Subjet"></div>
+          <div><input type="email" name="email" id="email" placeholder="Email adress"></div>
+          <div><textarea name="message" id="message" cols="30" rows="10"></textarea></div>
+          <div><button type="submit">Send</button></div>
+        </form>
+      </div>
+    </section>
 
   </div>
 </main>
 
-<section>
-  <h1>Contact us</h1>
-  <form action="">
-    <input type="text" name="name" id="name" value="Your name">
-    <input type="text" name="subjet" id="subjet" value="Subjet">
-    <input type="email" name="email" id="email" value="Email adress">
-    
-  </form>
-
-</section>
-
 <footer class="footer" role="contentinfo">
   <a class="option option-one" href="{% wagtail_documentation_path %}/">
     <div class="figure">
-      <svg class="figure-space" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style="width: 25px;" aria-hidden="true">
-        <path class="egg" fill="currentColor" d="M150 250c-42.741 0-75-32.693-75-90s42.913-110 75-110c32.088 0 75 52.693 75 110s-32.258 90-75 90z"/>
-        <ellipse fill="#ddd" cx="150" cy="270" rx="40" ry="7"/>
+      <svg class="figure-space" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style="width: 25px;"
+        aria-hidden="true">
+        <path class="egg" fill="currentColor"
+          d="M150 250c-42.741 0-75-32.693-75-90s42.913-110 75-110c32.088 0 75 52.693 75 110s-32.258 90-75 90z" />
+        <ellipse fill="#ddd" cx="150" cy="270" rx="40" ry="7" />
       </svg>
     </div>
     <div>
@@ -89,13 +108,20 @@
     </div>
   </a>
   <a class="option option-two" href="{% wagtail_documentation_path %}/getting_started/tutorial.html">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+    </svg>
     <div>
       <h4>{% trans "News" %}</h4>
     </div>
   </a>
   <a class="option option-three" href="{% url 'wagtailadmin_home' %}">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 13c-1.2 0-3.07.34-4.5 1-1.43-.67-3.3-1-4.5-1C5.33 13 1 14.08 1 16.25V19h22v-2.75c0-2.17-4.33-3.25-6.5-3.25zm-4 4.5h-10v-1.25c0-.54 2.56-1.75 5-1.75s5 1.21 5 1.75v1.25zm9 0H14v-1.25c0-.46-.2-.86-.52-1.22.88-.3 1.96-.53 3.02-.53 2.44 0 5 1.21 5 1.75v1.25zM7.5 12c1.93 0 3.5-1.57 3.5-3.5S9.43 5 7.5 5 4 6.57 4 8.5 5.57 12 7.5 12zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 5.5c1.93 0 3.5-1.57 3.5-3.5S18.43 5 16.5 5 13 6.57 13 8.5s1.57 3.5 3.5 3.5zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M16.5 13c-1.2 0-3.07.34-4.5 1-1.43-.67-3.3-1-4.5-1C5.33 13 1 14.08 1 16.25V19h22v-2.75c0-2.17-4.33-3.25-6.5-3.25zm-4 4.5h-10v-1.25c0-.54 2.56-1.75 5-1.75s5 1.21 5 1.75v1.25zm9 0H14v-1.25c0-.46-.2-.86-.52-1.22.88-.3 1.96-.53 3.02-.53 2.44 0 5 1.21 5 1.75v1.25zM7.5 12c1.93 0 3.5-1.57 3.5-3.5S9.43 5 7.5 5 4 6.57 4 8.5 5.57 12 7.5 12zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 5.5c1.93 0 3.5-1.57 3.5-3.5S18.43 5 16.5 5 13 6.57 13 8.5s1.57 3.5 3.5 3.5zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" />
+    </svg>
     <div>
       <h4>{% trans "About Open Build" %}</h4>
     </div>

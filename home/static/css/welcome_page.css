@@ -67,10 +67,11 @@ svg:not(:root) {
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e6e6e6;
+    /* background: linear-gradient(black, white); */
 }
 
-.logo {
-    width: 150px;
+.logo{
+    width: 130px;/*  */
     margin-right: 20px;
 }
 
@@ -145,6 +146,13 @@ svg:not(:root) {
 
 .main-text p {
     margin: 15px auto 0;
+}
+
+.contact{
+    text-align: center;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer {
