@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    /* background: linear-gradient(white, rgb(83, 147, 199)); */
 }
 
 
@@ -19,6 +20,9 @@ aside{
     width: 30px;
     padding: 0px;
     border-radius: 4px;
+}
+aside div a img{
+    background-color: white;
 }
  
 header, main, section, footer{
@@ -67,7 +71,7 @@ svg:not(:root) {
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e6e6e6;
-    /* background: linear-gradient(black, white); */
+    
 }
 
 .logo{
@@ -138,7 +142,11 @@ svg:not(:root) {
     width: 100%;
     margin: 5px auto;
     border: 2px solid #e6e6e6;
+    border-radius: 6px;
+    margin: 40px 0px;
+    padding: 18px;
 }
+
 
 .main-text h1 {
     font-size: 22px;
@@ -148,11 +156,52 @@ svg:not(:root) {
     margin: 15px auto 0;
 }
 
+.contats{
+    height: 400px;
+}
 .contact{
+    height: 100%;
+    padding: 10px;
+    width: 45%;
     text-align: center;
     display: inline-block;
     flex-direction: column;
     justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contact h1{
+    margin-top: 3px;
+}
+.inputxt{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.inputcontainer{
+    height: 40px;
+    margin: 7px 0px;
+}
+.textareaa{
+    width: 340px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.textacontainer{
+    margin: 5px 0px;
+}
+
+.button{
+    background-color: rgb(124, 181, 214);
+    border: none;
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
 }
 
 .footer {
