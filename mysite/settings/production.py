@@ -13,6 +13,8 @@ DATABASES = {
 
 DEBUG = True
 
+ALLOWED_HOSTS = ['ob-cms-dwtkh.ondigitalocean.app', '*.open.build', '127.0.0.1', '[::1]']
+
 try:
     from .local import *
 except ImportError:
