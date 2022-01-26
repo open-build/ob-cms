@@ -46,8 +46,6 @@
       <p><img class="guy" src="{% static 'img/guy.png' %}" alt="">At its core, OpenBuild helps to build and support new and existing Open Source software for corporate,
         nonprofits, government and startups who want to build fast, open and quality. <br />
         <br />
-        This includes supporting the development and implementation of a Open Source data management platforms <br />
-        <br />
         Our teams of two or more provide dedicated support to clients that either directly contract us to support their
         data management process, development process improvements, migrating to cloud infrastucture and host their Open
         Source projects/systems.<br />
@@ -58,63 +56,31 @@
       <p>{% trans "Please feel free to <a href='https://github.com/open-build/'>join our community</a>, or get started with one of the links below."%}</p>
     </div>
 
-    <section class="carousel" aria-label="Gallery">
-      <ol class="carousel__viewport" style="background-color: aquamarine;">
-        <li id="carousel__slide1"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper">
-            <a href="#carousel__slide4"
-               class="carousel__prev">Go to last slide</a>
-            <a href="#carousel__slide2"
-               class="carousel__next">Go to next slide</a>
-          </div>
+    <div id="container">
+      <ul id="slider">
+        <li id="slide1">
+          <p><img  src="{% static 'img/logoslide.png' %}" alt="">Open Build can help you get your business up and running and use cloud native open source software.</p>
         </li>
-        <li id="carousel__slide2"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide1"
-             class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide3"
-             class="carousel__next">Go to next slide</a>
+        <li id="slide2">
+          <p><img  src="{% static 'img/negocio.png' %}" alt="">Start your own company, using free and open source tools and with affordable open source developers.</p>
         </li>
-        <li id="carousel__slide3"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide2"
-             class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide4"
-             class="carousel__next">Go to next slide</a>
+        <li id="slide3">
+          <p><img class="guy" src="{% static 'img/team.png' %}" alt="">Our partner matching service, we will help you find a developer or development team to build your application.</p>
         </li>
-        <li id="carousel__slide4"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide3"
-             class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide1"
-             class="carousel__next">Go to first slide</a>
+      </ul>
+      
+      <ul class="menu">
+        <li>
+          <a href="#slide1"></a>
         </li>
-      </ol>
-      <aside class="carousel__navigation">
-        <ol class="carousel__navigation-list">
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide1"
-               class="carousel__navigation-button">Go to slide 1</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide2"
-               class="carousel__navigation-button">Go to slide 2</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide3"
-               class="carousel__navigation-button">Go to slide 3</a>
-          </li>
-        </ol>
-      </aside>
-    </section>
+        <li>
+          <a href="#slide2"></a>
+        </li>
+         <li>
+          <a href="#slide3"></a>
+        </li>
+      </ul>
+    </div>
 
     <!-- <div class="open-source">
       <h1>{% trans "Open Business" %}</h1>
@@ -127,21 +93,15 @@
 
     <div class="open-source">
       <h1>{% trans "STEM Teaching and Training" %}</h1>
-      <p><img class="girl" src="{% static 'img/girl.png' %}" alt="">With OpenBuild being an active member in the Open Source community, we are deeply passionate about contributing
+      <p class="pright"><img class="girl" src="{% static 'img/girl.png' %}" alt="">With OpenBuild being an active member in the Open Source community, we are deeply passionate about contributing
         to the spread of learning and knowledge of Open Source technologies, both software and hardware in our local
         communities. <br />
         <br />
         Our developers, technical specialists, and analysts volunteer their time to work with local organizations and
         schools to teach STEM based courses.<br />
         <br />
-        In addition, we have on-the job and job retrainig programs just starting in the US to help disenfranchised
-        communites or individuals just needing a fresh career start learn to help manage and support software in cloud
-        infrastructure.<br />
-        <br />
-        For more information on ways to get involved with our STEM Teaching program, please contact us at:
-        info@open.build
       </p>
-      <p>{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>, or get started with one of the links below.' %}</p>
+      <p class="pright">{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>, or get started with one of the links below.' %}</p>
     </div>
 
     <section class="contacts">
