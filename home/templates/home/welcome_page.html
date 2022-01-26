@@ -43,7 +43,7 @@
 
     <div class="open-source">
       <h1>{% trans "Open Source" %}</h1>
-      <p>At its core, OpenBuild helps to build and support new and existing Open Source software for corporate,
+      <p><img class="guy" src="{% static 'img/guy.png' %}" alt="">At its core, OpenBuild helps to build and support new and existing Open Source software for corporate,
         nonprofits, government and startups who want to build fast, open and quality. <br />
         <br />
         This includes supporting the development and implementation of a Open Source data management platforms <br />
@@ -58,9 +58,76 @@
       <p>{% trans "Please feel free to <a href='https://github.com/open-build/'>join our community</a>, or get started with one of the links below."%}</p>
     </div>
 
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport" style="background-color: aquamarine;">
+        <li id="carousel__slide1"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4"
+               class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2"
+               class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3"
+             class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4"
+             class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide3"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1"
+             class="carousel__next">Go to first slide</a>
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1"
+               class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2"
+               class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3"
+               class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+        </ol>
+      </aside>
+    </section>
+
+    <!-- <div class="open-source">
+      <h1>{% trans "Open Business" %}</h1>
+      <p><img class="guy" src="{% static 'img/guy.png' %}" alt="">Open Build can help you get your business up and running and use cloud native open source software.  
+        <br> your own software development company, design agency or build a mobile application using free and open source tools and with affordable open source developer teams.
+        <br> our partner matching service, we will help you find a developer or development team to build your application.
+      </p>
+      <p>{% trans "Please feel free to <a href='https://github.com/open-build/'>join our community</a>, or get started with one of the links below."%}</p>
+    </div> -->
+
     <div class="open-source">
       <h1>{% trans "STEM Teaching and Training" %}</h1>
-      <p>With OpenBuild being an active member in the Open Source community, we are deeply passionate about contributing
+      <p><img class="girl" src="{% static 'img/girl.png' %}" alt="">With OpenBuild being an active member in the Open Source community, we are deeply passionate about contributing
         to the spread of learning and knowledge of Open Source technologies, both software and hardware in our local
         communities. <br />
         <br />
@@ -91,6 +158,7 @@
     </section>
 
   </div>
+  Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
 </main>
 
 <footer class="footer" role="contentinfo">
