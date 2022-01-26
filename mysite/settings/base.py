@@ -187,3 +187,5 @@ WAGTAILSEARCH_BACKENDS = {
 BASE_URL = 'http://example.com'
 
 PUPUT_AS_PLUGIN = True
+
+SECRET_KEY = "sdfgerg32g90uadfgjo12!@89u9ergj9249889"
