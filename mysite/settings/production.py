@@ -11,7 +11,7 @@ DATABASES = {
     }
 }
 
-DEBUG = False
+DEBUG = True
 
 try:
     from .local import *
