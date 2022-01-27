@@ -41,9 +41,7 @@
     <meta name="twitter:title" content="{{ blog_page.title }}" />
     <meta name="twitter:description" content="{{ blog_page.description }}" />
 {% endblock social_share %}
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
-{% endblock extra_css %}
+
 {% block content %}
     {% with per_page=blog_page.num_entries_page %}
         {# 'paginate' tag cannot render dotted variables, so we need to create a context var #}
