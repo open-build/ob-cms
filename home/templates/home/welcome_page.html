@@ -1,42 +1,7 @@
 {% load i18n wagtailcore_tags %}
 {% load static %}
 
-<header class="header">
-  <div class="logo">
-    <a href="https://open.build/">
-      <img class="logo" src="{% static 'img/logo.png' %}" alt="">
-    </a>
-  </div>
-  <div class="header-link">
-    {% comment %}
-    This works for all cases but prerelease versions:
-    {% endcomment %}
-    <a href="/news/">
-      {% trans "Blog" %}
-    </a>
-    <a href="#contact">
-      {% trans "Contact" %}
-    </a>
-  </div>
-</header>
-<!--  -->
-<aside>
-  <div>
-    <a href="https://twitter.com/open_build" target="_blank">
-      <img class="logosocialmed" src="{% static 'img/twt.png' %}" alt="">
-    </a>
-  </div>
-  <div>
-    <a href="https://www.linkedin.com/company/openbuild/" target="_blank">
-      <img class="logosocialmed" src="{% static 'img/linkedin.png' %}" alt="">
-    </a>
-  </div>
-  <div>
-    <a href="https://www.facebook.com/OpenBuildSTEM" target="_blank">
-      <img class="logosocialmed" src="{% static 'img/facebook.png' %}" alt="">
-    </a>
-  </div>
-</aside>
+
 
 <main class="main">
   <div class="main-text">
@@ -68,7 +33,7 @@
           <p><img class="guy" src="{% static 'img/team.png' %}" alt="">Our partner matching service, we will help you find a developer or development team to build your application.</p>
         </li>
       </ul>
-      
+
       <ul class="menu">
         <li>
           <a href="#slide1"></a>
@@ -84,7 +49,7 @@
 
     <!-- <div class="open-source">
       <h1>{% trans "Open Business" %}</h1>
-      <p><img class="guy" src="{% static 'img/guy.png' %}" alt="">Open Build can help you get your business up and running and use cloud native open source software.  
+      <p><img class="guy" src="{% static 'img/guy.png' %}" alt="">Open Build can help you get your business up and running and use cloud native open source software.
         <br> your own software development company, design agency or build a mobile application using free and open source tools and with affordable open source developer teams.
         <br> our partner matching service, we will help you find a developer or development team to build your application.
       </p>
@@ -120,38 +85,3 @@
   </div>
   Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
 </main>
-
-<footer class="footer" role="contentinfo">
-  <a class="option option-one" href="{% wagtail_documentation_path %}/">
-    <div class="figure">
-      <svg class="figure-space" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style="width: 25px;"
-        aria-hidden="true">
-        <path class="egg" fill="currentColor"
-          d="M150 250c-42.741 0-75-32.693-75-90s42.913-110 75-110c32.088 0 75 52.693 75 110s-32.258 90-75 90z" />
-        <ellipse fill="#ddd" cx="150" cy="270" rx="40" ry="7" />
-      </svg>
-    </div>
-    <div>
-      <h4>{% trans "Powered By Wagtail" %}</h4>
-    </div>
-  </a>
-  <a class="option option-two" href="{% wagtail_documentation_path %}/getting_started/tutorial.html">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M0 0h24v24H0V0z" fill="none" />
-      <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-    </svg>
-    <div>
-      <h4>{% trans "News" %}</h4>
-    </div>
-  </a>
-  <a class="option option-three" href="{% url 'wagtailadmin_home' %}">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M0 0h24v24H0z" fill="none" />
-      <path
-        d="M16.5 13c-1.2 0-3.07.34-4.5 1-1.43-.67-3.3-1-4.5-1C5.33 13 1 14.08 1 16.25V19h22v-2.75c0-2.17-4.33-3.25-6.5-3.25zm-4 4.5h-10v-1.25c0-.54 2.56-1.75 5-1.75s5 1.21 5 1.75v1.25zm9 0H14v-1.25c0-.46-.2-.86-.52-1.22.88-.3 1.96-.53 3.02-.53 2.44 0 5 1.21 5 1.75v1.25zM7.5 12c1.93 0 3.5-1.57 3.5-3.5S9.43 5 7.5 5 4 6.57 4 8.5 5.57 12 7.5 12zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 5.5c1.93 0 3.5-1.57 3.5-3.5S18.43 5 16.5 5 13 6.57 13 8.5s1.57 3.5 3.5 3.5zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" />
-    </svg>
-    <div>
-      <h4>{% trans "About Open Build" %}</h4>
-    </div>
-  </a>
-</footer>

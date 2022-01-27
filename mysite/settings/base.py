@@ -187,6 +187,6 @@ WAGTAILSEARCH_BACKENDS = {
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://example.com'
 
-PUPUT_AS_PLUGIN = True
+PUPUT_AS_PLUGIN = False
 
 SECRET_KEY = "sdfgerg32g90uadfgjo12!@89u9ergj9249889"
