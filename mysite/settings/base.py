@@ -106,7 +106,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cms',
-        'PASSWORD': os.environ["PASSWORD"],
+        'PASSWORD': os.environ.get("PASSWORD"),
         'USER': 'cms_user',
         'HOST': 'db-mysql-nyc3-97229-do-user-2508039-0.b.db.ondigitalocean.com',
         'PORT': '25060',
