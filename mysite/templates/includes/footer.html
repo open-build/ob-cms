@@ -2,7 +2,7 @@
 {% load static %}
 
 <footer class="footer" role="contentinfo">
-  <a class="option option-one" href="{% wagtail_documentation_path %}/">
+  <a class="option option-three" href="{% url 'wagtailadmin_home' %}">
     <div class="figure">
       <svg class="figure-space" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style="width: 25px;"
         aria-hidden="true">
@@ -15,7 +15,7 @@
       <h4>{% trans "Powered By Wagtail" %}</h4>
     </div>
   </a>
-  <a class="option option-two" href="{% wagtail_documentation_path %}/getting_started/tutorial.html">
+  <a class="option option-two" href="/news">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M0 0h24v24H0V0z" fill="none" />
       <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
@@ -24,7 +24,7 @@
       <h4>{% trans "News" %}</h4>
     </div>
   </a>
-  <a class="option option-three" href="{% url 'wagtailadmin_home' %}">
+  <a class="option option-three" href="/about">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M0 0h24v24H0z" fill="none" />
       <path
