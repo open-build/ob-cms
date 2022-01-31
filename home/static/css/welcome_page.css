@@ -69,16 +69,50 @@ svg:not(:root) {
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e6e6e6;
+    background: #f7f4f4;
+    height: 70px;
+    border-radius: 5px;
+}
+/* .menu{
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+.menu li a{
+    padding: 20px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+} */
+.header-link{
+    margin-bottom: 10px;
+    padding-top: 23px;
+    padding-left: 20px;
+    width: 90px;
+    height: 70px;
+}
+.head{
+    width: 20px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.header-link:hover{
+    background-color: rgb(210, 105, 30);
+}
+.header a:hover{
+    color: white;
 }
 
 .logo{
-    width: 130px;/*  */
-    margin-right: 20px;
+    width: 135px;/*  */
+    margin-right: 60px;
 }
 
 .logo a {
@@ -415,8 +449,8 @@ svg:not(:root) {
     }
 }
 
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
     .header-link {
         max-width: 100px;
     }
-}
+} */

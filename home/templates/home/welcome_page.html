@@ -2,6 +2,27 @@
 {% load static %}
 
 <header class="header">
+  <!-- <ul class="menu">
+    <li>
+      <div class="logo">
+        <a href="https://open.build/">
+          <img class="logo" src="{% static 'img/logo.png' %}" alt="">
+        </a>
+      </div>
+    </li>
+
+    <li>
+      <a href="/news/">
+        {% trans "Blog" %}
+      </a>
+    </li>
+
+    <li>
+      <a href="#contact">
+        {% trans "Contact" %}
+      </a>
+    </li>
+  </ul> -->
   <div class="logo">
     <a href="https://open.build/">
       <img class="logo" src="{% static 'img/logo.png' %}" alt="">
@@ -11,15 +32,19 @@
     {% comment %}
     This works for all cases but prerelease versions:
     {% endcomment %}
-    <a href="/news/">
+    <a class="head" href="/news/">
       {% trans "Blog" %}
     </a>
-    <a href="#contact">
+  </div>
+
+  <div class="header-link">
+    <a class="head" href="#contact">
       {% trans "Contact" %}
     </a>
   </div>
 </header>
 <!--  -->
+
 <aside>
   <div>
     <a href="https://twitter.com/open_build" target="_blank">
@@ -43,7 +68,8 @@
 
     <div class="open-source">
       <h1>{% trans "Open Source" %}</h1>
-      <p><img class="guy" src="{% static 'img/guy.png' %}" alt="">At its core, OpenBuild helps to build and support new and existing Open Source software for corporate,
+      <p><img class="guy" src="{% static 'img/guy.png' %}" alt="">At its core, OpenBuild helps to build and support new
+        and existing Open Source software for corporate,
         nonprofits, government and startups who want to build fast, open and quality. <br />
         <br />
         Our teams of two or more provide dedicated support to clients that either directly contract us to support their
@@ -53,22 +79,26 @@
         In addition to our Open Source projects, OpenBuild has two initiatives that promote the use of open data
         standards and technologies.
       </p>
-      <p>{% trans "Please feel free to <a href='https://github.com/open-build/'>join our community</a>, or get started with one of the links below."%}</p>
+      <p>{% trans "Please feel free to <a href='https://github.com/open-build/'>join our community</a>, or get started
+        with one of the links below."%}</p>
     </div>
 
     <div id="container">
       <ul id="slider">
         <li id="slide1">
-          <p><img  src="{% static 'img/logoslide.png' %}" alt="">Open Build can help you get your business up and running and use cloud native open source software.</p>
+          <p><img src="{% static 'img/logoslide.png' %}" alt="">Open Build can help you get your business up and running
+            and use cloud native open source software.</p>
         </li>
         <li id="slide2">
-          <p><img  src="{% static 'img/negocio.png' %}" alt="">Start your own company, using free and open source tools and with affordable open source developers.</p>
+          <p><img src="{% static 'img/negocio.png' %}" alt="">Start your own company, using free and open source tools
+            and with affordable open source developers.</p>
         </li>
         <li id="slide3">
-          <p><img class="guy" src="{% static 'img/team.png' %}" alt="">Our partner matching service, we will help you find a developer or development team to build your application.</p>
+          <p><img class="guy" src="{% static 'img/team.png' %}" alt="">Our partner matching service, we will help you
+            find a developer or development team to build your application.</p>
         </li>
       </ul>
-      
+
       <ul class="menu">
         <li>
           <a href="#slide1"></a>
@@ -76,7 +106,7 @@
         <li>
           <a href="#slide2"></a>
         </li>
-         <li>
+        <li>
           <a href="#slide3"></a>
         </li>
       </ul>
@@ -93,7 +123,8 @@
 
     <div class="open-source">
       <h1>{% trans "STEM Teaching and Training" %}</h1>
-      <p class="pright"><img class="girl" src="{% static 'img/girl.png' %}" alt="">With OpenBuild being an active member in the Open Source community, we are deeply passionate about contributing
+      <p class="pright"><img class="girl" src="{% static 'img/girl.png' %}" alt="">With OpenBuild being an active member
+        in the Open Source community, we are deeply passionate about contributing
         to the spread of learning and knowledge of Open Source technologies, both software and hardware in our local
         communities. <br />
         <br />
@@ -101,24 +132,30 @@
         schools to teach STEM based courses.<br />
         <br />
       </p>
-      <p class="pright">{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>, or get started with one of the links below.' %}</p>
+      <p class="pright">{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>,
+        or get started with one of the links below.' %}</p>
     </div>
 
     <section class="contacts">
       <div class="contact">
         <h1>Contact us</h1>
         <form action="mailto:info@open.build" method="get">
-          <div class="inputcontainer"><input class="inputxt" type="text" name="name" id="name" placeholder="Your name"></div>
-          <div class="inputcontainer"><input class="inputxt" type="text" name="subjet" id="subjet" placeholder="Subjet"></div>
-          <div class="inputcontainer"><input class="inputxt" type="email" name="email" id="email" placeholder="Email adress"></div>
-          <div class="textacontainer"><textarea class="textareaa" name="message" id="message" cols="30" rows="10"></textarea></div>
+          <div class="inputcontainer"><input class="inputxt" type="text" name="name" id="name" placeholder="Your name">
+          </div>
+          <div class="inputcontainer"><input class="inputxt" type="text" name="subjet" id="subjet" placeholder="Subjet">
+          </div>
+          <div class="inputcontainer"><input class="inputxt" type="email" name="email" id="email"
+              placeholder="Email adress"></div>
+          <div class="textacontainer"><textarea class="textareaa" name="message" id="message" cols="30"
+              rows="10"></textarea></div>
           <div><button class="button" type="submit">Send</button></div>
         </form>
       </div>
     </section>
 
   </div>
-  Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+  Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a
+    href="https://icons8.com/illustrations">Ouch!</a>
 </main>
 
 <footer class="footer" role="contentinfo">
