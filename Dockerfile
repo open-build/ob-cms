@@ -28,12 +28,6 @@ RUN apt-get update --yes --quiet && apt-get install --yes --quiet --no-install-r
     build-essential \
  && rm -rf /var/lib/apt/lists/*
 
-# install mysqlclient
-RUN apk update
-    && apk add --virtual build-deps gcc python3-dev musl-dev
-    && apk add --no-cache mariadb-dev
-    && apk del build-deps
-
 # Install the application server.
 RUN pip install "gunicorn==20.0.4"
 

@@ -1,6 +1,7 @@
 {% load i18n wagtailcore_tags %}
 {% load static %}
 
+<<<<<<< HEAD
 <header class="header">
   <!-- <ul class="menu">
     <li>
@@ -62,25 +63,33 @@
     </a>
   </div>
 </aside>
+=======
+
+>>>>>>> cc603c9013ef68429c317fc53927e1a6e26c76db
 
 <main class="main">
   <div class="main-text">
 
     <div class="open-source">
       <h1>{% trans "Open Source" %}</h1>
+<<<<<<< HEAD
       <p><img class="guy" src="{% static 'img/guy.png' %}" alt="">At its core, OpenBuild helps to build and support new
         and existing Open Source software for corporate,
         nonprofits, government and startups who want to build fast, open and quality. <br />
+=======
+      <p><img class="guy" src="{% static 'img/guy.png' %}" alt=""><em>Open Build</em> helps small business and non-profits benefit from open source software,
+        and connect with teams of developers. <br />
+>>>>>>> cc603c9013ef68429c317fc53927e1a6e26c76db
         <br />
-        Our teams of two or more provide dedicated support to clients that either directly contract us to support their
-        data management process, development process improvements, migrating to cloud infrastucture and host their Open
-        Source projects/systems.<br />
+        We recruit, hire and educate software developers from all over the world to use open source software, learn best practices and processes to build better software and build there own agencies and companies to help benefit there local communities.<br />
         <br />
-        In addition to our Open Source projects, OpenBuild has two initiatives that promote the use of open data
-        standards and technologies.
       </p>
+<<<<<<< HEAD
       <p>{% trans "Please feel free to <a href='https://github.com/open-build/'>join our community</a>, or get started
         with one of the links below."%}</p>
+=======
+      <p>If your interested in learning more about how open source and open build can help your company or organization.  <a href="/#contact">Get in touch with us</a>.</p>
+>>>>>>> cc603c9013ef68429c317fc53927e1a6e26c76db
     </div>
 
     <div id="container">
@@ -114,7 +123,7 @@
 
     <!-- <div class="open-source">
       <h1>{% trans "Open Business" %}</h1>
-      <p><img class="guy" src="{% static 'img/guy.png' %}" alt="">Open Build can help you get your business up and running and use cloud native open source software.  
+      <p><img class="guy" src="{% static 'img/guy.png' %}" alt="">Open Build can help you get your business up and running and use cloud native open source software.
         <br> your own software development company, design agency or build a mobile application using free and open source tools and with affordable open source developer teams.
         <br> our partner matching service, we will help you find a developer or development team to build your application.
       </p>
@@ -123,21 +132,29 @@
 
     <div class="open-source">
       <h1>{% trans "STEM Teaching and Training" %}</h1>
+<<<<<<< HEAD
       <p class="pright"><img class="girl" src="{% static 'img/girl.png' %}" alt="">With OpenBuild being an active member
         in the Open Source community, we are deeply passionate about contributing
+=======
+      <p class="pright"><img class="girl" src="{% static 'img/girl.png' %}" alt="">With Open Build being an active member in the Open Source community, we are deeply passionate about contributing
+>>>>>>> cc603c9013ef68429c317fc53927e1a6e26c76db
         to the spread of learning and knowledge of Open Source technologies, both software and hardware in our local
         communities. <br />
         <br />
         Our developers, technical specialists, and analysts volunteer their time to work with local organizations and
-        schools to teach STEM based courses.<br />
+        schools to teach STEM based courses in their local communities.<br />
         <br />
       </p>
+<<<<<<< HEAD
       <p class="pright">{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>,
         or get started with one of the links below.' %}</p>
+=======
+      <p class="pright">{% trans 'Please feel free to <a href="https://github.com/open-build/">join our community</a>.' %}</p>
+>>>>>>> cc603c9013ef68429c317fc53927e1a6e26c76db
     </div>
 
     <section class="contacts">
-      <div class="contact">
+      <div class="contact" id="contact">
         <h1>Contact us</h1>
         <form action="mailto:info@open.build" method="get">
           <div class="inputcontainer"><input class="inputxt" type="text" name="name" id="name" placeholder="Your name">
@@ -157,38 +174,3 @@
   Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a
     href="https://icons8.com/illustrations">Ouch!</a>
 </main>
-
-<footer class="footer" role="contentinfo">
-  <a class="option option-one" href="{% wagtail_documentation_path %}/">
-    <div class="figure">
-      <svg class="figure-space" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style="width: 25px;"
-        aria-hidden="true">
-        <path class="egg" fill="currentColor"
-          d="M150 250c-42.741 0-75-32.693-75-90s42.913-110 75-110c32.088 0 75 52.693 75 110s-32.258 90-75 90z" />
-        <ellipse fill="#ddd" cx="150" cy="270" rx="40" ry="7" />
-      </svg>
-    </div>
-    <div>
-      <h4>{% trans "Powered By Wagtail" %}</h4>
-    </div>
-  </a>
-  <a class="option option-two" href="{% wagtail_documentation_path %}/getting_started/tutorial.html">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M0 0h24v24H0V0z" fill="none" />
-      <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-    </svg>
-    <div>
-      <h4>{% trans "News" %}</h4>
-    </div>
-  </a>
-  <a class="option option-three" href="{% url 'wagtailadmin_home' %}">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M0 0h24v24H0z" fill="none" />
-      <path
-        d="M16.5 13c-1.2 0-3.07.34-4.5 1-1.43-.67-3.3-1-4.5-1C5.33 13 1 14.08 1 16.25V19h22v-2.75c0-2.17-4.33-3.25-6.5-3.25zm-4 4.5h-10v-1.25c0-.54 2.56-1.75 5-1.75s5 1.21 5 1.75v1.25zm9 0H14v-1.25c0-.46-.2-.86-.52-1.22.88-.3 1.96-.53 3.02-.53 2.44 0 5 1.21 5 1.75v1.25zM7.5 12c1.93 0 3.5-1.57 3.5-3.5S9.43 5 7.5 5 4 6.57 4 8.5 5.57 12 7.5 12zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 5.5c1.93 0 3.5-1.57 3.5-3.5S18.43 5 16.5 5 13 6.57 13 8.5s1.57 3.5 3.5 3.5zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" />
-    </svg>
-    <div>
-      <h4>{% trans "About Open Build" %}</h4>
-    </div>
-  </a>
-</footer>

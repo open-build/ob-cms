@@ -35,7 +35,7 @@ urlpatterns = urlpatterns + [
     # the list:
     path("", include(puput_urls)),
     path("", include(wagtail_urls)),
-
+    path('__debug__/', include('debug_toolbar.urls')),
     # Alternatively, if you want Wagtail pages to be served from a subpath
     # of your site, rather than the site root:
     #    path("pages/", include(wagtail_urls)),
