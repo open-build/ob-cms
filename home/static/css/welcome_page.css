@@ -1,6 +1,10 @@
 html {
+    color: white;
     box-sizing: border-box;
-    /* background: linear-gradient(white, rgb(83, 147, 199)); */
+    background-image: url("/static/img/disco.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #072103;
 }
 
 *,
@@ -28,7 +32,7 @@ header, main, section, footer{
     max-width: 960px;
     margin: 0 auto;
     padding: 0 15px;
-    color: #534f50;
+    /* color: #ffffff; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.40;
 }
@@ -39,7 +43,7 @@ p {
 
 a {
     background-color: transparent;
-    color: #308282;
+    color: #add4d4;
     text-decoration: none;
 }
 
@@ -73,24 +77,11 @@ svg:not(:root) {
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e6e6e6;
-    background: #f7f4f4;
+    
     height: 70px;
     border-radius: 5px;
 }
-/* .menu{
-    padding: 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-}
-.menu li a{
-    padding: 20px;
-    display: block;
-}
-.menu li{
-    display: inline-block;
-    text-align: center;
-} */
+
 .header-link{
     margin-bottom: 10px;
     padding-top: 23px;
@@ -111,8 +102,9 @@ svg:not(:root) {
 }
 
 .logo{
-    width: 135px;/*  */
+    width: 135px;
     margin-right: 60px;
+    /* background: linear-gradient(gray, rgb(255, 255, 255)); */
 }
 
 .logo a {
@@ -249,12 +241,6 @@ svg:not(:root) {
    /*  background:rgb(139, 55, 55); */
 }
 
-/* #container > ul#slider li img{
-  border-radius: 19px;
-  background: #e0e0e0;
-  box-shadow:  7px 7px 14px #888888,
-             -7px -7px 14px #c2bfbf;
-} */
 
 #container > ul#slider li#slide1 img{
   float: left;
@@ -416,7 +402,7 @@ svg:not(:root) {
 
 .option p {
     padding-top: 3px;
-    color: #231f20;
+    /* color: #231f20; */
     font-size: 15px;
     font-weight: 300;
 }
