@@ -184,8 +184,9 @@ svg:not(:root) {
     margin: 5px auto;
     margin: 40px 0px;
     padding: 18px;
-    text-align: left;
-    height: 490px;
+    text-align: center;
+    align-items: center;
+    height: 400px;
 }
 
 .intro {
