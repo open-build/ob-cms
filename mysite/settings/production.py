@@ -15,7 +15,7 @@ DATABASES = {
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['nullrecords-cms-6xw4e.ondigitalocean.app', 'open.build', '127.0.0.1', '[::1]','www.open.build']
+ALLOWED_HOSTS = ['nullrecords-cms-6xw4e.ondigitalocean.app', 'nullrecords.com', '127.0.0.1', '[::1]','www.nullrecords.com']
 
 try:
     from .local import *
