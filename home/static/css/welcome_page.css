@@ -72,15 +72,14 @@ svg:not(:root) {
 }
 
 .header {
-    display: flex;
+    display: block;
+    position: fixed;
     align-items: center;
-    padding-top: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #e6e6e6;
     height: 70px;
+    width: 100%;
     background-color: #e9bcb7;
     background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%);
-    border-radius: 5px;
 }
 
 .header-link{
