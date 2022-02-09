@@ -78,6 +78,7 @@ svg:not(:root) {
     padding-bottom: 10px;
     border-bottom: 1px solid #e6e6e6;
     height: 70px;
+    background-color: #BDCCE0;
     border-radius: 5px;
 }
 
