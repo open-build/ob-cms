@@ -43,7 +43,7 @@ p {
 
 a {
     background-color: transparent;
-    color: #add4d4;
+    color: #072103;
     text-decoration: none;
 }
 
@@ -93,6 +93,10 @@ svg:not(:root) {
     width: 20px;
     font-size: 20px;
     font-weight: 900;
+}
+
+a.head{
+    color: #072103;
 }
 .header-link:hover{
     background-color: #D92707;
