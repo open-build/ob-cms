@@ -29,7 +29,6 @@ aside div a img{
 }
 
 header, main, section, footer{
-    max-width: 960px;
     margin: 0 auto;
     padding: 0 15px;
     /* color: #ffffff; */
@@ -72,14 +71,13 @@ svg:not(:root) {
 }
 
 .header {
-    display: block;
+    display: flex;
     position: fixed;
     align-items: center;
     padding-bottom: 10px;
+    justify-content: center;
     height: 70px;
     width: 100%;
-    background-color: #e9bcb7;
-    background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%);
 }
 
 .header-link{
@@ -102,12 +100,14 @@ svg:not(:root) {
 }
 
 a.head{
-    color: #072103;
+    color: #ffffff;
 }
 
 .logo{
     width: 135px;
     margin-right: 60px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
     /* background: linear-gradient(gray, rgb(255, 255, 255)); */
 }
 
@@ -145,6 +145,7 @@ a.head{
     padding: 40px 0;
     margin: 0 auto;
     text-align: center;
+    width: 75%;
 }
 
 .figure-space {
