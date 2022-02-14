@@ -31,7 +31,6 @@ aside div a img{
 header, main, section, footer{
     margin: 0 auto;
     padding: 0 15px;
-    /* color: #ffffff; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.40;
 }
