@@ -17,15 +17,14 @@ aside{
     float: right;
     position: fixed;
     right: 20px;
-    margin-top: 25vh;
+    margin-top: 39vh;
 }
 .logosocialmed{
-    width: 30px;
-    padding: 0px;
-    border-radius: 4px;
-}
-aside div a img{
-    background-color: white;
+    width: 33px;
+    padding: 2px;
+    border-radius: 25px;
+    background-color: #ff5758;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
 }
 
 header, main, section, footer{
@@ -36,7 +35,7 @@ header, main, section, footer{
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 a {
@@ -88,23 +87,20 @@ svg:not(:root) {
 }
 .head{
     width: 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.66);
 }
-.header-link:hover{
-    background-color: #D92707;
-}
-.header a:hover{
-    color: white;
-}
-
 a.head{
     color: #ffffff;
+}
+.head:hover{
+    color: #ff5758;
 }
 
 .logo{
     width: 135px;
-    margin-right: 60px;
+    margin-right: 50%;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
     /* background: linear-gradient(gray, rgb(255, 255, 255)); */
@@ -189,12 +185,11 @@ a.head{
 
 .video {
     width: 100%;
-    margin: 5px auto;
-    margin: 40px 0px;
-    padding: 18px;
+    margin: 40px auto;
+    padding: 18px 18px 0px 18px;
     text-align: center;
     align-items: center;
-    height: 400px;
+    height: 370px;
 }
 
 .intro {
@@ -211,6 +206,13 @@ a.head{
 }
 .pright{
   text-align: right;
+}
+.nullrecords{
+    color: #ff5757d0;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.66);
 }
 
 
@@ -451,8 +453,3 @@ a.head{
     }
 }
 
-/* @media (max-width: 360px) {
-    .header-link {
-        max-width: 100px;
-    }
-} */

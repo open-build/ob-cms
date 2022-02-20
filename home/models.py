@@ -8,3 +8,6 @@ class HomePage(Page):
 
 class AboutPage(Page):
     pass
+
+class ArtistsPage(Page):
+    pass
