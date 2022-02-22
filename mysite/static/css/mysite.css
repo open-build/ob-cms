@@ -1,0 +1,65 @@
+html {
+    color: white;
+    box-sizing: border-box;
+    background-image: url("/static/img/disco.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #072103;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+aside{
+    float: right;
+    position: fixed;
+    right: 20px;
+    margin-top: 39vh;
+}
+.logosocialmed{
+    width: 33px;
+    padding: 2px;
+    border-radius: 25px;
+    background-color: #ff5758;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+header, main, section, footer{
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.40;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+a {
+    background-color: transparent;
+    color: #add4d4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D92707;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+main {
+    display: block; /* For IE11 support */
+}
