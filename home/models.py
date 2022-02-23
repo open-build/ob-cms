@@ -11,3 +11,6 @@ class AboutPage(Page):
 
 class ArtistsPage(Page):
     pass
+
+class SubmitPage(Page):
+    pass

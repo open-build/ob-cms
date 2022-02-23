@@ -37,7 +37,6 @@ a.head{
     margin-right: 50%;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
-    /* background: linear-gradient(gray, rgb(255, 255, 255)); */
 }
 
 .logo a {
@@ -230,7 +229,6 @@ a.head{
 
 .option p {
     padding-top: 3px;
-    /* color: #231f20; */
     font-size: 15px;
     font-weight: 300;
 }
@@ -240,26 +238,3 @@ a.head{
         max-width: 780px;
     }
 }
-
-/* @media (max-width: 767px) {
-    .option {
-        flex: 0 0 50%;
-    }
-}
-
-@media (max-width: 599px) {
-    .main {
-        padding: 20px 0;
-    }
-
-    .figure-space {
-        max-width: 200px;
-    }
-
-    .footer {
-        display: block;
-        width: 300px;
-        margin: 0 auto;
-    }
-} */
-
