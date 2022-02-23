@@ -7,8 +7,6 @@ html {
     background-color: #072103;
 }
 
-
-
 svg:not(:root) {
     overflow: hidden;
 }
@@ -159,121 +157,6 @@ a.head{
     font-size: 24px;
     text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.66);
 }
-
-
-
-
-
-#slider {color: rgb(255, 255, 255);}
-   #slider #slide1 {background-color: #78c0f3; border-radius: 5px;}
-   #slider #slide2 {background-color: #e29b48; border-radius: 5px;}
-   #slider #slide3 {background-color: #81dc91; border-radius: 5px;}
-
-#container{
-  margin: auto;
-  /* background-color: rgb(187, 186, 186); */
-  max-width: 940px;
-  width: 100%;
-  padding: 30px;
-  height: 380px;
-  box-sizing: border-box;
-  border: 1px solid #e6e6e6;
-}
-
-#container > ul, li {
-    padding: 0;
-    margin-left: 20px;
-    list-style: none;
-}
-
-#container > ul#slider{
-  position: relative;
-  width: 800px;
-  height: 300px;
-}
-
-#container > ul#slider li {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    padding: 20px;
-    transition: opacity .5s;
-   /*  background:rgb(139, 55, 55); */
-}
-
-
-#container > ul#slider li#slide1 img{
-  float: left;
-  margin: 0px;
-  width: 200px;
-  border-radius: 19px;
-  background: #e0e0e0;
-  box-shadow:  7px 7px 14px #888888,
-             -7px -7px 14px #c2bfbf;
-  /* box-shadow:  5px 5px 10px #888888,
-             -5px -5px 10px #c2bfbf; */
-}
-
-#container > ul#slider li#slide2 img{
-  float: right;
-  margin: 0px;
-  width: 200px;
-}
-
-#container > ul#slider li#slide3 img{
-  float: left;
-  margin: 0px;
-  width: 200px;
-}
-
-#container > ul#slider li p{
-  text-align: center;
-  font-size: 40px;
-}
-
-#container > ul#slider li:first-child {
-    opacity: 1; /*Mostramos el primer <li>*/
-}
-
-#container > ul#slider li:target {
-    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
-}
-
-#container > .menu{
-  text-align: center;
-  margin: 20px;
-}
-
-#container > .menu li{
-  display: inline-block;
-  text-align: center;
-}
-
-#container > .menu li a{
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  background-color: rgb(201, 189, 189);
-  padding: 10px;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  border-radius: 100%;
-}
-
-/* #slide1{
-  background-color: grey !important;
-} */
-
-#slider li #slide1{
-  background-color: grey;
-}
-
-
-
 
 .main-text h1 {
     font-size: 2em;

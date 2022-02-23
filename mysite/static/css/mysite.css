@@ -1,9 +1,14 @@
+:root{
+    --red:#ff5758;
+}
+
 html {
     color: white;
     box-sizing: border-box;
-    background-image: url("/static/img/disco.jpg");
+    background-image: url("/static/img/sol.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
     background-color: #072103;
 }
 
@@ -23,7 +28,7 @@ aside{
     width: 33px;
     padding: 2px;
     border-radius: 25px;
-    background-color: #ff5758;
+    background-color: var(--red);
     box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -45,7 +50,7 @@ a {
 }
 
 a:hover {
-    color: #D92707;
+    color: var(--red);
 }
 
 h1,
