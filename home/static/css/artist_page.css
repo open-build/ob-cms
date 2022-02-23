@@ -1,9 +1,10 @@
 html {
     color: white;
     box-sizing: border-box;
-    background-image: url("/static/img/bg.jpg");
+    background-image: url("/static/img/disco.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
     background-color: #072103;
 }
 
