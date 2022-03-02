@@ -23,7 +23,7 @@ aside{
 aside div a img{
     background-color: white;
 }
- 
+
 header, main, section, footer{
     max-width: 960px;
     margin: 0 auto;
@@ -31,6 +31,11 @@ header, main, section, footer{
     color: #534f50;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.40;
+}
+
+.donate {
+  margin-left: auto;
+  order: 2;
 }
 
 p {
@@ -309,8 +314,8 @@ svg:not(:root) {
   border-radius: 100%;
 }
 
-/* #slide1{ 
-  background-color: grey !important; 
+/* #slide1{
+  background-color: grey !important;
 } */
 
 #slider li #slide1{
