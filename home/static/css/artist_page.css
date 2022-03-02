@@ -1,3 +1,7 @@
+:root{
+    --red:#ff5758;
+}
+
 html {
     color: white;
     box-sizing: border-box;
@@ -10,43 +14,6 @@ html {
 
 svg:not(:root) {
     overflow: hidden;
-}
-
-.header {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    padding-bottom: 10px;
-    justify-content: center;
-    height: 70px;
-    width: 100%;
-}
-
-.header-link{
-    margin-bottom: 10px;
-    padding-top: 23px;
-    padding-left: 20px;
-    width: 90px;
-    height: 70px;
-}
-.head{
-    width: 20px;
-    font-size: 18px;
-    font-weight: 900;
-    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.66);
-}
-a.head{
-    color: #ffffff;
-}
-.head:hover{
-    color: #ff5758;
-}
-
-.logo{
-    width: 135px;
-    margin-right: 50%;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .logo a {
@@ -71,6 +38,7 @@ a.head{
     margin: 0 auto;
     text-align: center;
     width: 75%;
+    height: 100%;
 }
 
 .figure-space {
@@ -153,96 +121,10 @@ a.head{
     margin: 15px auto 0;
 }
 
-.contats{
-    height: 400px;
-}
-.contact{
-    height: 100%;
-    padding: 10px;
-    width: 45%;
-    text-align: center;
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.contact h1{
-    margin-top: 3px;
-}
-.inputxt{
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-    padding-left: 10px;
-}
-.inputcontainer{
-    height: 40px;
-    margin: 7px 0px;
-}
-.textareaa{
-    width: 340px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.textacontainer{
-    margin: 5px 0px;
-}
-
 .section1{
     display: flex;
-    flex-direction: wrap;
-}
-
-.button{
-    background-color: #D92707;
-    border: none;
-    width: 70px;
-    height: 25px;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-}
-
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-top: 1px solid #e6e6e6;
-    padding: 10px;
-}
-
-.option {
-    display: block;
-    padding: 10px 10px 10px 34px;
-    position: relative;
-    text-decoration: none;
-}
-
-.option svg {
-    width: 24px;
-    height: 24px;
-    fill: gray;
-    border: 1px solid #d9d9d9;
-    padding: 5px;
-    border-radius: 100%;
-    top: 10px;
-    left: 0;
-    position: absolute;
-}
-
-.option h4 {
-    font-size: 19px;
-    text-decoration: underline;
-}
-
-.option p {
-    padding-top: 3px;
-    /* color: #231f20; */
-    font-size: 15px;
-    font-weight: 300;
+    justify-content: space-around;
+    
 }
 
 @media (max-width: 996px) {
@@ -280,11 +162,15 @@ a.head{
 
 #container{
   margin: auto;
-  max-width: 940px;
+  max-width: 840px;
   width: 100%;
   padding: 30px;
   height: 380px;
   box-sizing: border-box;
+}
+
+#container>p{
+    margin-left: 60px;
 }
 
 #container > ul, li {
@@ -312,16 +198,8 @@ a.head{
     overflow: hidden;
 }
 
-
-#container > ul#slider li#slide3 img{
-  float: left;
-  margin: 0px;
-  width: 200px;
-}
-
 #container > ul#slider li p{
-  text-align: center;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 #container > ul#slider li:first-child {
@@ -334,7 +212,8 @@ a.head{
 
 #container > .menu{
   text-align: center;
-  margin: 20px;
+  margin-top: 10px;
+  margin-left: 70px;
 }
 
 #container > .menu li{
@@ -347,17 +226,16 @@ a.head{
   color: white;
   text-decoration: none;
   background-color: rgb(201, 189, 189);
-  padding: 10px;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 100%;
 }
 
-/* #slide1{ 
-  background-color: grey !important; 
-} */
-
-#slider li #slide1{
-  background-color: grey;
+#slider img{
+    width: 25px;
+    padding: 0px;
+    background-color: var(--red);
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-top: 5px;
 }
