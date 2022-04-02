@@ -79,8 +79,8 @@ svg:not(:root) {
     padding-bottom: 10px;
     border-bottom: 1px solid #CEC7C3;
     border-right: 1px solid #CEC7C3;
-    background-color: ;
-    background: #8aa99d50;
+    /*background-color: ; */
+    background: white;
     height: 70px;
     border-radius: 5px;
     margin-bottom: 0px;
@@ -94,7 +94,7 @@ svg:not(:root) {
     transition: background-color .5s;
 }
 .head{
-    color: white;
+    color: rgb(206, 204, 204);
     width: 20px;
     font-size: 20px;
     font-weight: 900;
@@ -109,13 +109,15 @@ svg:not(:root) {
 }
 
 .header-link:hover{
-    background-color: rgba(210, 105, 30, 0.788);
+    background-color: rgba(202, 123, 238, 0.788);  /* new color rgba(202, 123, 238, 0.788) old color rgba(210, 105, 30, 0.788) */
 }
 .header a:hover{
     color: white;
 }
 
-
+body {
+    background-color: #f6f8f6;
+}
 .logo{
     width: 135px;/*  */
     margin-right: 60px;
@@ -196,8 +198,9 @@ svg:not(:root) {
 .open-source {
     width: 100%;
     margin: 5px auto;
+    background-color: white;
     border: 2px solid #e6e6e6;
-    border-radius: 6px;
+    border-radius: 20px;
     margin: 40px 0px;
     padding: 18px;
     text-align: left;
@@ -208,7 +211,7 @@ svg:not(:root) {
     text-align: center;
 }
 .pright{
-  text-align: right;
+  text-align: left;
 }
 
 
@@ -220,15 +223,20 @@ svg:not(:root) {
    #slider #slide2 {background-color: #e6b781; border-radius: 5px;}
    #slider #slide3 {background-color: #b0ebbb; border-radius: 5px;}
 
-#container{
+#container{ /* quotes */
   margin: auto;
   /* background-color: rgb(187, 186, 186); */
   max-width: 940px;
   width: 100%;
   padding: 30px;
   height: 380px;
+  border-top: 0px solid #CEC7C3;
+  border-right: 0px solid #CEC7C3;
+  border-left: 0px solid #CEC7C3;
+  border-bottom: 1px solid #CEC7C3;
+  border-radius: 0px;
   box-sizing: border-box;
-  border: 1px solid #e6e6e6;
+  /* border: 1px solid #e6e6e6; */
 }
 
 #container > ul, li {
@@ -319,7 +327,7 @@ svg:not(:root) {
 } */
 
 #slider li #slide1{
-  background-color: grey;
+  background-color: rgb(221, 224, 224);
 }
 
 
@@ -348,7 +356,7 @@ svg:not(:root) {
     /* border: 1px solid #ccc; */
     border-bottom: 2px solid #CEC7C3;
     border-right: 2px solid #CEC7C3;
-    background-color: #8aa99d50;
+    background-color: #acfedf50;
 }
 .contact h1{
     margin-top: 3px;
