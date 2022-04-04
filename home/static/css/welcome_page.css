@@ -223,7 +223,7 @@ body {
    #slider #slide2 {background-color: #e6b781; border-radius: 5px;}
    #slider #slide3 {background-color: #b0ebbb; border-radius: 5px;}
 
-#container{ /* quotes */
+#container{ /* quotes level*/
   margin: auto;
   /* background-color: rgb(187, 186, 186); */
   max-width: 940px;
