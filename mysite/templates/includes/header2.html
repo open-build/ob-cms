@@ -1,27 +1,25 @@
 {% load i18n wagtailcore_tags %}
 {% load static %}
+<header class="header">
 
-<footer class="footer">
   <div class="contenedor">
+
+
       <div class="barra">
           <a class="logo" href="index.html">
               <h1 class="logo__nombre no-margin centrar-texto">Open<span class="logo__bold"> Build</span></h1>
           </a>
-
-          <a href="{% url 'wagtailadmin_home' %}" class="navegacion__enlace">{% trans "Powered By Wagtail" %}</a>
-
 
           <nav class="navegacion">
               <a href="index.html" class="navegacion__enlace">Home</a>
               <a href="portafolio.html" class="navegacion__enlace">Portfolio</a>
               <a href="foundry.html" class="navegacion__enlace">Foundry</a>
               <a href="news.html" class="navegacion__enlace">News</a>
-              <a href="About_us.html" class="navegacion__enlace">About</a>
+              <a href="welcome_page.html" class="navegacion__enlace">About</a>
           </nav>
       </div>
   </div>
-</footer>
+
+</header>
 
 
-</body>
-</html>

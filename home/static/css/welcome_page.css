@@ -20,37 +20,6 @@ body {
     line-height: 2;
 }
 
-/** carrusel **/
-.carrusel {
-    height: 30vh;
-    display: flex;
-    align-items: center;
-  }
-
-  .carrusel-items {
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 30px 0px;
-  }
-
-  .carrusel-item {
-    min-width: 300px;
-    max-width: 300px;
-    height: 200px;
-    outline: 2px solid black;
-    cursor: pointer;
-  }
-
-  .carrusel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .carrusel-item:hover {
-    transform: scale(1.2);
-  }
 
 /** Globals **/
 .contenedor {
@@ -90,12 +59,17 @@ img {
     text-align: center;
 }
 
-/** Header **/
-.webp .header{
-    background-image: url(/static/img/Zoom\ Background\ de\ Cumpleaños\ Marfil\ Minimalista.png);
+/** Header FIX**/
+
+/**.webp .header{
+    background-image: url("{% static 'img/BRIGITTE-BAPTISTE.jpg' %}");
 }
 .no-webp .header{
-    background-image: url(/static/img/Zoom\ Background\ de\ Cumpleaños\ Marfil\ Minimalista.png);
+    background-image: url("{% static 'img/BRIGITTE-BAPTISTE.jpg' %}");
+}
+**/
+.cover {
+	background: url('/static/img/BRIGITTE-BAPTISTE.jpg');
 }
 .header{
     height: 70rem;
@@ -103,6 +77,7 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .header__texto {
    text-align: center;
    color: var(--primario);
@@ -302,3 +277,4 @@ img {
 	height: 500px;
 	width: 100%;
 }
+

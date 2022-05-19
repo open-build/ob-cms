@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base2.html" %}
 {% load static %}
 
 {% block body_class %}template-homepage{% endblock %}
@@ -10,6 +10,125 @@
 
 {% block content %}
 
+<main class="contenedor">
+	<h3 class="centrar-texto">About Us</h3>
+
+	<div class="sobre-nosotros">
+		<div class="sobre-nosotros__imagen">
+			<img class="guy" src="{% static 'img/guy.png' %}" alt="imagen nosotros">
+		</div>
+
+		<div class="sobre-nosotros__texto">
+			<p>Open Build helps small business and non-profits benefit from open source software, and connect with a team of developers.</p>
+			<p>We recruit, hire and educate software developers from all over the world to use open source software, learn best practices and processes to build better software and build there own agencies and companies to help benefit there local communities.</p>
+			<p>If your interested in learning more about how open source and open build can help your company or organization. Get in touch with us.</p>
+			<div class="entrada__contenido">
+				<h4 class="no-margin"></h4>
+				<a href="contac.html" class="boton boton--secundario">Contact us</a>
+			</div>
+		</div>
+
+
+	</div>
+</main>
+
+
+
+
+
+<div class="contenedor contenido-principal">
+	<main class="About_us">
+		<h3></h3>
+
+		<article class="entrada">
+
+			<div class="entrada__contenido">
+				<h4 class="no-margin"></h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+
+			</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253821.60143739945!2d-75.73648339476723!3d6.268659411168071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428ef4e52dddb%3A0x722fd6c39270ac72!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1652944363549!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<p>Medelin, Colombia.</p>
+		</article>
+
+		<article class="entrada">
+			<div class="entrada__contenido">
+				<h4 class="no-margin">Partners</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+			</div>
+		</article>
+
+
+		<article class="entrada">
+			<div class="entrada__imagen">
+				<picture>
+					<img class="team" src="{% static 'img/partner.png' %}" alt="img Partners">
+				</picture>
+			</div>
+
+			<div class="entrada__contenido">
+				<h4 class="no-margin">name Partner</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+			</div>
+		</article>
+
+		<article class="entrada">
+			<div class="entrada__imagen">
+				<picture>
+					<img class="team" src="{% static 'img/BRIGITTE-BAPTISTE.jpg' %}" alt="img Partners">
+				</picture>
+			</div>
+
+			<div class="entrada__contenido">
+				<h4 class="no-margin">name Partner</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+			</div>
+		</article>
+
+	</main>
+	<aside class="sidebar">
+		<h3>Team</h3>
+
+		<article class="entrada">
+			<div class="entrada__imagen">
+				<picture>
+					<img class="team" src="{% static 'img/greg.jpg' %}" alt="img Team">
+				</picture>
+			</div>
+
+			<div class="entrada__contenido">
+				<h4 class="no-margin">Greg Lind</h4>
+				<a href="partners.html" class="boton boton--primario">Social media</a>
+			</div>
+		</article>
+
+		<article class="entrada">
+			<div class="entrada__imagen">
+				<picture>
+					<img class="team" src="{% static 'img/angi.jpg' %}" alt="img Team">
+				</picture>
+			</div>
+
+			<div class="entrada__contenido">
+				<h4 class="no-margin">Angie Valderrama</h4>
+				<a href="partners.html" class="boton boton--primario">Social media</a>
+			</div>
+		</article>
+
+		<article class="entrada">
+			<div class="entrada__imagen">
+				<picture>
+					<img class="team" src="{% static 'img/hugo.jpg' %}" alt="img Team">
+				</picture>
+			</div>
+
+			<div class="entrada__contenido">
+				<h4 class="no-margin">Hugo Cortes</h4>
+				<a href="partners.html" class="boton boton--primario">Social media</a>
+			</div>
+		</article>
+	</aside>
+</div>
 
 
 {% endblock content %}

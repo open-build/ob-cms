@@ -8,3 +8,15 @@ class HomePage(Page):
 
 class AboutPage(Page):
     pass
+
+class portafolio(Page):
+    pass
+
+class foundry(Page):
+    pass
+
+class news(Page):
+    pass
+
+class contact(Page):
+    pass

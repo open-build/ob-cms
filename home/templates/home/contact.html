@@ -1,0 +1,70 @@
+{% extends "base2.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<main class="contenedor">
+    <h3 class="centrar-texto">Contact</h3>
+
+    <div class="contacto-bg"></div>
+
+
+    <form class="formulario" action="/registration" method="POST">
+
+        <div class="campo">
+            <label class="campo__label" for="name">Name</label>
+            <input 
+                class="campo__field"
+                type="text" 
+                placeholder="Your name" 
+                id="nombre"
+            >
+        </div>
+        <div class="campo">
+            <label class="campo__label" for="phone">Phone</label>
+            <input 
+                class="campo__field"
+                type="numeber" 
+                placeholder="Your phone" 
+                id="email"
+            >
+        </div>
+        <div class="campo">
+            <label class="campo__label" for="email">E-mail</label>
+            <input 
+                class="campo__field"
+                type="email" 
+                placeholder="Your E-mail" 
+                id="email"
+            >
+        </div>
+        <div class="campo">
+            <label class="campo__label" for="address">Address</label>
+            <input 
+                class="campo__field"
+                type="email" 
+                placeholder="Your address" 
+                id="email"
+            >
+        </div>
+
+        <div class="campo">
+            <input type="submit" value="Submit" class="boton boton--primario">
+        </div>
+    </form>
+
+</main>
+
+
+{% endblock content %}
+
+
+
+
