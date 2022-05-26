@@ -1,0 +1,33 @@
+{% extends "base2.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<main class="contenedor">
+	<h3 class="centrar-texto">Foundry</h3>
+
+	<div class="sobre-nosotros">
+		<div class="sobre-nosotros__texto">
+			<p>Dado que Open Build es un miembro activo de la comunidad de código abierto, nos apasiona profundamente contribuir a la difusión del aprendizaje y el conocimiento de las tecnologías de código abierto, tanto de software como de hardware, en nuestras comunidades locales.</p>
+			<p>Nuestros desarrolladores, especialistas técnicos y analistas ofrecen su tiempo como voluntarios para trabajar con organizaciones y escuelas locales para impartir cursos basados en STEM en sus comunidades locales.
+			</p>
+			<a href="About_us.html" class="boton boton--primario">¿Como te ayudamos?</a>
+
+		</div>
+
+		<div class="sobre-nosotros__imagen">
+            <img class="team" src="{% static 'img/team.png' %}" alt="img Partners">
+		</div>
+	</div>
+
+</main>
+
+
+{% endblock content %}

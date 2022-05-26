@@ -1,8 +1,10 @@
 {% load i18n wagtailcore_tags %}
 {% load static %}
-<header class="header">
+<header class="header" style="background: url('/static/img/mountains.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
 
-  <div class="contenedor">
+  <div id="cont" class="contenedor">
+
+
 
 
       <div class="barra">
@@ -11,12 +13,37 @@
           </a>
 
           <nav class="navegacion">
-              <a href="index.html" class="navegacion__enlace">Home</a>
-              <a href="portafolio.html" class="navegacion__enlace">Portfolio</a>
-              <a href="foundry.html" class="navegacion__enlace">Foundry</a>
-              <a href="news.html" class="navegacion__enlace">News</a>
+              <a href="/home/" class="navegacion__enlace">{% trans "Home" %}</a>
+              <a href="/portfolio/" class="navegacion__enlace">{% trans "Portfolio" %}</a>
+              <a href="/foundry/" class="navegacion__enlace">{% trans "Foundry" %}</a>
+              <a href="/news/"class="navegacion__enlace">{% trans "News" %}</a>
+
               <a href="welcome_page.html" class="navegacion__enlace">About</a>
           </nav>
+      </div>
+
+      <div class="navegacion">
+
+          <a class="head art" href="/home/">
+              {% trans "Home" %}</a>
+      </div>
+    
+      <div class="navegacion">
+        <a class="head" href="/portfolio/">
+          {% trans "Portfolio" %}
+        </a>
+      </div>
+
+      <div class="navegacion">
+        <a class="head" href="/news/">
+          {% trans "News" %}
+        </a>
+      </div>
+
+      <div class="navegacion">
+        <a class="head" href="/about/">
+          {% trans "About" %}
+        </a>
       </div>
   </div>
 

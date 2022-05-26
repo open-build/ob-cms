@@ -59,18 +59,17 @@ img {
     text-align: center;
 }
 
-/** Header FIX**/
+/** Header FIX  style="background: url('/static/img/mountains.png');" **/
 
-/**.webp .header{
-    background-image: url("{% static 'img/BRIGITTE-BAPTISTE.jpg' %}");
+/** .webp .header{
+    background:  url('/static/img/mountains.png');
 }
 .no-webp .header{
-    background-image: url("{% static 'img/BRIGITTE-BAPTISTE.jpg' %}");
+    background: url('/static/img/mountains.png');
 }
-**/
-.cover {
-	background: url('/static/img/BRIGITTE-BAPTISTE.jpg');
-}
+*/
+
+
 .header{
     height: 70rem;
     background-size: cover;
