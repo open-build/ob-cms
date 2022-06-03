@@ -1,6 +1,6 @@
 {% load i18n wagtailcore_tags %}
 {% load static %}
-<header class="header" style="background: url('/static/img/mountains.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+<header class="header" style="background: url('/static/img/5.png'); background-size: cover; height: 70rem; background-position: center center; background-repeat: no-repeat;">
 
   <div id="cont" class="contenedor">
 
@@ -8,7 +8,7 @@
 
 
       <div class="barra">
-          <a class="logo" href="index.html">
+          <a class="logo" href="/home/">
               <h1 class="logo__nombre no-margin centrar-texto">Open<span class="logo__bold"> Build</span></h1>
           </a>
 
@@ -17,39 +17,14 @@
               <a href="/portfolio/" class="navegacion__enlace">{% trans "Portfolio" %}</a>
               <a href="/foundry/" class="navegacion__enlace">{% trans "Foundry" %}</a>
               <a href="/news/"class="navegacion__enlace">{% trans "News" %}</a>
-
-              <a href="welcome_page.html" class="navegacion__enlace">About</a>
+              <a href="/about/" class="navegacion__enlace">About</a>
           </nav>
-      </div>
-
-      <div class="navegacion">
-
-          <a class="head art" href="/home/">
-              {% trans "Home" %}</a>
-      </div>
-    
-      <div class="navegacion">
-        <a class="head" href="/portfolio/">
-          {% trans "Portfolio" %}
-        </a>
-      </div>
-
-      <div class="navegacion">
-        <a class="head" href="/news/">
-          {% trans "News" %}
-        </a>
-      </div>
-
-      <div class="navegacion">
-        <a class="head" href="/about/">
-          {% trans "About" %}
-        </a>
       </div>
   </div>
 
   <div class="header__texto">
-      <h2 class="no-margin">Create ideas</h2>
-      <h4 class="no-margin">with us</h4>
+      <h1 class="no-margin">Create ideas</h1>
+      <h2 class="no-margin">with us</h2>
   </div>
 </header>
 

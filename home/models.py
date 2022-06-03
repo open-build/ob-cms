@@ -9,14 +9,29 @@ class HomePage(Page):
 class AboutPage(Page):
     pass
 
-class portafolio(Page):
+class Portfolio(Page):
     pass
 
-class foundry(Page):
+class Foundry(Page):
     pass
 
-class news(Page):
+class News(Page):
     pass
 
-class contact(Page):
+class Contact(Page):
+    pass
+
+class Inicio(Page):
+    pass
+
+class Nosotros(Page):
+    pass
+
+class Portafolio(Page):
+    pass
+
+class Novedades(Page):
+    pass
+
+class Fundidora(Page):
     pass

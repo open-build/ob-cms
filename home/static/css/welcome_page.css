@@ -6,6 +6,7 @@
     --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
+    --calido: #e7a50b;
 }
 html {
     box-sizing: border-box;
@@ -68,14 +69,6 @@ img {
     background: url('/static/img/mountains.png');
 }
 */
-
-
-.header{
-    height: 70rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
 .header__texto {
    text-align: center;
@@ -277,3 +270,6 @@ img {
 	width: 100%;
 }
 
+.circular--square {
+    border-radius: 50%;
+  }
