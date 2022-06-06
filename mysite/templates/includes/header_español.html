@@ -1,0 +1,63 @@
+{% load i18n wagtailcore_tags %}
+{% load static %}
+<header class="header" style="background: url('/static/img/mountains.png'); background-size: cover; height: 70rem; background-position: center center; background-repeat: no-repeat;">
+
+  <div id="cont" class="contenedor">
+
+
+
+
+      <div class="barra">
+          <a class="logo" href="index.html">
+              <h1 class="logo__nombre no-margin centrar-texto">Open<span class="logo__bold"> Build</span></h1>
+          </a>
+
+          <nav class="navegacion">
+            <a href="/inicio/" class="navegacion__enlace">{% trans "Inicio" %}</a>
+            <a href="/inicio/portafolio/" class="navegacion__enlace">{% trans "Portafolio" %}</a>
+            <a href="/inicio/fundidora/" class="navegacion__enlace">{% trans "Fundidora" %}</a>
+            <a href="/inicio/novedades/"class="navegacion__enlace">{% trans "Novedades" %}</a>
+            <a href="/inicio/nosotros/" class="navegacion__enlace">{% trans "Nosotros" %}</a>
+        </nav>
+      </div>
+  </div>
+
+  <div class="header__texto">
+      <h2 class="no-margin">Innovemos</h2>
+      <h4 class="no-margin">juntos</h4>
+  </div>
+</header>
+
+<!--  -->
+  <div class="contenedor contenido-principal">
+      <main class="About_us">
+          <h3></h3>
+
+          <article class="entrada">
+              <div class="entrada__imagen">
+
+              </div>
+
+              <div class="entrada__contenido">
+                  <h4 class="no-margin">Codigo Abierto</h4>
+                  <p>Open Build ayuda a las pequeñas empresas y organizaciones sin fines de lucro a beneficiarse del software de código abierto y conectarse con un equipo de desarrolladores.</p>
+                  <a href="About_us.html" class="boton boton--primario">Más info</a>
+              </div>
+          </article>
+
+      </main>
+      <aside class="sidebar">
+          <h3></h3>
+
+          <ul class="cursos no-padding">
+              <li class="widget-curso">
+                  <h4 class="no-margin">STEM Teaching and Training</h4>
+                  <p>Enseñanza y capacitación con Open Build siendo un miembro activo en la comunidad de código abierto.</p>
+                  <a href="news.html" class="boton boton--primario">Más info</a>
+              </li>
+
+          </ul>
+      </aside>
+  </div>
+
+

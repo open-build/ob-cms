@@ -1,0 +1,107 @@
+{% extends "base2es.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<main class="contenedor">
+	<h3 class="centrar-texto">Sobre nosotros</h3>
+
+	<div class="sobre-nosotros">
+		<div class="sobre-nosotros__imagen">
+			<img class="guy" src="{% static 'img/novedad.png' %}" alt="imagen nosotros">
+		</div>
+
+		<div class="sobre-nosotros__texto">
+			<p>Open Build ayuda a las pequeñas empresas y organizaciones sin fines de lucro a beneficiarse del software de código abierto y conectarse con un equipo de desarrolladores.</p>
+			<p>Reclutamos, contratamos y educamos a desarrolladores de software de todo el mundo para que usen software de código abierto, aprendan las mejores prácticas y procesos para crear un mejor software y crear sus propias agencias y empresas para ayudar a beneficiar a sus comunidades locales.</p>
+			<p>Si está interesado en obtener más información sobre cómo el código abierto y la compilación abierta pueden ayudar a su empresa u organización. Póngase en contacto con nosotros.</p>
+			<div class="entrada__contenido">
+				<h4 class="no-margin"></h4>
+				<a href="/about/contact/" class="boton boton--secundario">Contactanos</a>
+			</div>
+		</div>
+
+
+	</div>
+</main>
+
+
+
+
+
+<div class="contenedor contenido-principal">
+	<main class="About_us">
+		<h3></h3>
+
+		<article class="entrada">
+
+			<div class="entrada__contenido">
+				<h4 class="no-margin"></h4>
+				<p></p>
+
+			</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253821.60143739945!2d-75.73648339476723!3d6.268659411168071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428ef4e52dddb%3A0x722fd6c39270ac72!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1652944363549!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<p>Medelin, Colombia.</p>
+		</article>
+
+		<article class="entrada">
+			<div class="entrada__contenido">
+				<h4 class="no-margin">Partners</h4>
+				<p></p>
+			</div>
+		</article>
+	</main>
+
+	<aside class="sidebar">
+		<h3>Equipo</h3>
+
+		<article class="entrada">
+			<div class="entrada__imagen">
+				<picture>
+					<img class="circular--square" src="{% static 'img/angi.jpg' %}" alt="img Team">
+				</picture>
+			</div>
+
+			<div class="entrada__contenido">
+				<h4 class="no-margin">Angie Valderrama</h4>
+				<a href="partners.html" class="boton boton--primario">Social media</a>
+			</div>
+		</article>
+
+		<article class="entrada">
+			<div class="entrada__imagen">
+				<picture>
+					<img class="circular--square" src="{% static 'img/hugo.jpg' %}" alt="img Team">
+				</picture>
+			</div>
+
+			<div class="entrada__contenido">
+				<h4 class="no-margin">Hugo Cortes</h4>
+				<a href="partners.html" class="boton boton--primario">Social media</a>
+			</div>
+		</article>
+
+		<article class="entrada">
+			<div class="entrada__imagen">
+				<picture>
+					<img class="team" src="{% static 'img/greg.jpg' %}" alt="img Team">
+				</picture>
+			</div>
+
+			<div class="entrada__contenido">
+				<h4 class="no-margin">Greg Lind</h4>
+				<a href="partners.html" class="boton boton--primario">Social media</a>
+			</div>
+		</article>
+	</aside>
+</div>
+
+
+{% endblock content %}

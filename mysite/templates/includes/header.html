@@ -1,44 +1,68 @@
 {% load i18n wagtailcore_tags %}
 {% load static %}
-<header class="header">
-  <div class="logo">
-    <a href="/">
-      <img class="logo" src="{% static 'img/logo.png' %}" alt="">
-    </a>
+<header class="header" style="background: url('/static/img/5.png'); background-size: cover; height: 70rem; background-position: center center; background-repeat: no-repeat;">
+
+  <div id="cont" class="contenedor">
+
+
+
+
+      <div class="barra">
+          <a class="logo" href="/home/">
+              <h1 class="logo__nombre no-margin centrar-texto">Open<span class="logo__bold"> Build</span></h1>
+          </a>
+
+          <nav class="navegacion">
+              <a href="/home/" class="navegacion__enlace">{% trans "Home" %}</a>
+              <a href="/portfolio/" class="navegacion__enlace">{% trans "Portfolio" %}</a>
+              <a href="/foundry/" class="navegacion__enlace">{% trans "Foundry" %}</a>
+              <a href="/news/"class="navegacion__enlace">{% trans "News" %}</a>
+              <a href="/about/" class="navegacion__enlace">About</a>
+          </nav>
+      </div>
   </div>
-  <div class="header-link">
-    <a class="head hl1" href="/news/">
-      {% trans "News" %}
-    </a>
-  </div>
-  <div class="header-link">
-    <a class="head hl2" href="/#contact">
-      {% trans "Contact" %}
-    </a>
-  </div>
-  <div class="donate">
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-    <input type="hidden" name="hosted_button_id" value="8N8B7PPL77KWA" />
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-    </form>
+
+  <div class="header__texto">
+      <h1 class="no-margin">Create ideas</h1>
+      <h2 class="no-margin">with us</h2>
   </div>
 </header>
+
 <!--  -->
-<aside>
-  <div>
-    <a href="https://twitter.com/open_build" target="_blank">
-      <img class="logosocialmed" src="{% static 'img/twt.png' %}" alt="">
-    </a>
+  <div class="contenedor contenido-principal">
+      <main class="About_us">
+          <h3></h3>
+
+          <article class="entrada">
+              <div class="entrada__imagen">
+
+              </div>
+
+              <div class="entrada__contenido">
+                  <h4 class="no-margin">Open Source</h4>
+                  <p>Open Build helps small business and non-profits benefit from open source software, and connect with a team of developers.</p>
+                  <a href="About_us.html" class="boton boton--primario">More</a>
+              </div>
+
+              <div class="entrada__contenido">
+                  <h4 class="no-margin">Contact</h4>
+                  <a href="contac.html" class="boton boton--secundario">Contact us</a>
+              </div>
+          </article>
+
+      </main>
+      <aside class="sidebar">
+          <h3></h3>
+
+          <ul class="cursos no-padding">
+              <li class="widget-curso">
+                  <h4 class="no-margin">STEM Teaching and Training</h4>
+                  <p>With Open Build being an active member in the Open Source community.</p>
+                  <a href="news.html" class="boton boton--primario">More</a>
+              </li>
+
+          </ul>
+      </aside>
   </div>
-  <div>
-    <a href="https://www.linkedin.com/company/openbuild/" target="_blank">
-      <img class="logosocialmed" src="{% static 'img/linkedin.png' %}" alt="">
-    </a>
-  </div>
-  <div>
-    <a href="https://www.facebook.com/OpenBuildSTEM" target="_blank">
-      <img class="logosocialmed" src="{% static 'img/facebook.png' %}" alt="">
-    </a>
-  </div>
-</aside>
+
+

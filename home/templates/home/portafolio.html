@@ -1,0 +1,32 @@
+{% extends "base2es.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<h3 class="centrar-texto">Portafolio</h3>
+<div class="portafolio">
+	<picture>
+		<img class="team" src="{% static 'img/4.png' %}" alt="img Partners">
+	</picture>
+	<div class="portafolio__informacion">
+
+		<a class="text_buttom" href="Nulls_Records.html">
+			<h4>Nulls Records</h4>
+		</a>
+		<img class="team" src="{% static 'img/nullR.png' %}" alt="img Partners">
+		<p class="portafolio__descripcion">
+			Null Records ayuda a los artistas independientes a conectarse con fanáticos y patrocinadores como nunca antes. El poder colectivo de un sello organizado como colectivo de artistas visuales y musicales gestionando sus propios canales y su propio destino.
+		</p>
+	</div>
+</div>
+
+
+
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% load i18n wagtailcore_tags %}
+{% load static %}
+<header class="header">
+
+  <div class="contenedor">
+
+
+      <div class="barra">
+          <a class="logo" href="index.html">
+              <h1 class="logo__nombre no-margin centrar-texto">Open<span class="logo__bold"> Build</span></h1>
+          </a>
+
+          <nav class="navegacion">
+            <a href="/inicio/" class="navegacion__enlace">{% trans "Inicio" %}</a>
+            <a href="/inicio/portafolio/" class="navegacion__enlace">{% trans "Portafolio" %}</a>
+            <a href="/inicio/fundidora/" class="navegacion__enlace">{% trans "Fundidura" %}</a>
+            <a href="/inicio/novedades/"class="navegacion__enlace">{% trans "Novedades" %}</a>
+            <a href="/inicio/nosotros/" class="navegacion__enlace">{% trans "Nosotros" %}</a>
+        </nav>
+      </div>
+  </div>
+
+</header>
+
+
