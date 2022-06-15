@@ -26,7 +26,6 @@ body {
 .contenedor {
     width: min(90%, 120rem);
     margin: 0 auto;
-    padding: 50px;
 }
 a {
     text-decoration: none;
@@ -74,11 +73,11 @@ img {
 .header__texto {
    text-align: center;
    color: var(--primario);
-   margin-top: 5rem;
+   padding: 160px
 }
 @media (min-width: 768px) {
     .header__texto {
-        margin-top: 15rem;
+        margin-top: 1rem;
     }
 }
 .barra {
