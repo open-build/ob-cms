@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('wagtailcore', '0066_collection_management_permissions'),
-        ('home', '0008_nosotros_novedades_portafolio'),
+        ('home', '0008_fundidora_nosotros_novedades_portafolio'),
     ]
 
     operations = [
