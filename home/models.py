@@ -32,3 +32,6 @@ class Novedades(Page):
 
 class Fundidora(Page):
     pass
+
+class Fundidora2(Page):
+    pass
