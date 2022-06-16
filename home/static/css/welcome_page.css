@@ -20,7 +20,10 @@ body {
     font-size: 1.6rem;
     line-height: 2;
 }
-
+#cont{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
 
 /** Globals **/
 .contenedor {
