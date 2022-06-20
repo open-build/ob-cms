@@ -20,12 +20,16 @@ body {
     font-size: 1.6rem;
     line-height: 2;
 }
-
+#cont{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
 
 /** Globals **/
 .contenedor {
     width: min(90%, 120rem);
     margin: 0 auto;
+    padding: 50px;
 }
 a {
     text-decoration: none;
@@ -59,16 +63,6 @@ img {
 .centrar-texto {
     text-align: center;
 }
-
-/** Header FIX  style="background: url('/static/img/mountains.png');" **/
-
-/** .webp .header{
-    background:  url('/static/img/mountains.png');
-}
-.no-webp .header{
-    background: url('/static/img/mountains.png');
-}
-*/
 
 .header__texto {
    text-align: center;
