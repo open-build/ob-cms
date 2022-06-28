@@ -1,11 +1,11 @@
-{% extends "base2es.html" %}
+{% extends "base_español.html" %}
 {% load static %}
 
 {% block body_class %}template-homepage{% endblock %}
 
 {% block extra_css %}
 
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+<link rel="stylesheet" href="{% static 'css/inicio_page.css' %}">
 {% endblock extra_css %}
 
 {% block content %}
@@ -52,9 +52,15 @@
 		</article>
 
 		<article class="entrada">
-			<div class="entrada__contenido">
-				<h4 class="no-margin">Partners</h4>
+			<h4 class="no-margin">Partners</h4>
+			<div class="navegacion">
 				<p></p>
+				<img class="logo" src="{% static 'img/google-cloud-square.webp' %}" width="80" height="80" alt="img Team">
+				<p></p>
+				<img class="logo" src="{% static 'img/1200px-DigitalOcean_logo.svg.png' %}" width="80" height="80" alt="img Team">
+				<p></p>
+				<img class="logo" src="{% static 'img/buildly-rabbit-square-transparent.png' %}" width="80" height="80" alt="img Team">
+
 			</div>
 		</article>
 	</main>

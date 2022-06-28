@@ -29,7 +29,6 @@ body {
 .contenedor {
     width: min(90%, 120rem);
     margin: 0 auto;
-    padding: 50px;
 }
 a {
     text-decoration: none;
@@ -64,24 +63,15 @@ img {
     text-align: center;
 }
 
-/** Header FIX  style="background: url('/static/img/mountains.png');" **/
-
-/** .webp .header{
-    background:  url('/static/img/mountains.png');
-}
-.no-webp .header{
-    background: url('/static/img/mountains.png');
-}
-*/
 
 .header__texto {
    text-align: center;
    color: var(--primario);
-   margin-top: 5rem;
+   padding: 160px
 }
 @media (min-width: 768px) {
     .header__texto {
-        margin-top: 15rem;
+        margin-top: 1rem;
     }
 }
 .barra {
@@ -167,6 +157,7 @@ img {
 .boton--secundario {
     background-color: var(--primario);
 }
+
 
 .cursos {
     list-style: none;
