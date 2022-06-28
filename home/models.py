@@ -15,9 +15,6 @@ class Portfolio(Page):
 class Foundry(Page):
     pass
 
-class News(Page):
-    pass
-
 class Contact(Page):
     pass
 
