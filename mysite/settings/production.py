@@ -15,7 +15,7 @@ DATABASES = {
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['ob-cms-dwtkh.ondigitalocean.app', 'open.build', '127.0.0.1', '[::1]','www.open.build','ukraine.open.build','colombia.open.build']
+ALLOWED_HOSTS = ['ob-cms-dwtkh.ondigitalocean.app', 'buildly.io', '127.0.0.1', '[::1]','www.buildly.io',]
 
 try:
     from .local import *
