@@ -4,25 +4,30 @@
 
   <div id="cont">
 
-    <div class="dropdown">
-        <button class="dropbtn">Version</button>
-        <div class="dropdown-content">
-          <a href="/inicio/">COL</a>
-          <a href="/">USA</a>
-        </div>
-      </div>
+    <nav class="navegacion">
+      <a class="text_buttom" href="/inicio/">
+        <img class="logo" src="{% static 'img/flag_COL.png' %}" width="20" height="20" alt="img Team">
+      </a>
+      <a class="text_buttom" href="/">
+        <img class="logo" src="{% static 'img/flag_ukraine.png' %}" width="20" height="20" alt="img Team">
+      </a>
+      <a class="text_buttom" href="/">
+        <img class="logo" src="{% static 'img/flag_USA.png' %}" width="20" height="20" alt="img Team">
+      </a>
+    </nav>
 
       <div class="barra">
           <a class="logo" href="/">
-              <h1 class="logo__nombre no-margin centrar-texto">Open<span class="logo__bold"> Build</span></h1>
+            <img class="logo" src="{% static 'img/logo.png' %}" width="90" height="35" alt="img Team">
           </a>
 
           <nav class="navegacion">
-              <a href="/" class="navegacion__enlace">{% trans "Home" %}</a>
-              <a href="/portfolio/" class="navegacion__enlace">{% trans "Portfolio" %}</a>
-              <a href="/foundry/" class="navegacion__enlace">{% trans "Foundry" %}</a>
-              <a href="/news/"class="navegacion__enlace">{% trans "News" %}</a>
+              <a href="/" class="navegacion__enlace">Home</a>
+              <a href="/portfolio/" class="navegacion__enlace">Portfolio</a>
+              <a href="/foundry/" class="navegacion__enlace">Foundry</a>
+              <a href="/news/"class="navegacion__enlace">News</a>
               <a href="/about/" class="navegacion__enlace">About</a>
+              <a href="https://www.paypal.com/donate/?hosted_button_id=N4LEGDDNB2PWC" class="boton2">DONATE NOW</a>
           </nav>
       </div>
   </div>
