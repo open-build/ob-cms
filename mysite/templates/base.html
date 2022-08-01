@@ -32,8 +32,9 @@
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/mysite.js' %}"></script>
 
+
         {% block extra_js %}
-            {# Override this in templates to add extra javascript #}
+        <script src="{% static 'js/popup.js' %}"></script>
         {% endblock %}
     </body>
     {% include "includes/footer.html" %}
