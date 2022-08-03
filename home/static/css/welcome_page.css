@@ -298,7 +298,7 @@ body {
 } */
 
 /* social media aside*/
-aside{
+.asidesocial{
     float: right;
     position: fixed;
     right: 20px;
