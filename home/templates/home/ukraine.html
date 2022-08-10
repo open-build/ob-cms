@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<main class="contenedor">
+
+	<div class="sobre-nosotros">
+		<div class="sobre-nosotros__texto">
+			Це неприбуткова організація, яка зосереджена на тому щоб навчати будувати бізнес, який модернізован та зосереджена на сталому зростанні та навчанні працівників.
+
+		</div>
+
+		<div class="sobre-nosotros__imagen">
+            <img class="team" src="{% static 'img/ukraine_background.png' %}" alt="img Partners">
+		</div>
+	</div>
+
+	<h3 class="centrar-texto">НАПРЯМКИ РОБОТИ</h3>
+
+</main>
+
+
+{% endblock content %}
