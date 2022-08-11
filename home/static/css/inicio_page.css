@@ -280,3 +280,31 @@ img {
     border-radius: 100px;
 }
 
+/* social media aside*/
+.asidesocial{
+    float: right;
+    position: fixed;
+    right: 20px;
+    margin-top: 25vh;
+    margin-right: 20px;
+    z-index: 90;
+}
+.sc{
+    padding: 2px;
+    padding-left: 4px;
+}
+.yt{
+    padding: 2.2px;
+}
+.bc{
+    padding: 2px;
+}
+.p{
+    padding: 7px;
+}
+.logosocialmed{
+    width: 33px;
+    border-radius: 25px;
+    background-color: var(--red);
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}

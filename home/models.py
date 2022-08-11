@@ -32,3 +32,6 @@ class Novedades(Page):
 
 class Fundidora(Page):
     pass
+
+class Ukraine(Page):
+    pass

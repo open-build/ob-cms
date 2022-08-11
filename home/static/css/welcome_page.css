@@ -279,3 +279,49 @@ img {
     box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.17);
     border-radius: 100px;
 }
+
+/* Donate popup
+#popup {
+    display:none;
+    position:absolute;
+    margin:0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 50px 2px #000;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+} */
+
+/* social media aside*/
+.asidesocial{
+    float: right;
+    position: fixed;
+    right: 20px;
+    margin-top: 25vh;
+    margin-right: 20px;
+    z-index: 90;
+}
+.sc{
+    padding: 2px;
+    padding-left: 4px;
+}
+.yt{
+    padding: 2.2px;
+}
+.bc{
+    padding: 2px;
+}
+.p{
+    padding: 7px;
+}
+.logosocialmed{
+    width: 33px;
+    border-radius: 25px;
+    background-color: var(--red);
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
