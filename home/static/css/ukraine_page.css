@@ -107,7 +107,7 @@ img {
 .navegacion__enlace {
     display: block;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem; /** ukraine need this size becouse the words are more large **/
     color: var(--primario);
 }
 
