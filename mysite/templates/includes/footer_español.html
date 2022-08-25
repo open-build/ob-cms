@@ -4,13 +4,15 @@
 <footer class="footer">
   <div class="contenedor">
       <div class="barra">
+        <section class="nosotros">
           <a class="logo" href="index.html">
               <h1 class="logo__nombre no-margin centrar-texto">Open<span class="logo__bold"> Build</span></h1>
           </a>
 
           <a href="{% url 'wagtailadmin_home' %}" class="navegacion__enlace">{% trans "Powered By Wagtail" %}</a>
+        </section>
 
-
+        <section class="menu">
           <nav class="navegacion">
               <a href="/home_page/" class="navegacion__enlace">{% trans "Inicio" %}</a>
               <a href="/portfolio/" class="navegacion__enlace">{% trans "Portafolio" %}</a>
@@ -18,6 +20,7 @@
               <a href="/news/"class="navegacion__enlace">{% trans "Novedades" %}</a>
               <a href="/about/" class="navegacion__enlace">Nosotros</a>
           </nav>
+        </section>
       </div>
   </div>
 </footer>
