@@ -1,0 +1,32 @@
+{% load i18n wagtailcore_tags %}
+{% load static %}
+
+<footer class="footer">
+  <div class="contenedor">
+      <div class="barra">
+        <section class="nosotros">
+          <a class="logo" href="index.html">
+              <h4 class="logo__nombre no-margin centrar-texto">Open<span class="logo__bold"> Build</span></h4>
+          </a>
+
+          <a href="{% url 'wagtailadmin_home' %}" class="navegacion__enlace">{% trans "Powered By Wagtail" %}</a>
+        </section>
+
+
+        <section class="menu">
+          <nav class="navegacion">
+              <a href="/" class="navegacion__enlace">Про організацію</a>
+              <a href="/portfolio/" class="navegacion__enlace">Напрямки роботи</a>
+              <a href="/foundry/" class="navegacion__enlace">Проекти організації</a>
+              <a href="/news/"class="navegacion__enlace">Новини</a>
+              <a href="/about/" class="navegacion__enlace">Команда та Партнери</a>
+          </nav>
+        </section>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
