@@ -328,3 +328,40 @@ body {
     background-color: var(--red);
     box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
 }
+ /* Donate Button */
+ .stopwar{
+    position: absolute;
+    width: 81px;
+    height: 20px;
+    left: 139px;
+    top: 314px;
+    background-color: #5354F2;
+    color: white;
+    padding: 8px;
+    border: none;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+
+color: #FFFFFF;
+}
+.stopwar2{
+    position: absolute;
+    width: 81px;
+    height: 20px;
+    left: 139px;
+    top: 333px;
+    background-color: #FAFF18;
+    color: white;
+    padding: 8px;
+    border: none;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+}
