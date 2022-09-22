@@ -107,7 +107,7 @@ img {
 .navegacion__enlace {
     display: block;
     text-align: center;
-    font-size: 1.5rem; /** ukraine need this size becouse the words are more large **/
+    font-size: 1.3rem; /** ukraine need this size becouse the words are more large **/
     color: var(--primario);
 }
 
@@ -345,8 +345,9 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 10px;
+    font-weight: 700;
 
-color: #FFFFFF;
+   color: #FFFFFF;
 }
 .stopwar2{
     position: absolute;
@@ -364,4 +365,8 @@ color: #FFFFFF;
     font-weight: 400;
     font-size: 12px;
     line-height: 10px;
+    font-weight: 700;
+}
+.heightspace{
+    height: 155px;
 }
