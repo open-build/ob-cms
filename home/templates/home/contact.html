@@ -16,7 +16,7 @@
     <div class="contacto-bg"></div>
 
 
-    <form class="formulario" action="/registration" method="POST">
+    <form class="formulario" action="/registration" action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">
 
         <div class="campo">
             <label class="campo__label" for="name">Name</label>
@@ -54,6 +54,13 @@
                 id="email"
             >
         </div>
+        <div class="campo">
+            <label class="campo__label" for="curriculum">Curriculum</label>
+            <input
+                type="file"
+                name="archivossubidos[]" multiple
+            >
+        </div>
 
         <div class="campo">
             <input type="submit" value="Submit" class="boton boton--primario">
@@ -61,6 +68,7 @@
     </form>
 
 </main>
+
 
 
 {% endblock content %}
