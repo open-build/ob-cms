@@ -5,9 +5,9 @@ from os.path import join, normpath
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cms',
+        'NAME': 'buildly-cms',
         'PASSWORD': os.environ.get("PASSWORD"),
-        'USER': 'cms_user',
+        'USER': 'buildly-cms',
         'HOST': 'db-mysql-nyc3-97229-do-user-2508039-0.b.db.ondigitalocean.com',
         'PORT': '25060',
     }
