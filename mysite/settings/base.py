@@ -102,17 +102,6 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #    }
 #}
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cms',
-        'PASSWORD': os.environ.get("PASSWORD"),
-        'USER': 'cms_user',
-        'HOST': 'db-mysql-nyc3-97229-do-user-2508039-0.b.db.ondigitalocean.com',
-        'PORT': '25060',
-    }
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -185,8 +174,8 @@ WAGTAILSEARCH_BACKENDS = {
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
-BASE_URL = 'http://example.com'
+BASE_URL = 'http://buildly.io'
 
 PUPUT_AS_PLUGIN = False
 
-SECRET_KEY = "sdfgerg32g90uadfgjo12!@89u9ergj9249889"
+SECRET_KEY = "sdfgerg32g90uadfgjo12!@89u9ergj924fsdf9889"

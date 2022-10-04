@@ -8,9 +8,6 @@ from modelcluster.fields import ParentalKey
 class HomePage(Page):
     pass
 
-class DevelopersPage(Page):
-    pass
-
 class AboutPage(Page):
     pass
 
