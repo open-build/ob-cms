@@ -272,7 +272,7 @@ img {
 
   /* Donate Button */
 .boton2{
-    background-color: #6B0CD8;
+    /* background-color: #6B0CD8;*/
     color: white;
     padding: 8px;
     font-size: 12px;
@@ -280,9 +280,20 @@ img {
     border-radius: 100px;
     box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.17);
     border-radius: 100px;
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    display: block;
 }
+.boton2:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 
 /* Donate popup
+
 #popup {
     display:none;
     position:absolute;
