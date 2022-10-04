@@ -2,6 +2,8 @@ from django.db import models
 
 from wagtail.core.models import Page
 
+from modelcluster.fields import ParentalKey
+
 
 class HomePage(Page):
     pass

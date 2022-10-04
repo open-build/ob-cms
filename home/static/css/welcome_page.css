@@ -97,7 +97,7 @@ img {
 }
 .logo {
     color: var(--primario); /** #FBBE63; other option**/
-
+    width: 125px;
 }
 .logo__nombre {
     font-weight: 400;
@@ -135,7 +135,9 @@ img {
     margin-bottom: 0;
 }
 
-
+.team {
+  width: 150px;
+}
 
 
 .boton {
@@ -322,3 +324,9 @@ img {
 
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #02364f;}
+
+  /* bootstrap Override */
+  .carousel-caption {
+    top: 0;
+    bottom: auto;
+  }
