@@ -11,12 +11,13 @@
 {% block content %}
 
 <main class="contenedor">
+
     <h3 class="centrar-texto">Contact</h3>
 
     <div class="contacto-bg"></div>
 
 
-    <form class="formulario" action="/registration" action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">
+    <form class="formulario" action="/registration" action="../../form-result.php"  method="post" enctype="multipart/form-data" target="_blank">
 
         <div class="campo">
             <label class="campo__label" for="name">Name</label>
@@ -25,15 +26,6 @@
                 type="text"
                 placeholder="Your name"
                 id="nombre"
-            >
-        </div>
-        <div class="campo">
-            <label class="campo__label" for="phone">Phone</label>
-            <input
-                class="campo__field"
-                type="numeber"
-                placeholder="Your phone"
-                id="email"
             >
         </div>
         <div class="campo">
@@ -46,29 +38,52 @@
             >
         </div>
         <div class="campo">
-            <label class="campo__label" for="address">Address</label>
+            <label class="campo__label" for="url">Linkedin</label>
             <input
                 class="campo__field"
-                type="email"
-                placeholder="Your address"
-                id="email"
+                type="url"
+                placeholder="Your linkedin"
+                id="url"
             >
         </div>
         <div class="campo">
-            <label class="campo__label" for="curriculum">Curriculum</label>
+            <label class="campo__label" for="text">About</label>
+            <input
+                class="campo__field"
+                type="url"
+                placeholder="Describe yourself"
+                id="url"
+            >
+        </div>
+        <div class="campo">
+            <label class="campo__label" for="curriculum">Resume</label>
             <input
                 type="file"
                 name="archivossubidos[]" multiple
             >
         </div>
 
+
         <div class="campo">
             <input type="submit" value="Submit" class="boton boton--primario">
         </div>
+
+
+
     </form>
 
 </main>
 
+<section class="form-register">
+    <h4>Contac</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Your name">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Your E-mail">
+    <input class="controls" type="url" name="url" id="url" placeholder="Your Linkedin">
+    <input class="controls" type="text" name="url" id="url" placeholder="Describe yourself">
+    <input class="botons" type="file" name="file" id="file" placeholder="Your Resume">
+    <input class="botons" type="submit" value="submit">
+  </section>
 
 
 {% endblock content %}
