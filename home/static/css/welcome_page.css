@@ -273,11 +273,15 @@ width: 150px;
 }
 
 .image-cropper {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+}
+
+.spacer {
+  padding: 10px 10px 10px 10px;
 }
 
 img {
@@ -332,10 +336,4 @@ img {
 
 #github {
   background-color: white;
-}
-
-/* Puput Blog overrides for NEW section */
-.about !important{
-    background: var(--primario) none repeat scroll 0 0;
-    margin-bottom: 1em;
 }
