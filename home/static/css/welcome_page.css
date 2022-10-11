@@ -75,7 +75,7 @@ img {
 }
 
 .image_right {
-  position: absolute;
+  position: relative;
   top: 0px;
   right: 0px;
 }
@@ -185,29 +185,7 @@ width: 150px;
   background-color: var(--primario);
 }
 
-.cursos {
-  list-style: none;
-}
 
-.widget-curso {
-  border-bottom: 1px solid var(--gris);
-  margin-bottom: 2rem;
-}
-.widget-curso:last-of-type {
-  border: none;
-  margin-bottom: 0;
-}
-.widget-curso__label {
-  font-family: var(--fuenteHeading);
-  font-weight: bold;
-}
-.widget-curso__info {
-  font-weight: normal;
-}
-.widget-curso__label,
-.widget-curso__info {
-  font-size: 2rem;
-}
 
 .footer {
   background-color: var(--primario);
@@ -239,60 +217,6 @@ width: 150px;
 .text_buttom{
   color: var(--negro);
   cursor: pointer;
-}
-.portafolio:last-of-type {
- border: none;
-}
-.portafolio__label {
-  font-family: var(--fuenteHeading);
-  font-weight: bold;
-}
-.portafolio__info {
-  font-weight: normal;
-}
-.portafolio__label,
-.portafolio__info {
-  font-size: 2rem;
-  color: var(--negro);
-}
-
-/** Contacto **/
-.contacto-bg {
-  background-image: url(../img/contacto.jpg);
-/**  height: 40rem; **/
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.formulario {
-  background-color: var(--blanco);
-  margin: -5rem auto 0 auto;
-  width: 95%;
-  padding: 5rem;
-}
-.campo {
-  display: flex;
-  margin-bottom: 2rem;
-}
-.campo__label {
-  flex: 0 0 9rem;
-  text-align: right;
-  padding-right: 2rem;
-}
-.campo__field {
-  flex: 1;
-  border: 1px solid var(--gris);
-}
-.campo__field--textarea {
-  height: 20rem;
-}
-#map {
-height: 500px;
-width: 100%;
-}
-
-.circular--square {
-  border-radius: 50%;
 }
 
 /* Dropdown Button */
@@ -380,69 +304,26 @@ img {
 
 
 #social-sidebar {
-left: 0;
-position: fixed;
-top: 30%;
-}
-#social-sidebar li:first-child a { border-top-right-radius: 5px; }
-#social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
-
-#social-sidebar a {
-background: rgba(0, 0, 0, .7);
-color: #fff;
-   text-decoration: none;
-display: block;
-height: 50px;
-width: 50px;
-font-size: 24px;
-line-height: 50px;
-position: relative;
-text-align: center;
-   cursor: pointer;
-}
-#social-sidebar a:hover span {
-left: 120%;
-opacity: 1;
-}
-#social-sidebar a span {
- font: 12px "Open Sans", sans-serif;
- text-transform: uppercase;
-border-radius: 3px;
-line-height: 24px;
-left: -100%;
-margin-top: -16px;
-opacity: 0;
-padding: 4px 8px;
-position: absolute;
-transition: opacity .3s, left .4s;
-top: 50%;
-z-index: -1;
+  right: 0;
+  position: fixed;
+  top: 1%;
 }
 
-#social-sidebar a span:before {
-content: "";
-display: block;
-height: 8px;
- width: 8px;
-left: -4px;
-margin-top: -4px;
-position: absolute;
-top: 50%;
-transform: rotate(45deg);
+#social-sidebar a:hover {
+  -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(10%);
 }
 
-#social-sidebar a[class*="twitter"]:hover,
-#social-sidebar a[class*="twitter"] span,
-#social-sidebar a[class*="twitter"] span:before {background: #00aced;}
+#social-sidebar img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
 
-#social-sidebar a[class*="facebook"]:hover,
-#social-sidebar a[class*="facebook"] span,
-#social-sidebar a[class*="facebook"] span:before {background: #3B5998;}
-
-#social-sidebar a[class*="github"]:hover,
-#social-sidebar a[class*="github"] span,
-#social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
-
-#social-sidebar a[class*="linkedin"]:hover,
-#social-sidebar a[class*="linkedin"] span,
-#social-sidebar a[class*="linkedin"] span:before {background: #6BB130;}
+#social-sidebar li {
+  list-style: none;
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  position: relative;
+}
