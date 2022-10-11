@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<main class="contenedor">
+	<h3 class="centrar-texto">Buildly Open Source and Product Community</h3>
+
+	<div class="sobre-nosotros">
+		<div class="sobre-nosotros__imagen">
+			<img class="guy" src="{% static 'img/right-to-repair.png' %}" width="400" alt="image of a a wrench in a hand">
+		</div>
+
+		<div class="sobre-nosotros__texto">
+			<h1>Open Source Community</h1>
+			<p>
+			Buildly from it's founding in 2019 was and is about promiting Open Source software, and best practices of making software and it's processes better and more inclusive.
+			</p>
+			<p>
+			To learn more about our community and how to parcitpate the best place to start is to read our docs:
+			<ul>
+				<li><a href="https://github.com/buildlyio/docs/blob/master/CODE_OF_CONDUCT.md">https://github.com/buildlyio/docs/blob/master/CODE_OF_CONDUCT.md</a></li>
+				<li><a href="https://github.com/buildlyio/docs/blob/master/CONTRIBUTING.md">https://github.com/buildlyio/docs/blob/master/CONTRIBUTING.md</a></li>
+				<li><a href="https://github.com/buildlyio/docs/blob/master/VISION.md">https://github.com/buildlyio/docs/blob/master/VISION.md</a></li>
+			</p>
+			<div class="entrada__contenido">
+				<h4 class="no-margin"></h4>
+				<a href="https://www.github.com/buildlyio" class="boton boton--secundario">Join</a>
+			</div>
+		</div>
+	</div>
+</main>
+
+{% endblock content %}

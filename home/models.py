@@ -16,3 +16,6 @@ class Foundry(Page):
 
 class Contact(Page):
     pass
+
+class Community(Page):
+    pass
