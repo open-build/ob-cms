@@ -91,7 +91,7 @@ img {
 .header__texto {
  text-align: center;
  color: var(--primario);
- margin-top: 5rem;
+ margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -100,7 +100,7 @@ img {
   }
 }
 .barra {
-  padding-top: 4rem;
+  padding-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -112,8 +112,8 @@ img {
 }
 .logo {
   color: var(--calido); /** #FBBE63; other option**/
-  width: 75px;
-  padding-bottom: 10px;
+  width: 60px;
+  padding-bottom: 4px;
 }
 .logo__nombre {
   font-weight: 400;
@@ -307,7 +307,7 @@ img {
 #social-sidebar {
   right: 0;
   position: fixed;
-  top: 1%;
+  top: 15%;
 }
 
 #social-sidebar a:hover {
