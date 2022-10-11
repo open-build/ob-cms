@@ -74,6 +74,12 @@ img {
   color: var(--blanco);
 }
 
+.image_right {
+       position: absolute;
+       top: 0px;
+       right: 0px;
+   }
+
 
 .header__texto {
  text-align: center;
