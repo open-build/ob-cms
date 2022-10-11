@@ -78,6 +78,7 @@ img {
   position: relative;
   top: 0px;
   right: 0px;
+  vertical-align: top;
 }
 
 .logosocialmed bc{
@@ -326,4 +327,8 @@ img {
   width: 30px;
   line-height: 30px;
   position: relative;
+}
+
+#github {
+  background-color: white;
 }
