@@ -7,6 +7,7 @@
   --blanco: #ffffff;
   --negro: #121212;
   --calido: #F9943B;
+  --main-color: #162944;
 }
 html {
   box-sizing: border-box;
@@ -331,4 +332,10 @@ img {
 
 #github {
   background-color: white;
+}
+
+/* Puput Blog overrides for NEW section */
+.about !important{
+    background: var(--primario) none repeat scroll 0 0;
+    margin-bottom: 1em;
 }
