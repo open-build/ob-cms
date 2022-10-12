@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<main class="contenedor">
+	<h3 class="centrar-texto">Buildly Open Source and Product Community</h3>
+
+	<div class="p-5 mb-1 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Open Source Community</h1>
+      <p class="col-md-10 fs-4" style="text-align: justify;">
+				<img class="community" src="{% static 'img/right-to-repair.png' %}" width="300" alt="image of a wrench in a hand" style="float: left; padding: 10px;">
+				Buildly from it's founding in 2019 was and is about promiting Open Source software, and best practices of making software and it's processes better and more inclusive.
+				<br/>
+				To learn more about our community and how to parcitpate the best place to start is to read our docs:
+				<ul class="list-group">
+  				<li class="list-group-item">
+				    <img src="{% static 'img/github.png' %}" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0"/>
+				    <a href="https://github.com/buildlyio/docs/blob/master/CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a>
+				  </li>
+					<li class="list-group-item">
+						<img src="{% static 'img/github.png' %}" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0"/>
+						<a href="https://github.com/buildlyio/docs/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a>
+					</li>
+					<li class="list-group-item">
+						<img src="{% static 'img/github.png' %}" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0"/>
+						<a href="https://github.com/buildlyio/docs/blob/master/VISION.md">VISION.md</a>
+					</li>
+				</ul>
+			</p>
+      <a href="https://www.github.com/buildlyio" class="btn btn-success btn-lg">Join</a>
+    </div>
+  </div>
+
+	<div class="p-5 mb-1 bg-light rounded-3">
+    <div class="container-fluid py-5">
+				<h2>Buildly Discord Community</h2>
+				<p class="col-md-10 fs-4" style="text-align: justify;">
+					The Discord Community is for Foundry and Open Source community members.  It's a place to collaborate, share resources and if your using Buildly Insights, send your product proposal and find a developer.
+				<iframe src="https://discord.com/widget?id=937790682297417778&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+		</div>
+	</div>
+</main>
+
+{% endblock content %}

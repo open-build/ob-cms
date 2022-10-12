@@ -284,11 +284,12 @@ width: 150px;
   padding: 10px 10px 10px 10px;
 }
 
-img {
+
+.community img {
   display: inline;
   margin: 0 auto;
   height: 100%;
-  width: auto;
+  width: 300px;
 }
 
 .card {
