@@ -10,69 +10,8 @@
 
 {% block content %}
 
-<main class="contenedor">
+<form class="formulario" action="/registration" action="../../form-result.php"  method="post" enctype="multipart/form-data" target="_blank">
 
-    <h3 class="centrar-texto">Contact</h3>
-
-    <div class="contacto-bg"></div>
-
-
-    <form class="formulario" action="/registration" action="../../form-result.php"  method="post" enctype="multipart/form-data" target="_blank">
-
-        <div class="campo">
-            <label class="campo__label" for="name">Name</label>
-            <input
-                class="campo__field"
-                type="text"
-                placeholder="Your name"
-                id="nombre"
-            >
-        </div>
-        <div class="campo">
-            <label class="campo__label" for="email">E-mail</label>
-            <input
-                class="campo__field"
-                type="email"
-                placeholder="Your E-mail"
-                id="email"
-            >
-        </div>
-        <div class="campo">
-            <label class="campo__label" for="url">Linkedin</label>
-            <input
-                class="campo__field"
-                type="url"
-                placeholder="Your linkedin"
-                id="url"
-            >
-        </div>
-        <div class="campo">
-            <label class="campo__label" for="text">About</label>
-            <input
-                class="campo__field"
-                type="url"
-                placeholder="Describe yourself"
-                id="url"
-            >
-        </div>
-        <div class="campo">
-            <label class="campo__label" for="curriculum">Resume</label>
-            <input
-                type="file"
-                name="archivossubidos[]" multiple
-            >
-        </div>
-
-
-        <div class="campo">
-            <input type="submit" value="Submit" class="boton boton--primario">
-        </div>
-
-
-
-    </form>
-
-</main>
 
 <section class="form-register">
     <h4>Contac</h4>
