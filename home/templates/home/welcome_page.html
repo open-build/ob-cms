@@ -4,7 +4,7 @@
 <!--  -->
 <br/>
 <div class="container" id="slides">
-  <div id="homeCarousel" class="carousel-light slide" data-bs-ride="carousel">
+  <div id="homeCarousel" class="carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -12,14 +12,14 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="{% static 'img/screen-shot.png' %}" class="d-block" style="margin-left: 100px;">
+        <img src="{% static 'img/screen-shot.png' %}" class="d-block" style="margin-left: 100px;margin-top: 20px">
         <div class="carousel-caption d-none d-md-block">
           <h2>Build with Insights</h2>
           <p>Buildly Insights let’s you <b>communicate with your remote development team</b> to build products that matter and ensure the quality is there for your product’s growth.</p>
           <a href="https://insights.buildly.io/register" class="btn btn-success btn-lg">Register for the Beta Now >></a>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-bs-interval="10000">
         <img src="{% static 'img/1.png' %}" class="d-block" style="float: right; margin-top: 80px">
         <div class="carousel-caption d-none d-md-block">
           <h2>Product Requirements Guide</h2>
@@ -28,19 +28,21 @@
           <br/>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-bs-interval="10000">
         <img src="{% static 'img/4.png' %}" class="d-block" style="width:800px; float: right; margin: 75px;">
         <div class="carousel-caption d-none d-md-block" style="width: 500px;">
           <h2>Idea Translation AI</h2>
-            <p style="text-align: justify;">Buildly Insights AI <b>translates your product ideas into technical documentation</b> <br/>
+            <p style="text-align: justify;">Buildly Insights AI <b>translates your product ideas into technical documentation</b>
               to speed up the development budgeting phase.
               <br/>
-              Once the documentation is translated, import your features from Trello, and then <br/>
-              use one of our other API integrations to share your technical tickets via GitHub (Available Now) <br/>
+              <br/>
+              Once the documentation is translated, import your features from Trello, and then
+              use one of our other API integrations to share your technical tickets via GitHub (Available Now)
               or Jira (Coming Soon!)
               <br/>
-              Now you can manage your development team, your requirements and your releases in the tools <br/>
-              you know, but let <a href="https://insights.buildly.io">Buildly Insights</a> give you <b>control over your communication <br/>
+              <br/>
+              Now you can manage your development team, your requirements and your releases in the tools
+              you know, but let <a href="https://insights.buildly.io">Buildly Insights</a> give you <b>control over your communication
               and planning your releases.</b>
             <a href="https://insights.buildly.io/register" class="btn btn-success btn-lg">Register for the Beta Now >></a>
             </p>
@@ -64,6 +66,7 @@
       </div>
     </div>
   </div>
+  <br/>
   <div class="card-group">
     <div class="card text-center border-light mb-3">
         <div class="card-header">
@@ -71,8 +74,8 @@
         </div>
         <div class="card-content">
           <div class="spacer">
-            <div class="image-cropper" style="float: left;">
-              <img src="{% static 'img/right-to-repair.png' %}" alt="img Team">
+            <div style="float: left; margin-right: 10px">
+              <img src="{% static 'img/right-to-repair.png' %}" alt="image or a hand with a hammer" width="150">
             </div>
           </div>
           <p class="card-text" style="text-align: justify;">
@@ -89,8 +92,8 @@
         </div>
         <div class="card-content">
           <div class="spacer">
-            <div class="image-cropper" style="float: left;">
-              <img src="{% static 'img/satellite-dish.svg' %}" alt="img Team">
+            <div style="float: left; margin-right: 10px">
+              <img src="{% static 'img/satellite-dish.svg' %}" alt="image of a satellite dish" width="150" height="150">
             </div>
           </div>
           <p class="card-text" style="text-align: justify;">Buildly Insights facilitates and automates communication between developers and product teams.</p>
@@ -98,9 +101,6 @@
     </div>
   </div>
   <br/>
-  <br/>
-  <br/>
-
   <div class="card-group">
     <div class="card text-center border-light mb-3">
         <div class="card-header">
@@ -108,8 +108,8 @@
         </div>
         <div class="card-content">
           <div class="spacer">
-            <div class="image-cropper" style="float: right;">
-              <img src="{% static 'img/release.png' %}" alt="img Team">
+            <div style="float: right; margin-left: 10px">
+              <img src="{% static 'img/release.png' %}" alt="image of an announcement" width="150" height="150">
             </div>
           </div>
           <p class="card-text" style="text-align: justify;">Once you have your technical documentaiton, estimates and architecutre, use Insights Release Management to plan your releases.
@@ -125,8 +125,8 @@
         </div>
         <div class="card-content">
           <div class="spacer">
-            <div class="image-cropper" style="float: right;">
-              <img src="{% static 'img/fast.svg' %}" alt="img Team">
+            <div style="float: right; margin-left: 10px">
+              <img src="{% static 'img/fast.svg' %}" alt="imgage of a fast forward button" width="150" height="150">
             </div>
           </div>
           <p class="card-text" style="text-align: justify;">Buildly Insights automation reduces the number of releases and iterations up to 50% compared to a
