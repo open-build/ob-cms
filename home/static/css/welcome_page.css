@@ -23,9 +23,24 @@ body {
   line-height: 2;
   background-image: linear-gradient(to bottom right, var(--blanco), var(--primario));
 }
-#cont{
+#cont {
   width: min(90%, 120rem);
   margin: 0 auto;
+}
+
+#slides {
+  background-image: linear-gradient(to bottom right, var(--primario), var(--main-color));
+  padding-bottom: 125px;
+  border-radius: .5%;
+  color: var(--calido);
+}
+
+#slides h2 {
+  color: var(--calido);
+}
+
+#slides p {
+  color: var(--blanco);
 }
 
 /** Globals **/
