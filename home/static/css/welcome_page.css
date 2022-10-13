@@ -229,40 +229,7 @@ img {
     color: var(--negro);
 }
 
-/** Contacto **/
-.contacto-bg {
-    background-image: url(../img/bannerC.png);
-  /**  height: 40rem; **/
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.formulario {
-    background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
-    width: 95%;
-    padding: 5rem;
-}
-.campo {
-    display: flex;
-    margin-bottom: 2rem;
-}
-.campo__label {
-    flex: 0 0 9rem;
-    text-align: right;
-    padding-right: 2rem;
-}
-.campo__field {
-    flex: 1;
-    border: 1px solid var(--gris);
-}
-.campo__field--textarea {
-    height: 20rem;
-}
-#map {
-	height: 500px;
-	width: 100%;
-}
 
 .circular--square {
     width: 150px;
@@ -349,13 +316,13 @@ body {
 /* form-register */
 .form-register {
     width: 400px;
-    background: #24303c;
+    background: #ffffff;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
     border-radius: 4px;
     font-family: 'calibri';
-    color: white;
+    color: #02364f;
     box-shadow: 7px 13px 37px #000;
   }
   
@@ -366,14 +333,14 @@ body {
   
   .controls {
     width: 100%;
-    background: #24303c;
+    background: #ffffff;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #1f53c5;
+    border: 1px solid #02364f;
     font-family: 'calibri';
     font-size: 18px;
-    color: white;
+    color: rgb(#4776E6 0%, #8E54E9  51%, #4776E6);
   }
   
   .form-register p {
@@ -384,24 +351,54 @@ body {
   }
   
   .form-register a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
   }
-  
+
   .form-register a:hover {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: underline;
   }
-  
+
   .form-register .botons {
     width: 100%;
-    background: #1f53c5;
+    background: #02364f;
+    border-radius: 40px;
     border: none;
     padding: 12px;
     color: white;
     margin: 16px 0;
     font-size: 16px;
   }
+
+.custom-input-file {
+    width: 100%;
+    background: #02364f;
+    border-radius: 40px;
+    border: none;
+    padding: 5px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 40px;
+  }
+  .custom-input-file .input-file {
+   border: 10000px solid transparent;
+   cursor: pointer;
+   font-size: 10000px;
+   margin: 0;
+   opacity: 0;
+   outline: 0 none;
+   padding: 0;
+   position: absolute;
+   right: -1000px;
+   top: -1000px;
+  }
+
 
  /* cards */
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
