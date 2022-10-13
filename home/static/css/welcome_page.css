@@ -231,7 +231,7 @@ img {
 
 /** Contacto **/
 .contacto-bg {
-    background-image: url(../img/contacto.jpg);
+    background-image: url(../img/bannerC.png);
   /**  height: 40rem; **/
     background-size: cover;
     background-repeat: no-repeat;
@@ -265,12 +265,14 @@ img {
 }
 
 .circular--square {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
   }
 
   /* Donate Button */
 .boton2{
-    background-color: #6B0CD8;
+    /* background-color: #6B0CD8;*/
     color: white;
     padding: 8px;
     font-size: 12px;
@@ -278,9 +280,20 @@ img {
     border-radius: 100px;
     box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.17);
     border-radius: 100px;
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    display: block;
 }
+.boton2:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 
 /* Donate popup
+
 #popup {
     display:none;
     position:absolute;
@@ -324,4 +337,164 @@ body {
     border-radius: 25px;
     background-color: var(--red);
     box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+.logoteam{
+    width: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* form-register */
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+ /* cards */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container-card{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+.team-cards{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.card .contenido-card{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido-card h3{
+    margin-bottom: 15px;
+    color: #7a7a7a;
+}
+.card .contenido-card p{
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.card .contenido-card a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+
+.flex-container {
+  flex-wrap: wrap;
+}
+
+
+@media (min-width: 768px) {
+    .container-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    .container-card1{
+        flex-wrap: wrap;
+    }
+    .card1{
+        margin: 15px;
+    }
 }

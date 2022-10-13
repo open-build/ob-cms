@@ -32,123 +32,108 @@
 	</div>
 </main>
 
-
-
-
-
-<div class="contenedor contenido-principal">
-	<main class="About_us">
-		<h3></h3>
-
-		<article class="entrada">
-
-			<div class="entrada__contenido">
-				<h4 class="no-margin"></h4>
+		<main class="contenedor">
+			<h3 class="centrar-texto">Partners</h3>
+			<div class="sobre-nosotros">
+			 <div class="navegacion">
 				<p></p>
-
-			</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253821.60143739945!2d-75.73648339476723!3d6.268659411168071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428ef4e52dddb%3A0x722fd6c39270ac72!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1652944363549!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					<p>Medelin, Colombia.</p>
-		</article>
-
-		<article class="entrada">
-			<h4 class="no-margin">Partners</h4>
-			<div class="navegacion">
+				<img class="logopartners" src="{% static 'img/google-cloud-square.webp' %}" width="90" height="90" alt="img Team">
 				<p></p>
-				<img class="logo" src="{% static 'img/google-cloud-square.webp' %}" width="80" height="80" alt="img Team">
+				<img class="logopartners" src="{% static 'img/1200px-DigitalOcean_logo.svg.png' %}" width="80" height="80" alt="img Team">
 				<p></p>
-				<img class="logo" src="{% static 'img/1200px-DigitalOcean_logo.svg.png' %}" width="80" height="80" alt="img Team">
-				<p></p>
-				<img class="logo" src="{% static 'img/buildly-rabbit-square-transparent.png' %}" width="80" height="80" alt="img Team">
+				<img class="logopartners" src="{% static 'img/buildly-rabbit-square-transparent.png' %}" width="75" height="70" alt="img Team">
+			 </div>
 
-			</div>
-		</article>
-	</main>
+			 <div class="sobre-nosotros__texto">
+				<div class="entrada__contenido">
+					<h4></h4>
+					<a href="/about/contact/" class="boton boton--secundario">Unete a nuestro equipo</a>
+				</div>
+			 </div>
+		   </div>
+		</main>
 
-	<aside class="sidebar">
-		<h3>Team</h3>
 
-		<article class="entrada">
-			<div class="entrada__imagen">
-				<picture>
-					<img class="circular--square" src="{% static 'img/angi.jpg' %}" alt="img Team">
-				</picture>
-			</div>
+	<div class="team-cards">
+		<h3 class="centrar-texto">Equipo</h3>
+	</div>
 
-			<div class="entrada__contenido">
-				<h4 class="no-margin">Angie Valderrama</h4>
-				<a class="logo" href="https://www.linkedin.com/in/angie-valderrama-bb9182200/">
-					<img class="logo" src="{% static 'img/linkeding.png' %}" width="20" height="20" alt="img Team">
-				  </a>
-				<p>Desarrolladora frontend un jugador de equipo y puede trabajar en un entorno de ritmo rápido. Me adapto fácilmente a diferentes metodologías de trabajo. También tengo la capacidad de ser autodidacta en mi campo de formación.</p>
-			</div>
-		</article>
 
-		<article class="entrada">
-			<div class="entrada__imagen">
-				<picture>
-					<img class="circular--square" src="{% static 'img/ana.png' %}" alt="img Team">
-				</picture>
-			</div>
+	<div class="container-card">
 
-			<div class="entrada__contenido">
-				<h4 class="no-margin">Ana Roman</h4>
-				<a class="logo" href="https://www.linkedin.com/in/angie-valderrama-bb9182200/">
-					<img class="logo" src="{% static 'img/linkeding.png' %}" width="20" height="20" alt="img Team">
-				  </a>
-				<p>Software Development | BackEnd Developer | Databases | API´s .</p>
-			</div>
-		</article>
+	<div class="card">
+	  <figure>
+		<img src="{% static 'img/angi.jpg' %}">
+	  </figure>
+	  <div class="contenido-card">
+		<h3>Angie Valderrama</h3>
+		<p>Desarrolladora frontend trabajo bien en equipo y puedo trabajar en un entorno de ritmo rápido.  Tengo la capacidad de ser autodidacta en mi campo de formación.</p>
+		<a href="https://www.linkedin.com/in/angie-valderrama-bb9182200/">Linkedin</a>
 
-		<article class="entrada">
-			<div class="entrada__imagen">
-				<picture>
-					<img class="circular--square" src="{% static 'img/hugo.jpg' %}" alt="img Team">
-				</picture>
-			</div>
+	  </div>
+	</div>
 
-			<div class="entrada__contenido">
-				<h4 class="no-margin">Hugo Cortes</h4>
-				<a class="logo" href="https://www.linkedin.com/in/hugo-cortes-m/">
-					<img class="logo" src="{% static 'img/linkeding.png' %}" width="20" height="20" alt="img Team">
-				  </a>
-				<p>Desarrollador frontend con un fuerte interés en proyectos que requieren pensamiento tanto conceptual como analítico. Siempre tengo muchas ganas de aprender de todos.</p>
-			</div>
-		</article>
+	<div class="card">
+	  <figure>
+		<img src="{% static 'img/ana.png' %}">
+	  </figure>
+	  <div class="contenido-card">
+		<h3>Ana Roman</h3>
+		<p>Software Developer en aprendizaje continuo.
+			Las tecnologías emergentes me apasionan, incluso los sistemas más complejos, esto me motiva a crecer y optimizar el mundo.</p>
+		<a href="https://www.linkedin.com/in/angie-valderrama-bb9182200/">Linkedin</a>
+	  </div>
+	</div>
 
-		<article class="entrada">
-			<div class="entrada__imagen">
-				<picture>
-					<img class="team" src="{% static 'img/greg.jpg' %}" alt="img Team">
-				</picture>
-			</div>
+	<div class="card">
+	  <figure>
+		<img src="{% static 'img/GregSquare.jpeg' %}">
+	  </figure>
+	  <div class="contenido-card col-4">
+		<h3>Greg Lind</h3>
+		<p>Director ejecutivo y cofundador de Buildlyio me centró en llevar el desarrollo de código abierto a los equipos de desarrollo de productos y la comunicación a los desarrolladores.</p>
+		<a href="https://www.linkedin.com/in/greglind/">Linkedin</a>
+	  </div>
+	</div>
+  </div>
 
-			<div class="entrada__contenido">
-				<h4 class="no-margin">Greg Lind</h4>
-				<a class="logo" href="https://www.linkedin.com/in/greglind/">
-					<img class="logo" src="{% static 'img/linkeding.png' %}" width="20" height="20" alt="img Team">
-				  </a>
-				<p>Director ejecutivo y cofundador de Buildlyio me centró en llevar el desarrollo de código abierto a los equipos de desarrollo de productos y la comunicación a los desarrolladores.</p>
-			</div>
-		</article>
+  <div class="container-card">
 
-		<article class="entrada">
-			<div class="entrada__imagen">
-				<picture>
-					<img class="circular--square" src="{% static 'img/marina.png' %}" width="300" height="300" alt="img Team">
-				</picture>
-			</div>
+	<div class="card">
+	  <figure>
+		<img src="{% static 'img/HugoSe.jpg' %}">
+	  </figure>
+	  <div class="contenido-card">
+		<h3>Hugo Cortés</h3>
+		<p>Desarrollador frontend con un fuerte interés en proyectos que requieren pensamiento tanto conceptual como analítico. Abierto a nuevos retos de aprendizaje.</p>
+		<a href="https://www.linkedin.com/in/hugo-cortes-m/">Linkedin</a>
+	  </div>
+	</div>
 
-			<div class="entrada__contenido">
-				<h4 class="no-margin">Marina Mishchenko</h4>
-				<a class="logo" href="https://www.linkedin.com/in/marina-mishchenko-058108200/">
-					<img class="logo" src="{% static 'img/linkeding.png' %}" width="20" height="20" alt="img Team">
-				  </a>
-				<p>Apoyo al CEO en la gestión de cronogramas e hitos para varias organizaciones; asegurando que los hitos semanales del proyecto sean rastreados y cumplidos y que el software para el seguimiento detallado de tareas. </p>
-			</div>
-		</article>
-	</aside>
-</div>
+	<div class="card">
+	  <figure>
+		<img src="{% static 'img/marinateam.JPG' %}">
+	  </figure>
+	  <div class="contenido-card">
+		<h3>Marina Mishchenko</h3>
+		<p>Apoyo al CEO en la gestión de cronogramas e hitos para varias organizaciones; asegurando que los hitos semanales del proyecto sean rastreados y cumplidos. </p>
+		<a href="https://www.linkedin.com/in/marina-mishchenko-058108200/">Linkedin</a>
+	  </div>
+	</div>
+
+	<div class="card">
+	  <figure>
+		<img src="{% static 'img/peterTeam.png' %}">
+	  </figure>
+	  <div class="contenido-card col-4">
+		<h3>Peter Odeny</h3>
+		<p>CTO y cofundador de PevySpace. Un mentor y un ingeniero de software full-stack con enfoque en soluciones de datos</p>
+		<a href="https://www.linkedin.com/in/peter-odeny-a5b19697/">Linkedin</a>
+	  </div>
+	</div>
+  </div>
+
+
 
 
 {% endblock content %}

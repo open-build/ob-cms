@@ -107,7 +107,7 @@ img {
 .navegacion__enlace {
     display: block;
     text-align: center;
-    font-size: 1.5rem; /** ukraine need this size becouse the words are more large **/
+    font-size: 1.3rem; /** ukraine need this size becouse the words are more large **/
     color: var(--primario);
 }
 
@@ -281,7 +281,17 @@ img {
     border-radius: 100px;
     box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.17);
     border-radius: 100px;
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    display: block;
 }
+.boton2:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 
 /* Donate popup
 #popup {
@@ -345,8 +355,9 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 10px;
+    font-weight: 700;
 
-color: #FFFFFF;
+   color: #FFFFFF;
 }
 .stopwar2{
     position: absolute;
@@ -364,4 +375,8 @@ color: #FFFFFF;
     font-weight: 400;
     font-size: 12px;
     line-height: 10px;
+    font-weight: 700;
+}
+.heightspace{
+    height: 155px;
 }
