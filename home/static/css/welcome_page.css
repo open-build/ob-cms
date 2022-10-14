@@ -22,6 +22,7 @@ body {
   font-size: 1.6rem;
   line-height: 2;
   background-image: linear-gradient(to bottom right, var(--blanco), var(--primario));
+
 }
 #cont {
   width: min(90%, 120rem);
@@ -33,6 +34,21 @@ body {
   padding-bottom: 125px;
   border-radius: .5%;
   color: var(--calido);
+  height: 820px;
+}
+
+#slides::before {
+  content: "";
+  background-image: url("/static/img/tech-back.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.09;
+  height: 850px;
 }
 
 #slides h2 {
