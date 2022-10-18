@@ -29,9 +29,23 @@ body {
   margin: 0 auto;
 }
 
+#banner {
+  max-height: 50px;
+  background-color: var(--gris);
+  color: var(--primario);
+  padding: 0px;
+}
+
+#banner h5 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--primario);
+}
+
+
 #slides {
   background-image: linear-gradient(to bottom, var(--main-color), var(--main-color));
-  padding-bottom: 125px;
+  padding-bottom: 135px;
   border-radius: .5%;
   color: var(--calido);
   height: 820px;
@@ -43,7 +57,7 @@ body {
   background-size: cover;
   position: absolute;
   width: 100%;
-  top: 80px;
+  top: 130px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -235,59 +249,6 @@ width: 150px;
   }
 }
 
-/** portafolio **/
-.portafolio {
-  padding: 3rem 0;
-  border-bottom: 1px solid var(--gris);
-}
-@media (min-width: 768px) {
-  .portafolio {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      column-gap: 2rem;
-  }
-}
-.text_buttom{
-  color: var(--negro);
-  cursor: pointer;
-}
-
-/* Dropdown Button */
-.dropbtn {
-  background-color: #29586e;
-  color: white;
-  padding: 8px;
-  font-size: 8px;
-  border: none;
-  border-radius: 10px;
-  justify-content: flex-end;
-  text-align: right; /* fix position */
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd;}
 
@@ -327,6 +288,10 @@ width: 150px;
   padding: 15px;
 }
 
+.btn-primary {
+  background-color: var(--primario);
+}
+
 .btn-success {
   background-color: var(--calido);
   border-color: var(--primario);
@@ -342,9 +307,9 @@ width: 150px;
 
 
 #social-sidebar {
-  right: 0;
+  left: -4;
   position: fixed;
-  top: 15%;
+  top: 16.5%;
 }
 
 #social-sidebar a:hover {

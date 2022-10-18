@@ -32,6 +32,7 @@
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
     </head>
+    {% include "includes/banner.html" %}
     {% include "includes/header.html" %}
     <body class="{% block body_class %}{% endblock %}">
         <!-- Google Tag Manager (noscript) -->
