@@ -2,12 +2,12 @@
   --fuenteHeading: 'Raleway', sans-serif;
   --fuenteParrafos: 'Raleway', sans-serif;
 
-  --primario: #162944;
+  --primario: #0C5595;
   --gris: #DCDCE0;
   --blanco: #ffffff;
   --negro: #121212;
   --calido: #F9943B;
-  --main-color: #162944;
+  --main-color: #0C5595;
 }
 html {
   box-sizing: border-box;
