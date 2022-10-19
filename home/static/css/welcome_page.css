@@ -7,7 +7,7 @@
   --blanco: #ffffff;
   --negro: #121212;
   --calido: #F9943B;
-  --main-color: #0C5595;
+  --main-color: #162944;
 }
 html {
   box-sizing: border-box;
@@ -66,7 +66,7 @@ body {
 }
 
 #slides h2 {
-  color: var(--calido);
+  color: var(--main-color);
 }
 
 #slides p {
@@ -226,16 +226,16 @@ width: 150px;
   cursor: pointer;
 }
 .boton--primario {
-  background-color: var(--primario);
+  background-color: var(--main-color);
 }
 .boton--secundario {
-  background-color: var(--primario);
+  background-color: var(--main-color);
 }
 
 
 
 .footer {
-  background-color: var(--primario);
+  background-color: var(--main-color);
   padding-bottom: 3rem;
   margin-top: 4rem;
 }
