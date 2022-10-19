@@ -11,6 +11,8 @@ from search import views as search_views
 
 from puput import urls as puput_urls
 
+from home import views as home_views
+
 urlpatterns = [
     path('django-admin/', admin.site.urls),
 
@@ -18,6 +20,8 @@ urlpatterns = [
     path('documents/', include(wagtaildocs_urls)),
 
     path('search/', search_views.search, name='search'),
+    path('contact/', home_views.contactView, name='contact'),
+    path('success/', home_views.successView, name='success'),
 
 ]
 

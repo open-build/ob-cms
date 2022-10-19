@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block body_class %}template-homepage{% endblock %}
 
 {% block extra_css %}
@@ -14,50 +13,27 @@
     <h3 class="centrar-texto">Contact</h3>
 
     <div class="contacto-bg"></div>
+    {% load crispy_forms_tags %}
+    <form method="post">
+        {%csrf_token%}
+        {%if form%}
 
+        <div class="row bg-white">
+            {%for field in form%}
+            <div class="col-md-6 p-2">{{field|as_crispy_field}}</div>
+            {%endfor%}
 
-    <form class="formulario" action="/registration" method="POST">
+        <div class="col-md-12">
+        <ul class="list-inline text-right">
+            <li class="list-inline-item">
+                <button type="reset" class="btn btn-secondary">Reset</button>
+                <button type="submit" class="btn btn-Success">Save</button>
+            </li>
+        </ul>
+            </div>
+             </div>
+        {%endif%}
 
-        <div class="campo">
-            <label class="campo__label" for="name">Name</label>
-            <input
-                class="campo__field"
-                type="text"
-                placeholder="Your name"
-                id="nombre"
-            >
-        </div>
-        <div class="campo">
-            <label class="campo__label" for="phone">Phone</label>
-            <input
-                class="campo__field"
-                type="numeber"
-                placeholder="Your phone"
-                id="email"
-            >
-        </div>
-        <div class="campo">
-            <label class="campo__label" for="email">E-mail</label>
-            <input
-                class="campo__field"
-                type="email"
-                placeholder="Your E-mail"
-                id="email"
-            >
-        </div>
-        <div class="campo">
-            <label class="campo__label" for="address">Address</label>
-            <input
-                class="campo__field"
-                type="email"
-                placeholder="Your address"
-                id="email"
-            >
-        </div>
-
-        <div class="campo">
-            <input type="submit" value="Submit" class="boton boton--primario">
-        </div>
     </form>
 
 </main>

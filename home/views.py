@@ -3,23 +3,24 @@ from django.http import HttpResponse, HttpResponseNotFound, Http404,  HttpRespon
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
-from .forms import ContactForm
+from .forms import ContactMailForm
 
 def contactView(request):
     if request.method == "GET":
-        form = ContactForm()
+        form = ContactMailForm()
     else:
-        form = ContactForm(request.POST)
+        form = ContactMailForm(request.POST)
         if form.is_valid():
-            subject = form.cleaned_data["subject"]
-            from_email = form.cleaned_data["from_email"]
+            name = form.cleaned_data["name"]
+            email = form.cleaned_data["email"]
             message = form.cleaned_data['message']
+            form.save()
             try:
-                send_mail(subject, message, from_email, ["admin@example.com"])
+                send_mail(name, message, email, ["admin@buildly.io"])
             except BadHeaderError:
                 return HttpResponse("Invalid header found.")
             return redirect("success")
-    return render(request, "email.html", {"form": form})
+    return render(request, "home/contact.html", {"form": form})
 
 def successView(request):
-    return HttpResponse("Success! Thank you for your message.")
+    return render(request, "home/success.html")

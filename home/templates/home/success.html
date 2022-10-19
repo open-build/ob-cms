@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<main class="contenedor">
+    <h3 class="centrar-texto">Thank you for your Message!</h3>
+    <p class="centrar-texto"> Someone from Buildly will review and respond very soon!</p>
+</main>
+
+
+{% endblock content %}
