@@ -11,12 +11,13 @@ def contactView(request):
     else:
         form = ContactMailForm(request.POST)
         if form.is_valid():
-            name = form.cleaned_data["name"]
-            email = form.cleaned_data["email"]
-            message = form.cleaned_data['message']
-            form.save()
             try:
-                send_mail(name, message, email, ["admin@buildly.io"])
+                name = form.cleaned_data["name"]
+                email = form.cleaned_data["email"]
+                message = form.cleaned_data['message']
+                form.save()
+                # needs crednetials before it will work
+                #send_mail(name, message, email, ["admin@buildly.io"])
             except BadHeaderError:
                 return HttpResponse("Invalid header found.")
             return redirect("success")
