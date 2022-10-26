@@ -73,6 +73,7 @@ img {
 @media (min-width: 768px) {
     .header__texto {
         margin-top: 1rem;
+        text-align: center;
     }
 }
 .barra {
@@ -283,6 +284,7 @@ img {
     border-radius: 100px;
     background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
     text-transform: uppercase;
+    text-align: center;
     transition: 0.5s;
     background-size: 200% auto;
     display: block;
@@ -415,13 +417,8 @@ img {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
     }
-}
 
-@media only screen and (min-width:320px) and (max-width:768px){
-    .container-card1{
-        flex-wrap: wrap;
-    }
-    .card1{
-        margin: 15px;
+    .card{
+        flex: 0 0 calc(33.3% - 1rem)
     }
 }
