@@ -1,0 +1,34 @@
+:root {
+	--fuenteHeading: 'Raleway', sans-serif;
+	--fuenteParrafos: 'Raleway', sans-serif;
+
+	--gris: #DCDCE0;
+	--black: #272727;
+	--main-color: #162944;
+	--brand-color: #F9943B;
+	--dark-color: #10113C;
+	--mid-color: #3884FD;
+	--light-color: #FFFFFF;
+
+  }
+  html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1 rem = 10px */
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+
+  }
+  body {
+	font-family: var(--fuenteParrafos);
+	font-size: 1.6rem;
+	line-height: 2;
+	background-image: linear-gradient(to bottom right, var(--blanco), var(--mid-color));
+
+  }
+
+  .row > div{
+	background: var(--brand-color);
+	padding: 30px;
+	border: 1px solid var(--brand-color);
+  }
