@@ -3,37 +3,22 @@
 <header class="header">
 
   <div id="cont">
-      <div class="barra">
+      <div class="navbar">
         <div class="logo">
           <a href="/">
             <img class="logo" src="{% static 'img/buildly-logo.png' %}" alt="">
           </a>
         </div>
-        <nav class="navegacion">
-            <a href="/" class="navegacion__enlace">{% trans "Home" %}</a>
-            <a href="https://insights.buildly.io" class="navegacion__enlace">{% trans "Insights" %}</a>
-            <a href="/foundry/" class="navegacion__enlace">{% trans "Foundry" %}</a>
-            <a href="/news/" class="navegacion__enlace">{% trans "News" %}</a>
-            <a href="/about/" class="navegacion__enlace">{% trans "About" %}</a>
-            <a href="/community/" class="navegacion__enlace">{% trans "Community" %}</a>
+        <nav class="navegation">
+            <a href="/" class="navegation__link">{% trans "Home" %}</a>
+            <a href="https://insights.buildly.io" class="navegation__link">{% trans "Insights" %}</a>
+            <a href="/foundry/" class="navegation__link">{% trans "Foundry" %}</a>
+            <a href="/news/" class="navegation__link">{% trans "News" %}</a>
+            <a href="/about/" class="navegation__link">{% trans "About" %}</a>
+            <a href="/community/" class="navegation__link">{% trans "Community" %}</a>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=N4LEGDDNB2PWC" class="button2">Get Started</a>
         </nav>
       </div>
   </div>
 
-  <div class="sidebar">
-    <ul id="social-sidebar">
-     <li>
-       <a href="https://www.twitter.com/buildly_io" target="_new"><img src="{% static 'img/twt.png' %}" width="32" height="32"></a>
-     </li>
-     <li>
-       <a href="https://www.facebook.com/buildlyio" target="_new"><img src="{% static 'img/facebook.png' %}" width="32" height="32"></a>
-     </li>
-     <li id="github">
-       <a href="https://www.github.com/buildlyio" target="_new"><img src="{% static 'img/github.png' %}" width="32" height="32"></a>
-     </li>
-     <li>
-       <a href="https://www.linkedin.com/company/buildlyio" target="_new"><img src="{% static 'img/linkedin.png' %}" width="32" height="32"></a>
-     </li>
-    </ul>
-  </div>
 </header>
