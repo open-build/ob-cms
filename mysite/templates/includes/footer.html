@@ -2,22 +2,88 @@
 {% load static %}
 
 <footer class="footer">
-  <div class="contenedor">
-      <div class="barra">
-          <a class="logo" href="/">
-              <h1 class="logo__nombre no-margin centrar-texto">Buildly</h1>
-          </a>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
 
-          <nav class="navegacion">
-              <a href="/" class="navegacion__enlace">{% trans "Home" %}</a>
-              <a href="https://insights.buildly.io" class="navegacion__enlace">{% trans "Insights" %}</a>
-              <a href="/foundry/" class="navegacion__enlace">{% trans "Foundry" %}</a>
-              <a href="/news/" class="navegacion__enlace">{% trans "News" %}</a>
-              <a href="/about/" class="navegacion__enlace">{% trans "About" %}</a>
-              <a href="/community/" class="navegacion__enlace">{% trans "Community" %}</a>
-          </nav>
-      </div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <footer class="footer">
+    <div class="container bottom_border">
+    <div class="row footer">
+    <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+        <div class="logo-footer">
+            <a href="/">
+              <img class="logo-footer" src="{% static 'img/buildly-logo.png' %}" alt="Logo">
+            </a>
+          </div>
+          <br/>
+    <p class="mb10">Buidly 103, Lockhaven <br/> DrGoldsboro, North Carolina(NC),<br/> 27534</p>
+    </div>
+
+    <div class=" col-sm-4 col-md  col-6 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5><br/>
+
+    <ul class="footer_ul_amrc">
+    <li><a href="https://insights.buildly.io" class="navegation__link">{% trans "Insights" %}</a></li>
+    <li><a href="/foundry/" class="navegation__link">{% trans "Foundry" %}</a></li>
+    <li><a href="/news/" class="navegation__link">{% trans "News" %}</a></li>
+    <li><a href="/about/" class="navegation__link">{% trans "About" %}</a></li>
+    <li><a href="/community/" class="navegation__link">{% trans "Community" %}</a></li>
+    </ul>
+    </div>
+
+
+    <div class=" col-sm-4 col-md  col-6 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Developers</h5><br/>
+
+    <ul class="footer_ul_amrc">
+    <li><a href="https://insights.buildly.io" class="navegation__link">Quickstart Guides</a></li><br/>
+    <li><a href="https://insights.buildly.io" class="navegation__link">Frameworks</a></li><br/>
+    <li><a href="https://insights.buildly.io" class="navegation__link">API Docs</a></li><br/>
+    </ul>
+    </div>
+
+    <div class=" col-sm-4 col-md  col-6 col">
+        <h5 class="headin5_amrc col_white_amrc pt2">Info</h5><br/>
+
+        <ul class="footer_ul_amrc">
+        <li><a href="http://webenlance.com" class="navegation__link">FAQs</a></li>
+        <li><a href="http://webenlance.com" class="navegation__link">About Us</a></li>
+        <li><a href="http://webenlance.com" class="navegation__link">Contact Us</a></li>
+        <li><a href="http://webenlance.com" class="navegation__link">Privacy Policty</a></li>
+        </ul>
+
+        </div>
+
+    <div class=" col-sm-4 col-md  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Join Newsletter</h5>
+
+    <ul class="footer_ul2_amrc">
+    <li><i class="navegation__link"></i><p>Subscribe our newsletter to get more free design course and resource.</p></li>
+    <li><input class="controls" type="email" name="correo" id="correo" placeholder="Enter email"><span id="icon">
+      <i class="fas fa-key"></i>
+    </span> </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <nav class="navegation">
+      <a><p> Copyright @ 2022 Buidly. All rights reserved </p></a>
+      <a class="text-right"><p>We use cookies for better service. <a href="https://insights.buildly.io/register"  class="banner-text">{% trans "Accept" %}</p></a>
+    </nav>
   </div>
+
+
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </footer>
 
 
