@@ -25,7 +25,7 @@ body {
   font-family: var(--fuenteParrafos);
   font-size: 1.6rem;
   line-height: 2;
-  background-image: linear-gradient(to bottom right, var(--blanco), var(--mid-color));
+  background-image: linear-gradient(to bottom right, var(--light-color));
 
 }
 #cont {
@@ -52,22 +52,21 @@ body {
   color: var(--brand-color);
 }
 
+/** slides header **/
 
 #slides {
-  background-image: linear-gradient(to bottom, var(--main-color), var(--primario));
+  background-image: linear-gradient(to bottom, #F4F4F4, #F4F4F4);
   padding-bottom: 135px;
-  border-radius: .5%;
-  color: var(--calido);
-  height: 820px;
+  border-radius: 0%;
+  height: 604px;
 }
 
 
 #slides::before {
   content: "";
-  background-image: url("/static/img/tech-back.jpg");
+  background-image: url("/static/img/"); /** figma img dosnt work **/
   background-size: cover;
   position: absolute;
-  width: min(77%, 150rem);
   top: 150px;
   right: 0px;
   bottom: 0px;
@@ -78,12 +77,21 @@ body {
 
 
 #slides h2 {
-  color: var(--calido);
+  color: var(--black);
+  font-weight: 700;
+  font-size: 50px;
+  left: 120px;
+  top: 276px;
 }
 
 #slides p {
-  color: var(--blanco);
+  color: #848280;
+  font-weight: 400;
+  font-size: 16px;
+  left: -300px;
+  top: 50px;
 }
+
 
 /** Globals **/
 .conteiner-home {
@@ -150,7 +158,7 @@ img {
   width: 50px;
 }
 
-.header__texto {
+.header__tex {
  text-align: center;
  color: var(--primario);
  margin-top: 2rem;
@@ -174,7 +182,6 @@ img {
   }
 }
 .logo {
-  color: var(--calido); /** #FBBE63; other option**/
   width: 60px;
   padding-bottom: 4px;
 }
@@ -184,6 +191,7 @@ img {
 .logo__bold {
   font-weight: 700;
 }
+
 @media (min-width: 768px) {
   .navegation {
       display: flex;
@@ -194,7 +202,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items:center;
-  text-align: center;
+  text-align:center;
   font-size: 16px;
   color: #848280;
 }
@@ -282,7 +290,7 @@ img {
 
 .card-title {
   width: 600px;
-  height: 70px;
+  height: 50px;
   font-weight: 700;
   font-size: 40px;
   line-height: 70px;
@@ -351,7 +359,9 @@ img {
   z-index: -1;
 }
 
-/* Any Question */
+/* costumers */
+
+/* Any Question: edit this session whith background-image: linear-gradient(to bottom, #F4F4F4, #F4F4F4);*/
 
 .any{
   position:absolute;
@@ -362,8 +372,7 @@ img {
   z-index: 1;
 }
 
-.questions
-{
+.questions{
   position:absolute;
   width: 365px;
   height: 420px;
@@ -380,12 +389,33 @@ img {
   color: #000000;
 }
 
+.line {
+  padding: 0px 0px 0px 0px;
+  width: 62px;
+  height: 5px;
+  background: #F07000;
+  border-radius: 5px;
+  border: 5px;
+}
+
+.line-grey {
+  padding: 0px 0px 0px 0px;
+  width: 126px;
+  height: 1px;
+  background: #BDBCBB;
+  border-radius: 5px;
+  border: 1px;
+
+  float: center;
+  margin-top: 60px
+}
+
 /* GET STARTED NOW */
 
 .now {
   position:absolute;
-  padding: 80px 80px 100px 80px;
-  width: 1200px;
+  padding: 80px 0px 50px 0px;
+  width: 950px;
   height: 359px;
   left: 130px;
   top: 4299px;
@@ -434,14 +464,13 @@ width: 150px;
 .button {
   display: block;
   font-family: var(--fuenteHeading);
-  color: var(--brand-color);
+  color: var(--light-color);
   text-align: center;
   padding: 1rem 3rem;
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 16px;
   margin-bottom: 2rem;
   border-radius: 40px;
-  border-color: var(--brand-color);
 }
 
 @media (min-width: 768px) {
@@ -454,12 +483,31 @@ width: 150px;
   cursor: pointer;
 }
 .button--primary{
-  background: transparent;
+  background-color: var(--mid-color);
+  border-color: var(--brand-color);
 }
+
 .button--secondary {
   background-color: var(--brand-color);
+  color: var(--light-color);
   border: none;
 }
+
+.button1 {
+  display: block;
+  font-family: var(--fuenteHeading);
+  color: var(--brand-color);
+  text-align: center;
+  padding: 1rem 3rem;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 2rem;
+  border-radius: 40px;
+  border: var(--brand-color);
+  border-width: 30rem;
+  background-color: var(--light-color);
+}
+
 
 .button--squere {
   color: var(--brand-color);
@@ -572,10 +620,12 @@ width: 150px;
 .col_white_amrc {
   color: #00131A;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 19px;
+  align-items:flex-end;
+  text-align: left;
 }
 footer {
-  padding: 130px 80px 0px 80px;
+  padding: 300px 80px 0px 80px;
   width:100%;
   background-color:#FFFFFF;
   min-height:250px;
@@ -592,18 +642,21 @@ footer {
   }
 footer p {
   font-size:13px;
-  color:#CCC;
   padding-bottom:0px;
   margin-bottom:8px;
+  color: #848280;
 }
 .mb10 {
-  padding-bottom:15px ;
+  padding-bottom:15px;
+  text-align: left;
+  color: #848280;
 }
 .footer_ul_amrc {
   margin:0px ;
   list-style-type:none ;
   font-size:14px;
   padding:0px 0px 10px 0px ;
+  color: #848280;
 }
 .footer_ul_amrc li {
   padding:0px 0px 5px 0px;

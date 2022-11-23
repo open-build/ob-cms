@@ -12,39 +12,45 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="{% static 'img/screen-shot.png' %}" class="img-bottom" style="margin-left: 100px;margin-top: 20px">
+        <img src="{% static 'img/pcHeader.png' %}" class="img-bottom" style="margin-left: 480px; margin-top: 100px;" >
         <div class="carousel-caption d-none d-md-block">
-          <h2>Build with Insights</h2>
-          <p>Buildly Insights let’s you <b>communicate with your remote development team</b> to build products that matter and ensure the quality is there for your product’s growth.</p>
-          <a href="https://insights.buildly.io/register" class="boton boton--secundario">Register Now >></a>
+          <h2 style="text-align: justify; margin-left: -140px; margin-top: 70px">Build with Insights</h2>
+          <p style="text-align: justify; margin-left: -140px; margin-top: 60px">Buildly Insights let’s you communicate with your remote<br/> development team to build products that matter and ensure the<br/> quality is there for your product’s growth.</p>
+          <img src="{% static 'img/insights-logo.png' %}" class="img-bottom" style="float: center; width: 267.3px; margin-left: 0px; margin-top: 30px">
+          <nav class="navegation">
+            <a style="text-align: justify; margin-left: -150px; margin-top: 60px" href="https://insights.buildly.io/register" class="button button--secondary">Register Now</a>
+        
+            <a style="text-align: justify; margin-left: 20px; margin-top: 60px" href="https://insights.buildly.io/register" class="button1">Learn more</a>
+          </nav>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="10000">
-        <img src="{% static 'img/1.png' %}" class="img-bottom" style="float: right; margin-top: 80px">
+        <a style="text-align: justify; margin-left: -320px; margin-top: 140px" href="https://insights.buildly.io/register" class="button button--secondary">Register Now</a>
+        <img src="{% static 'img/buildly-logo.png' %}" class="img-bottom" style="float:left; margin: 140px;  width:200px; margin-top: 230px">
         <div class="carousel-caption d-none d-md-block">
-          <h2>Product Requirements Guide</h2>
-          <p>Buildly Insights guides the requirement phase for the user by using <b>common language templates</b>.  Making it easier and faster to get started with confidnce on a new project, or a complex migration.</p>
-          <a href="https://insights.buildly.io/register" class="boton boton--secundario">Register Now >></a>
+          <h2 style="text-align: justify; margin-left: 300px; margin-top: 60px">Product Requirements Guide</h2>
+          <p style="text-align: justify; margin-left: 300px; margin-top: 60px">Buildly Insights guides the requirement phase for the user by using <b>common language templates</b>.  Making it easier and faster to get started with confidence on a new project, or a complex migration.</p>
           <br/>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="10000">
-        <img src="{% static 'img/4.png' %}" class="img-bottom" style="width:800px; float: right; margin: 75px;">
+        <img src="{% static 'img/AI.png' %}" class="img-bottom" style="width:400px; float: right; margin: 75px;">
         <div class="carousel-caption d-none d-md-block" style="width: 500px;">
-          <h2>Idea Translation AI</h2>
-            <p style="text-align: justify;">Buildly Insights AI <b>translates your product ideas into technical documentation</b>
+          <h2 style="text-align: justify; margin-left: -140px; margin-top: 70px">Idea Translation AI</h2>
+            <p style="text-align: justify; margin-left: -140px; margin-top: 70px">Buildly Insights AI <b>translates your product ideas into technical documentation</b>
               to speed up the development budgeting phase.
               <br/>
               <br/>
               Once the documentation is translated, import your features from Trello, and then
-              use one of our other API integrations to share your technical tickets via GitHub (Available Now)
-              or Jira (Coming Soon!)
+              use one of our other API integrations to share your technical tickets via GitHub<br/>
+              <nav class="navegation">
+                <p style="text-align: justify; margin-left: -150px; margin-top: 60px">(Available Now) or Jira (Coming Soon!)</p>
+            
+                <img src="{% static 'img/github.png' %}" class="img-bottom" style="width:70px; float: right;  margin-left: 20px; margin-top: 60px">
+
+              </nav>
               <br/>
-              <br/>
-              Now you can manage your development team, your requirements and your releases in the tools
-              you know, but let <a href="https://insights.buildly.io">Buildly Insights</a> give you <b>control over your communication
-              and planning your releases.</b>
-            <a href="https://insights.buildly.io/register" class="boton boton--secundario">Register Now >></a>
+              <a style="text-align: justify; margin-left: 200px; margin-top: 60px" href="https://insights.buildly.io/register" class="button button--secondary">Register Now</a>
             </p>
         </div>
       </div>
@@ -60,18 +66,32 @@
       <div class="Do_it text-center">
         <div class="card-body">
           <h2>How We Do It!</h2>
-          <br/>
+          <div class="line" style="float: center; width: 62px; margin-left: 500px;">
+            <p></p>
+          </div>
+        <br/>
           <p class="card-text">Designed for product and remote development teams to  communicate better and build quickly.  We use our proprietary <br/> trained models and data to translate, suggest and create estimates and architectures so you can build with confidence <br/> or go to the development community with confidence in your product.</p>
         </div>
+
+
         <div class="row mb-3">
           <div class="col"><img src="{% static 'img/notes 1.png' %}" width="38" alt=""><br/><br/>
             Guideded Requirement <br/> Gathering
           </div>
+          <div class="line-grey">
+            <p></p>
+          </div>
           <div class="col"><img src="{% static 'img/speech.png' %}" width="38" alt=""><br/><br/>
             AI Translates to <br/> Technical Document
           </div>
+          <div class="line-grey">
+            <p></p>
+          </div>
           <div class="col"><img src="{% static 'img/coding.png' %}" width="38" alt=""><br/><br/>
             Publish to internal <br/> Developer Portal or <br/> Share Externally
+          </div>
+          <div class="line-grey">
+            <p></p>
           </div>
           <div class="col"><img src="{% static 'img/rocket.png' %}" width="38" alt=""><br/><br/>
             Release and Change <br/> Management</div>
@@ -83,7 +103,13 @@
 	<div class="container-commun">
 
 		<div class="container-commun__text">
-      <h4 class="card-title">Buildly Community</h4>
+      <h4 class="card-title">Buildly Community</h4><br/>
+      <div class="container">
+        <div class="line">
+            <p></p>
+        </div>
+      </div><br/>
+      <br/>
 			<p>Open Build helps small business and non-profits benefit from open source software, and connect with a team of developers.</p>
 			<p>We recruit, hire and educate software developers from all over the world to use open source software, learn best practices and processes to build better software and build there own agencies and companies to help benefit there local communities.</p>
 			<p>If your interested in learning more about how open source and open build can help your company or organization. Get in touch with us.</p>
@@ -107,7 +133,13 @@
     </div>
 
     <div class="container-commun__text">
-      <h4 class="card-title">Automated Communication</h4>
+      <h4 class="card-title">Automated Communication</h4><br/>
+      <div class="container">
+        <div class="line">
+            <p></p>
+        </div>
+      </div><br/>
+      <br/>
 			<p>Open Build helps small business and non-profits benefit from open source software, and connect with a team of developers.</p>
 			<p>We recruit, hire and educate software developers from all over the world to use open source software, learn best practices and processes to build better software and build there own agencies and companies to help benefit there local communities.</p>
 			<p>If your interested in learning more about how open source and open build can help your company or organization. Get in touch with us.</p>
@@ -122,7 +154,13 @@
 	<div class="container-commun">
 
 		<div class="container-commun__text">
-      <h4 class="card-title">Release Management</h4>
+      <h4 class="card-title">Release Management</h4><br/>
+      <div class="container">
+        <div class="line">
+            <p></p>
+        </div>
+      </div><br/>
+      <br/>
 			<p>Open Build helps small business and non-profits benefit from open source software, and connect with a team of developers.</p>
 			<p>We recruit, hire and educate software developers from all over the world to use open source software, learn best practices and processes to build better software and build there own agencies and companies to help benefit there local communities.</p>
 			<p>If your interested in learning more about how open source and open build can help your company or organization. Get in touch with us.</p>
@@ -147,7 +185,13 @@
 
 
     <div class="container-commun__text">
-      <h4 class="card-title">Product Ideas -> Built Fast</h4>
+      <h4 class="card-title">Product Ideas -> Built Fast</h4><br/>
+      <div class="container">
+        <div class="line">
+            <p></p>
+        </div>
+      </div><br/>
+      <br/>
 			<p>Open Build helps small business and non-profits benefit from open source software, and connect with a team of developers.</p>
 			<p>We recruit, hire and educate software developers from all over the world to use open source software, learn best practices and processes to build better software and build there own agencies and companies to help benefit there local communities.</p>
 			<p>If your interested in learning more about how open source and open build can help your company or organization. Get in touch with us.</p>
@@ -158,13 +202,12 @@
 	</div>
 </div>
 </main>
-
 <br/>
 <br/>
 <br/>
 <br/>
 
-<main class="conteiner-home">
+<main class="conteiner-any">
 	<div class="container-commun">
     <div style="position: relative; left: 0; top: 0;">
       <img src="{% static 'img/AnyQuestions.png' %}" class='any'/>
@@ -174,18 +217,15 @@
     <div class="container-commun__text">
       <h4 class="card-questions">Any Questions?</h4>
 			<p>Lorem ipsum dolor sit amet consectetur. <br/> Consectetur sed feugiat.</p>
-			<div class="entrada__contenido">
-				<a href="/news/" class="button button--primary">Get Started</a>
-			</div>
+      <nav class="navegation">
+        <a href="/news/" class="button button--primary">Get Started</a>
+        <a href="/news/" class="button button--secondary">Check our FAQs</a>
+      </nav>
 		</div>
 	</div>
 </div>
 </main>
 
-<br/>
-<br/>
-<br/>
-<br/>
 
 <div class="container">
   <div class="now text-center">
