@@ -54,16 +54,36 @@
             {% endcomment %}
 
             <div class="news-container">
-                <figure class="news-img"><img src="{% static 'img/news.png' %}" alt="img"></figure>
+                <figure class="news-img"><img src="{% static 'img/bannerN.png' %}" alt="img" align: center;></figure>
                 <div class="news">
                     <p class="date">8/09/2022</p>
                     <a class="text_buttom" href="https://twitter.com/open_build">
                         <h4>Open Build twitter</h4>
                     </a>
-                    <p>
-                        Interact with us
-                    </p>
-                    <a class="twitter-timeline" href="https://twitter.com/open_build?ref_src=twsrc%5Etfw">Tweets by open_build</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <div class="contenedor contenido-principal"
+                     <main class="About_us">
+                      <article class="entrada">
+    
+
+                     <div class="entrada__contenido">
+                     </p>
+                       <a class="twitter-timeline" href="https://twitter.com/open_build?ref_src=twsrc%5Etfw">Tweets by open_build</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                     </div>
+
+                     </article>
+
+                      </main>
+    <aside class="sidebar">
+        <h3></h3>
+
+        <ul class="cursos no-padding">
+            <li class="widget-curso">
+                <figure class="news-img"><img src="{% static 'img/Interact.png' %}" align: center; alt="img">></figure>
+            </li>
+
+        </ul>
+    </aside>
+</div>
                 </div>
             </div>
         </div>
@@ -118,6 +138,7 @@
         </div>
     </div>
 </div>
+
 {% include "includes/footer.html" %}
 {% block js %}
     <script src="{% static 'puput/js/jquery.min.js' %}"></script>
