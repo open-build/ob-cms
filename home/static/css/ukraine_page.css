@@ -246,6 +246,7 @@ img {
     width: 95%;
     padding: 5rem;
 }
+
 .campo {
     display: flex;
     margin-bottom: 2rem;
@@ -283,6 +284,7 @@ img {
     border-radius: 100px;
     background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
     text-transform: uppercase;
+    text-align: center;
     transition: 0.5s;
     background-size: 200% auto;
     display: block;

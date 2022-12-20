@@ -16,22 +16,44 @@
       </a>
     </nav>
 
-      <div class="barra">
-          <a class="logo" href="/">
-            <img class="logo" src="{% static 'img/OPEN-BUILD-LOGO.png' %}" width="200" height="35" alt="img Team">
-          </a>
-
-          <nav class="navegacion">
-              <a href="/" class="navegacion__enlace">Home</a>
-              <a href="/portfolio/" class="navegacion__enlace">Portfolio</a>
-              <a href="/foundry/" class="navegacion__enlace">Foundry</a>
-              <a href="/news/"class="navegacion__enlace">News</a>
-              <a href="/about/" class="navegacion__enlace">About</a>
-              <a href="https://store.open.build/" class="navegacion__enlace">Store</a>
-              <a href="https://www.paypal.com/donate/?hosted_button_id=N4LEGDDNB2PWC" class="boton2">DONATE NOW</a>
-          </nav>
-      </div>
+    <nav class="barra navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+      <a class="navbar-brand" href="/">
+        <img class="logo" src="{% static 'img/OPEN-BUILD-LOGO.png' %}" width="200" height="35" alt="img Team"></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navegacion collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a href="/" class="navegacion__enlace">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/programs/" class="navegacion__enlace">Programs</a>
+      </li>
+      <li class="nav-item">
+        <a href="/foundry/" class="navegacion__enlace">Foundry</a>
+      </li>
+      <li class="nav-item">
+        <a href="/news/"class="navegacion__enlace">News</a>
+      </li>
+      <li class="nav-item">
+        <a href="/about/" class="navegacion__enlace">About</a>
+        <ul class="submenu">
+          <li class="nav-item">
+            <a href="/about/contact/"class="navegacion__enlace">Contact</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="https://store.open.build/" class="navegacion__enlace">Store</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.paypal.com/donate/?hosted_button_id=N4LEGDDNB2PWC" class="boton2">DONATE NOW</a>
+      </li>
+    </ul>
+    </nav>
   </div>
+
 
   <aside class="asidesocial">
     <!-- https://icons8.com/ -->

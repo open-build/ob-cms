@@ -27,6 +27,9 @@ class Nosotros(Page):
 class Portafolio(Page):
     pass
 
+class Programs(Page):
+    pass
+
 class Novedades(Page):
     pass
 
