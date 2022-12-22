@@ -17,29 +17,39 @@
 		<div class="sobre-nosotros__imagen">
 			<nav class="navegation">
 				<a href="/contact/" class="boton boton--secundario">Program #1</a>
-				<a href="/faq/" class="boton boton--secundario">Sign here</a>
+				<a href="/faq/" class="boton boton--secundario">Sign the form</a>
 			  </nav>
 			</br>
 			<p> <strong>Software internships</br>
 				for undeserved  communities in US Rural and Urban</br>
 				Ukraine and Colombia</strong>
-				<p>
+				<p class="sub_text">
 					6 month on job training</p>
-				<p>
-					{} Courses from Open Build’s LMS system</p>
-				<p>
-					{} Front End and UI track, and Backend and Devops Track</p>
-				<p>
-					{} Cloud Infrastructure and Architecture</p>
-				<p>
-					{} Customer Support, Triage and Patch and Release Management</p>
-				<p>
-					{} Business skills</p>
+					<nav class="navegacion">
+						<p>{}</p>
+						<p>Courses from Open Build’s LMS syste</p>
+					  </nav>
+					  <nav class="navegacion">
+						<p>{}</p>
+						<p>Front End and UI track, and Backend and Devops Track</p>
+					  </nav>
+					  <nav class="navegacion">
+						<p>{}</p>
+						<p>Cloud Infrastructure and Architecture</p>
+					  </nav>
+					  <nav class="navegacion">
+						<p>{}</p>
+						<p>Customer Support, Triage and Patch and Release Management</p>
+					  </nav>
+					  <nav class="navegacion">
+						<p>{}</p>
+						<p>Business skills</p>
+					  </nav>
 				</br>
 
 				<nav class="navegacion">
 					<a href="/contact/" class="boton boton--secundario">Program #2</a>
-					<a href="/faq/" class="boton boton--secundario">Sign here</a>
+					<a href="/faq/" class="boton boton--secundario">Sign the form</a>
 				  </nav>
 				</br>
 				<p><strong>
@@ -47,37 +57,38 @@
                     Junior developer training</br>
                     Learning skills and sertification.</br>
 					Fellowship</strong></p>
-				<p>
+				<p class="sub_text">
 					6-8 weeks training</p>
-				<p>
-						{} A junior developer from your team get's Cloud Native training and Open Build certification for release management process and tools</p>
-				<p>
-						{} A senior developer get Mentoship training and then real world cultural exchange opportunity to Mentor a team of Junior Developers.</p>
-				<a href="/about/contact/" class="boton boton--secundario">Contact us</a>
+						<nav class="navegacion">
+							<p>{}</p>
+							<p>A junior developer from your team get's Cloud Native training </br>and Open Build certification for release management process</br> and tools.</p>
+						  </nav>
+						  <nav class="navegacion">
+							<p>{}</p>
+							<p>A senior developer get Mentoship training and then real </br> world cultural exchange opportunity to Mentor a team of </br> Junior Developers.</p>
+						  </nav>
 		</div>
 
 		<div class="sobre-nosotros__texto">
 			<div class="entrada__contenido">
-				<img class="guy" src="{% static 'img/programs.png' %}" alt="imagen nosotros">
+			</br></br></br></br><img class="guy" src="{% static 'img/programs.png' %}" alt="imagen nosotros">
 			</div>
 		</div>
 
 
 	</div>
+</br>
+	<nav class="navegacion code">
+		<img class="programs" src="{% static 'img/code.png' %}" alt="img Partners">
+		<p>Contact us to learn more about how our programs work, and the possibility to work together.
+			Also, we are open to perspectives to develop a separate programs together.</p>
+	  </nav>
+	</br>
+	  <div class="bprograms">
+		<a href="/about/contact/" class="buttom_programs">CONTACT US NOW</a>
+	  </div>
 </main>
 
-<div class="portafolio">
-	<div class="portafolio__imagen">
-		<picture>
-			<img class="team" src="{% static 'img/code.png' %}" alt="img Partners">
-		</picture>
-	</div>
-
-	<div class="portafolio__informacion">
-			<h4>Contact us to learn more about how our programs work, and the possibility to work together. Also, we are open to perspectives to develop a separate programs together. </h4>
-	</div>
-	<a href="/about/contact/" class="boton boton--secundario">Contact us</a>
-</div>
 
 
 {% endblock content %}

@@ -191,6 +191,36 @@ img {
     background-color: var(--primario);
 }
 
+.bprograms{
+    display: flex;
+    justify-content: center;
+}
+
+.buttom_programs {
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 10rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--primario);
+}
+
+.sub_text{
+    font-size: 15px;
+    color:#2fb4cc;
+    width: 250px;
+    height: 40px;
+}
+
+.code {
+    font-size: 2.8rem;
+}
+
 .cursos {
     list-style: none;
 }
