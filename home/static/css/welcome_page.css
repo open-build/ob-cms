@@ -69,22 +69,28 @@ img {
    color: var(--primario);
    margin-top: 5rem;
 }
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media (min-width: 768px) {
     .header__texto {
         margin-top: 15rem;
     }
 }
-.barra {
-    padding-top: 4rem;
-}
 
-@media (min-width: 768px) {
+@media (max-width: 900px) {
     .barra {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
 }
+
 .logo {
     color: var(--primario); /** #FBBE63; other option**/
 
@@ -107,6 +113,7 @@ img {
     .navegacion {
         display: flex;
         gap: 2rem;
+        margin-top: 20px;
     }
 }
 .navegacion__enlace {
@@ -135,6 +142,9 @@ img {
 
 .barra ul {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 .navbar-nav > li {
