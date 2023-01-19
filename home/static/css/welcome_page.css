@@ -76,18 +76,13 @@ img {
     align-items: center;
 }
 
+.hamburger{
+    display: none;
+}
+
 @media (min-width: 768px) {
     .header__texto {
         margin-top: 15rem;
-    }
-}
-
-@media (max-width: 900px) {
-    .barra {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
     }
 }
 
@@ -107,6 +102,10 @@ img {
 }
 .logo__bold {
     font-weight: 700;
+}
+
+.navegacion{
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -149,8 +148,15 @@ img {
 
 .navbar-nav > li {
     position:relative;
-    display: inline-block;
+    display: inline-flex;
     margin: 7px;
+}
+
+.hamburgerContainer{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .submenu {
@@ -589,5 +595,43 @@ body {
     }
     .card1{
         margin: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .barra {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .barra{
+        flex-direction: row;
+    }
+
+    .navegacion{
+        align-items: flex-end;
+    }
+
+    .hamburger{
+        display: flex;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    .barra .menu{
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 250px;
+        position: fixed;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--blanco);
+        box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.384);
+        display: none;
     }
 }

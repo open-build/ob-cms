@@ -24,7 +24,7 @@
       </button> -->
 
       <div class="navegacion collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav menu">
           <li class="nav-item active">
             <a href="/" class="navegacion__enlace">Home</a>
           </li>
@@ -46,13 +46,15 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="https://store.open.build/" class="navegacion__enlace">Store</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.paypal.com/donate/?hosted_button_id=N4LEGDDNB2PWC" class="boton2">DONATE NOW</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a href="https://store.open.build/" class="navegacion__enlace">Store</a>
+            </li>
+          </ul>
+
+        <div class="nav-item hamburgerContainer">
+          <span class="material-symbols-outlined hamburger">menu</span>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=N4LEGDDNB2PWC" class="boton2">DONATE NOW</a>
+        </div>
       </div>
     </nav>
   </div>
@@ -84,3 +86,13 @@
     </div>
   </aside>
 </header>
+
+<script>
+  const hamburger = document.querySelector('.hamburger')
+  const menu = document.querySelector('.menu');
+
+  const hadleMenu = () => {
+    menu.style.display = 'flex';
+  }
+  hamburger.addEventListener('click', hadleMenu)
+</script>
