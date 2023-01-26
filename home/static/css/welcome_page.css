@@ -64,6 +64,10 @@ img {
     text-align: center;
 }
 
+#cont{
+    margin-top: 20px;
+}
+
 .header__texto {
    text-align: center;
    color: var(--primario);
@@ -80,6 +84,11 @@ img {
     display: none;
 }
 
+.closeIcon{
+    display: none;
+}
+
+
 @media (min-width: 768px) {
     .header__texto {
         margin-top: 15rem;
@@ -88,7 +97,11 @@ img {
 
 .logo {
     color: var(--primario); /** #FBBE63; other option**/
+}
 
+.navbar-brand{
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media (min-width: 768px) {
@@ -97,15 +110,12 @@ img {
         align-items: center;
     }
 }
+
 .logo__nombre {
     font-weight: 400;
 }
 .logo__bold {
     font-weight: 700;
-}
-
-.navegacion{
-    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -155,7 +165,7 @@ img {
 .hamburgerContainer{
     gap: 10px;
     display: flex;
-    align-items: center;
+    width: fit-content;
     justify-content: center;
 }
 
@@ -328,7 +338,7 @@ img {
     font-size: 12px;
     border: none;
     border-radius: 100px;
-    box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.17);
+    box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.24);
     border-radius: 100px;
     background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
     text-transform: uppercase;
@@ -336,6 +346,7 @@ img {
     transition: 0.5s;
     background-size: 200% auto;
     display: block;
+    height: fit-content;
 }
 .boton2:hover {
     background-position: right center; /* change the direction of the change here */
@@ -607,7 +618,7 @@ body {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 770px) {
     .barra{
         flex-direction: row;
     }
@@ -616,10 +627,11 @@ body {
         align-items: flex-end;
     }
 
-    .hamburger{
+    .closeIcon, .hamburger{
         display: flex;
         font-size: 40px;
         cursor: pointer;
+        color: #035f8a;
     }
 
     .barra .menu{
