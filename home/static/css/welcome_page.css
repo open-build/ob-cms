@@ -68,6 +68,89 @@ img {
     margin-top: 20px;
 }
 
+/* start of the modal for donations */
+.donateModal{
+    background-color: rgba(109, 109, 109, 0.452);
+    position: fixed;
+    overflow: scroll;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donateModal__container{
+    box-sizing: border-box;
+
+    background: url('/static/img/3 1.svg');
+    background-color: var(--blanco);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 40px;
+    padding: 20px;
+    color: #02364f;
+    font-size: 14px;
+    border-radius: 24px;
+    border: 2px solid #035f8a;
+
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.donateModal__logo--close{
+    width: 100%;
+    color: #035f8a;
+
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+}
+
+.donateModal__container--logo{
+    width: 200px;
+    align-self: flex-start;
+}
+
+.donateModal__closeIcon{
+    cursor: pointer;
+}
+
+.donateModal__container--image{
+    background: url('/static/img/1 201.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 220px;
+    height: 80px;
+}
+
+.donateModal__container h1{
+    font-size: 30px;
+}
+
+.donateModal__list{
+    margin: 0 40px;
+    font-size: 12px;  
+}
+
+.boton2__modal{
+    width: 50%;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+/* closing the modal for donations */
+
 .header__texto {
    text-align: center;
    color: var(--primario);
@@ -87,7 +170,6 @@ img {
 .closeIcon{
     display: none;
 }
-
 
 @media (min-width: 768px) {
     .header__texto {
@@ -338,7 +420,7 @@ img {
     font-size: 12px;
     border: none;
     border-radius: 100px;
-    box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.24);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.24);
     border-radius: 100px;
     background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
     text-transform: uppercase;
@@ -386,7 +468,7 @@ body {
     right: 20px;
     margin-top: 25vh;
     margin-right: 20px;
-    z-index: 90;
+    z-index: 1;
 }
 .sc{
     padding: 2px;
@@ -589,6 +671,14 @@ body {
 
 .flex-container {
   flex-wrap: wrap;
+}
+
+.header .header__nav--active {
+  display: flex;
+}
+  
+.header .header__nav--deactivate {
+  display: none;
 }
 
 

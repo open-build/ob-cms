@@ -3,7 +3,7 @@
 
 
 <!--  -->
-<div style="background: url('{% static 'img/5.png' %}'); background-size: cover; height: 50rem; background-position: center center; background-repeat: no-repeat;">
+<div style="background: url('/static/img/5.png'); background-size: cover; height: 50rem; background-position: center center; background-repeat: no-repeat;">
   <div class="header__texto">
       <h1 class="no-margin">Create ideas</h1>
       <h2 class="no-margin">with us</h2>
@@ -18,6 +18,27 @@
     </div>
 </div>
 -->
+
+<aside class="donateModal">
+    <div class="donateModal__container">
+        <div class="donateModal__logo--close">
+            <img class="donateModal__container--logo" src="/static/img/OPEN-BUILD-LOGO.png" alt="">
+            <span class="material-symbols-outlined donateModal__closeIcon">close</span>
+        </div>
+        <div class="donateModal__container--image"></div>
+        <h1>Support Open Build’s mission today. </h1>
+        <p>We help people from undeserved and vulnerable communities  who don’t have the possibility to get an education and study.</p>
+           <ul class="donateModal__list">
+                <li>Undeserved and vulnerable communities in economically challenged areas. Every day these communities face the challenges of inequality, injustice, disproportional, and lack of opportunities.</li>
+                <li>Juniors who often cannot apply their knowledge in practice.</li>
+                <li>A lot of people in undeserved communities don’t have access to hardware and software.</li>
+                <li>People can’t get a job without working experience.</li>
+            </ul>
+        <p>Over the last year, our team has helped people from underrepresented communities in Columbia and Ukraine, by giving them access to the tools and training to start their careers in IT and to learn the basics of web development, and software best practices.</p>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=N4LEGDDNB2PWC" class="boton2 boton2__modal">DONATE NOW</a>
+    </div>
+</aside>
+
 
 <div class="contenedor contenido-principal"
     <main class="About_us">
@@ -60,3 +81,12 @@
     </aside>
 </div>
 
+<script>
+    const donateModal = document.querySelector('.donateModal')
+    const donateModal__closeIcon = document.querySelector('.donateModal__closeIcon')
+
+    donateModal__closeIcon.addEventListener('click', () => {
+      donateModal.style.display = 'none';
+      console.log('first')
+    })
+</script>

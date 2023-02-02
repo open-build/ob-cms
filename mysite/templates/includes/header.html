@@ -92,40 +92,18 @@
   const hamburger = document.querySelector('.hamburger')
   const menu = document.querySelector('.menu');
   const closeIcon = document.querySelector('.closeIcon');
-  closeIcon.style.display = 'none';
-  
 
-  const handleResizeWindow = () => {
-    let screenWidth = document.documentElement.clientWidth;
-    return screenWidth 
-  }
-  window.addEventListener('resize', handleResizeWindow)
-
-  const hadleMenu = () => {
+  /* const handleMenu = () => {
     menu.style.display = 'flex';
     closeIcon.style.display = 'flex';
     hamburger.style.display = 'none';
   }
-  hamburger.addEventListener('click', hadleMenu)
+  hamburger.addEventListener('click', handleMenu) */
 
-  console.log(handleResizeWindow())
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("header__nav--active");
+    closeIcon.classList.toggle("header__nav--deactivate");
+    hamburger.classList.toggle("header__nav--deactivate")
+  });
 
-
-/* el problema está aquí y en que esto solo se ejecuta si le doy el click */
-  const hadleMenuClose = () => {
-    if (handleResizeWindow() < 770) {
-      menu.style.display = 'none';
-      closeIcon.style.display = 'none';
-      hamburger.style.display = 'flex';
-      console.log('< 700')
-    }
-    
-    if (handleResizeWindow() > 700){
-      menu.style.display = 'flex';
-      closeIcon.style.display = 'none';
-      hamburger.style.display = 'none';
-      console.log('> 700')
-    }
-  }
-  closeIcon.addEventListener('click', hadleMenuClose)
 </script>
