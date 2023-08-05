@@ -419,6 +419,8 @@ h6 {
 #hero .carousel-container {
   display: flex;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.737);
+  border-radius: 10px;
   align-items: center;
   position: absolute;
   bottom: 0;
@@ -430,7 +432,6 @@ h6 {
 
 #hero .carousel-content {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.737);
 }
 
 #hero h2 {
