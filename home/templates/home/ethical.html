@@ -3,12 +3,10 @@
 
 {% block body_class %}template-homepage{% endblock %}
 
-{% block extra_css %}
-
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
-{% endblock extra_css %}
 
 {% block content %}
+  <!-- Main Content Section -->
+  <section id="main-content" class="container">
     <h1>Charter for the Creation of a Standards Body for Buildling, Testing and Certifing Artificial Inteligence and Machine Learning Implementations</h1>
 
 
@@ -123,5 +121,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha512-f2lx7k2WIzo90We/NCcY4Jao7tsRhtPQ6T/+xetzk1YdxlHO6RLP8KOM95IgSTj
 
-
+</section>
 {% endblock content %}
