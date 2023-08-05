@@ -20,3 +20,5 @@ PyGithub
 Django-filter
 Pillow
 stripe
+wagtail>=2.15,<2.16
+puput==1.1.3
