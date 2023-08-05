@@ -1,62 +1,114 @@
-{% load i18n wagtailcore_tags %}
 {% load static %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide 1 -->
+          <div class="carousel-item active" data-bs-interval="5000" style="background-image: url({% static 'assets/img/slide/comms.png' %})">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Open Build</h2>
+                <p class="hero-light">
+                    <p>Open Build trains mentors and supports open source and junior developers, through corporate and non-profit programs for on the job training.  We also build and maintain open source repositories and standards for the open source community.</p>
+                </br>
+                    <a href="/about/" class="boton boton--primario">More</a>
+                </br>
+                </p>
+              </div>
+            </div>
+          </div>
 
-<!--  -->
-<div style="background: url('{% static 'img/5.png' %}'); background-size: cover; height: 50rem; background-position: center center; background-repeat: no-repeat;">
-  <div class="header__texto">
-      <h1 class="no-margin">Create ideas</h1>
-      <h2 class="no-margin">with us</h2>
-  </div>
-</div>
+        </div>
 
- <!--
-<div id="popup" class="popup panel panel-primary">
-    <img class="circular--square" src="{% static 'img/donate.png' %}" alt="popup">
-    <div class="panel-footer">
-        <button id="close" class="btn btn-lg btn-primary">Close button</button>
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
     </div>
-</div>
--->
+  </section><!-- End Hero -->
 
-<div class="contenedor contenido-principal"
-    <main class="About_us">
-        <article class="entrada">
-            <div class="entrada__imagen">
+  <main id="main">
 
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="icon-box">
+              <i class="bi bi-binoculars"></i>
+              <h3><a href="">Junior and Internship Program</a></h3>
+              <p>
+                <p>If you're a student or newly trained software developer and looking for a chacne to learn on the job skills, how to work with teams and use the tools of software development.  This is the place for you.  Signup here to aplly to join our junior program, or if you work for an organization that could use a more robust junior program connect with us here and we will help you and your organization get started.</p>
+                </p>
             </div>
-
-            <div class="entrada__contenido">
-                <h4 class="no-margin">Open Source</h4>
-                <p>Open Build helps small business and non-profits benefit from open source software, and connect with a team of developers.</p>
-            </br>
-                <a href="/about/" class="boton boton--primario">More</a>
-            </br>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h3><a href="">Become a Mentor</a></h3>
+              <p>
+                Joining our mentorship Program is easy. Simply sign up for the Open Source mentor program and an advisor will reach out to set up an interview.  These are volunteer postions but the rewards and connections far extend the time commitment for most involved.
+              </p>
             </div>
-
-            <div class="entrada__contenido">
-                <h4 class="no-margin">STEM Teaching and Training</h4>
-                <p>With Open Build being an active member in the Open Source community.</p>
-            </br>
-                <a href="https://www.open.build/news/2022/01/29/the-new-open-build/" class="boton boton--primario">More</a>
-            </br>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <h3><a href="">Collaboration between Open Build, Buildly and Get Motivated Buddies</a></h3>
+              <p>
+                We are thrilled to partner with Get Motivated Buddies to provide a comprehensive Bug Bounty Program. Get Motivated Buddies is a platform that provides challenges 
+                to help you learn new skills and earn rewards. The mission of GetMotivatedBuddies is to leverage technology to measurably improve well-being for individuals and 
+                society. Well-being measures quality of life across different domains, including autonomy, competence, and relatedness.
+              </p>     
             </div>
+          </div>
+        </div>
 
-        </article>
+      </div>
+    </section><!-- End Featured Section -->
 
-    </main>
-    <aside class="sidebar">
-        <h3></h3>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="{% static 'assets/img/ethics.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Ethical AI</h3>
+            <p>We are thrilled to announce the existence of the Standards Body for AI Fairness and Inclusivity, a dynamic and independent organization working tirelessly to ensure a future where AI and ML models are devoid of gender and cultural biases. As part of this critical mission, we invite enthusiastic experts and dedicated companies to collaborate with us in refining and evolving the standards that drive AI fairness and inclusivity forward. Moreover, we extend a warm invitation to businesses seeking recognition for their commitment to ethical AI practices to apply for our esteemed certification.
+            </p>
+            <h4>How to Participate:</h4>
+            <ul>
+                <li>If you are an AI researcher, data scientist, ethicist, or diversity advocate, join us in shaping the future of AI fairness. Your insights and expertise are invaluable in creating robust evaluation standards.</li>
+                <li>As an AI company, pledge your dedication to fair AI development by engaging with our standards and testing methodologies. Participate in the evaluation process to identify and mitigate gender and cultural biases in your AI and ML models.</li>
+                <li>Contribute to the ongoing discussions, collaborative efforts, and educational initiatives aimed at raising awareness about the importance of AI fairness and inclusivity.</li>
+            </ul>
+            <h4>Benefits of Certification:</h4>
+            <ul>
+                <li>Showcase your company's commitment to social responsibility and ethical AI practices by obtaining our recognized certification.</li>
+                <li>Gain a competitive edge in the industry, as consumers and stakeholders increasingly prioritize companies that prioritize fairness and inclusivity in AI technologies.</li>
+                <li>Foster trust and confidence in your AI solutions, ensuring that they are deployed responsibly and without perpetuating biases.</li>
+            </ul>
+          </div>
+        </div>
 
-        <ul class="cursos no-padding">
-            <li class="widget-curso">
-                <h4 class="no-margin">Contribute</h4>
-                <br>
-                <script>(function() { var d = document, fr = d.createElement('script'); fr.type = 'text/javascript'; fr.async = true; fr.src = 'https://static.fundrazr.com/widgets/loader.js'; var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fr, s);})();</script>
-                <div class="fr-widget" data-type="badge" data-variant="rectangle" data-width="300" data-url="https://fnd.us/donatenow-openbuild"><a href="https://fundrazr.com" target="_blank"><img src="//static.fundrazr.com/widgets/powered-by.png" alt="Powered by FundRazr" /></a></div>
-            </li>
+      </div>
+    </section><!-- End About Section -->
 
-        </ul>
-    </aside>
-</div>
-
+    <section id="clients" class="clients">
+      <div class="container">
+        &nbsp;
+      </div>
+    </section>
+  
+  </main>

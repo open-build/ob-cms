@@ -15,6 +15,12 @@ class Portfolio(Page):
 class Foundry(Page):
     pass
 
+class Radical(Page):
+    pass
+
+class Ethical(Page):
+    pass
+
 class Contact(Page):
     pass
 

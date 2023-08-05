@@ -37,7 +37,23 @@
         </style>
         <link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
         <link rel="stylesheet" href="{% static 'puput/css/puput.css' %}"/>
+        <!-- Favicons -->
+        <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+        <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+        <!-- Template Main CSS File -->
+        <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
     {% endblock %}
 </head>
 <body>
@@ -69,7 +85,6 @@
             {% block content %}{% endblock content %}
             {% block extra_content %}{% endblock extra_content %}
             <div class="news-container">
-                <figure class="news-img"><img src="{% static 'img/bannerN.png' %}" alt="img" align: center;></figure>
                 <div class="news">
                     <p class="date">8/09/2022</p>
                     <a class="text_buttom" href="https://twitter.com/open_build">

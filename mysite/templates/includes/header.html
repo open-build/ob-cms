@@ -1,83 +1,79 @@
-{% load i18n wagtailcore_tags %}
+{% load i18n %}
 {% load static %}
-<header class="header">
+  
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
 
-  <div id="cont">
-
-    <nav class="navegacion">
-      <a class="text_buttom" href="/inicio/">
-        <img class="logo" src="{% static 'img/flag_COL.png' %}" width="20" height="20" alt="img Team">
-      </a>
-      <a class="text_buttom" href="/ukraine">
-        <img class="logo" src="{% static 'img/flag_ukraine.png' %}" width="20" height="20" alt="img Team">
-      </a>
-      <a class="text_buttom" href="/">
-        <img class="logo" src="{% static 'img/flag_USA.png' %}" width="20" height="20" alt="img Team">
-      </a>
-    </nav>
-
-    <nav class="barra navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
-      <a class="navbar-brand" href="/">
-        <img class="logo" src="{% static 'img/OPEN-BUILD-LOGO.png' %}" width="200" height="35" alt="img Team"></a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
-   <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="navegacion collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a href="/" class="navegacion__enlace">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/programs/" class="navegacion__enlace">Programs</a>
-      </li>
-      <li class="nav-item">
-        <a href="/foundry/" class="navegacion__enlace">Foundry</a>
-      </li>
-      <li class="nav-item">
-        <a href="/news/"class="navegacion__enlace">News</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about/" class="navegacion__enlace">About</a>
-        <ul class="submenu">
-          <li class="nav-item">
-            <a href="/about/contact/"class="navegacion__enlace">Contact</a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a href="https://store.open.build/" class="navegacion__enlace">Store</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://www.paypal.com/donate/?hosted_button_id=N4LEGDDNB2PWC" class="boton2">DONATE NOW</a>
-      </li>
-    </ul>
-    </nav>
-  </div>
-
-
-  <aside class="asidesocial">
-    <!-- https://icons8.com/ -->
-    <div>
-      <a href="https://twitter.com/open_build" target="_blank">
-        <img class="logosocialmed bc"
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTI4LDYuOTM3Yy0wLjk1NywwLjQyNS0xLjk4NSwwLjcxMS0zLjA2NCwwLjg0YzEuMTAyLTAuNjYsMS45NDctMS43MDUsMi4zNDUtMi45NTFjLTEuMDMsMC42MTEtMi4xNzIsMS4wNTUtMy4zODgsMS4yOTUgYy0wLjk3My0xLjAzNy0yLjM1OS0xLjY4NS0zLjg5My0xLjY4NWMtMi45NDYsMC01LjMzNCwyLjM4OS01LjMzNCw1LjMzNGMwLDAuNDE4LDAuMDQ4LDAuODI2LDAuMTM4LDEuMjE1IGMtNC40MzMtMC4yMjItOC4zNjMtMi4zNDYtMTAuOTk1LTUuNTc0QzMuMzUxLDYuMTk5LDMuMDg4LDcuMTE1LDMuMDg4LDguMDk0YzAsMS44NSwwLjk0MSwzLjQ4MywyLjM3Miw0LjQzOSBjLTAuODc0LTAuMDI4LTEuNjk3LTAuMjY4LTIuNDE2LTAuNjY3YzAsMC4wMjMsMCwwLjA0NCwwLDAuMDY3YzAsMi41ODUsMS44MzgsNC43NDEsNC4yNzksNS4yMyBjLTAuNDQ3LDAuMTIyLTAuOTE5LDAuMTg3LTEuNDA2LDAuMTg3Yy0wLjM0MywwLTAuNjc4LTAuMDM0LTEuMDAzLTAuMDk1YzAuNjc5LDIuMTE5LDIuNjQ5LDMuNjYyLDQuOTgzLDMuNzA1IGMtMS44MjUsMS40MzEtNC4xMjUsMi4yODQtNi42MjUsMi4yODRjLTAuNDMsMC0wLjg1NS0wLjAyNS0xLjI3My0wLjA3NWMyLjM2MSwxLjUxMyw1LjE2NCwyLjM5Niw4LjE3NywyLjM5NiBjOS44MTIsMCwxNS4xNzYtOC4xMjgsMTUuMTc2LTE1LjE3N2MwLTAuMjMxLTAuMDA1LTAuNDYxLTAuMDE1LTAuNjlDMjYuMzgsOC45NDUsMjcuMjg1LDguMDA2LDI4LDYuOTM3eiI+PC9wYXRoPjwvc3ZnPg==" />
-      </a>
-    </div>
-    <div>
-      <a href="https://www.facebook.com/OpenBuildSTEM/" target="_blank">
-        <img class="logosocialmed sc"
-        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTE1LDNDOC4zNzMsMywzLDguMzczLDMsMTVjMCw2LjAxNiw0LjQzMiwxMC45ODQsMTAuMjA2LDExLjg1MlYxOC4xOGgtMi45Njl2LTMuMTU0aDIuOTY5di0yLjA5OWMwLTMuNDc1LDEuNjkzLTUsNC41ODEtNSBjMS4zODMsMCwyLjExNSwwLjEwMywyLjQ2MSwwLjE0OXYyLjc1M2gtMS45N2MtMS4yMjYsMC0xLjY1NCwxLjE2My0xLjY1NCwyLjQ3M3YxLjcyNGgzLjU5M0wxOS43MywxOC4xOGgtMy4xMDZ2OC42OTcgQzIyLjQ4MSwyNi4wODMsMjcsMjEuMDc1LDI3LDE1QzI3LDguMzczLDIxLjYyNywzLDE1LDN6Ij48L3BhdGg+PC9zdmc+"/>
-      </a>
-    </div>
-    <div>
-      <a href="https://www.linkedin.com/company/openbuild/about/" target="_blank">
-        <img class="logosocialmed yt" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTI0LDRINkM0Ljg5NSw0LDQsNC44OTUsNCw2djE4YzAsMS4xMDUsMC44OTUsMiwyLDJoMThjMS4xMDUsMCwyLTAuODk1LDItMlY2QzI2LDQuODk1LDI1LjEwNSw0LDI0LDR6IE0xMC45NTQsMjJoLTIuOTUgdi05LjQ5MmgyLjk1VjIyeiBNOS40NDksMTEuMTUxYy0wLjk1MSwwLTEuNzItMC43NzEtMS43Mi0xLjcyYzAtMC45NDksMC43Ny0xLjcxOSwxLjcyLTEuNzE5YzAuOTQ4LDAsMS43MTksMC43NzEsMS43MTksMS43MTkgQzExLjE2OCwxMC4zOCwxMC4zOTcsMTEuMTUxLDkuNDQ5LDExLjE1MXogTTIyLjAwNCwyMmgtMi45NDh2LTQuNjE2YzAtMS4xMDEtMC4wMi0yLjUxNy0xLjUzMy0yLjUxNyBjLTEuNTM1LDAtMS43NzEsMS4xOTktMS43NzEsMi40MzdWMjJoLTIuOTQ4di05LjQ5MmgyLjgzdjEuMjk3aDAuMDRjMC4zOTQtMC43NDYsMS4zNTYtMS41MzMsMi43OTEtMS41MzMgYzIuOTg3LDAsMy41MzksMS45NjYsMy41MzksNC41MjJWMjJ6Ij48L3BhdGg+PC9zdmc+" />
-      </a>
-    </div>
-    <a href="https://www.instagram.com/open_build/" target="_blank">
-      <img class="logosocialmed sc"
-      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABe0lEQVRIie2WPUoDQRTHf9qaYJOk0jqFgjGFUcQjCBo8hjlE8ARRcwhDwMLKwiNoLqGdyu6aIimiFvMWhiE7H+wIFvnDY7O8j9+82TdDYKV/oAZwBUyAKfDjaVPgRXLrodALIAuAFVkKdEOg3xGguS184I1InZqWYGz7ugHuAVXX6jx0DJxo75vApQ18GgGa110Lqe3a5hkwADrAhlgHuAHmjtzMBrYlvgJ7ltyWxNhqBINnGnQbGEsHGXAPNMW37+g8GDzQoB9L/J/iA7iNCT4Q/9gSM5KYw5jgivhtw5dKTNUHbB6nMrJ2ZMoXvCPPJ0vMozx3QxaQq2iLrsXfRA2S6X8HtiRmaKkTDJ6hzimo6R2hvmkK3GnQNpGPU36BtIpTaQNvjhqFcl2Zc9T1eISa9Ir8Hjo61ad+qSaO5DL2rIPMqX6wraqkrLXrqC2J3W0C1Fwr66L+rsSCLoAzF1SHJ5E6PfeF5qoBfdRQfAXAMsnp47G9K/25fgH7R22w5ouqlAAAAABJRU5ErkJggg==">      </a>
-  </div>
-    </div>
-  </aside>
-</header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+  
+        <div class="logo">
+          <a href="/">
+            <img src="{% static 'img/OPEN-BUILD-LOGO.png' %}" width="250" class="img-fluid">
+          </a>
+        </div>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li class="nav-item active">
+              <a href="/" class="navegacion__enlace">Home</a>
+            </li>
+            <li>
+              <a href="/programs/" class="navegacion__enlace">Programs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Frameworks
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/framewroks/">Ethical AI</a>
+                <a class="dropdown-item" href="/radical-transparency/">Radical Transparency</a>
+              </div>
+            </li>
+            <li>
+              <a href="/news/"class="navegacion__enlace">News</a>
+            </li>
+            <li><a class="dropdown-item" href="/about/">About</a>
+            <li><a class="dropdown-item" a href="/about/contact/"class="navegacion__enlace">Contact</a></li>
+            <li>&nbsp;
+            <button class="btn btn-outline-success my-2 my-md-0" type="link" href="https://www.paypal.com/donate/?hosted_button_id=N4LEGDDNB2PWC">Donate</button>
+            </li>
+          </ul>
+        </nav><!-- .navbar -->
+      </div>
+    </header><!-- End Header -->
+    <aside class="asidesocial">
+      <!-- https://icons8.com/ -->
+      <div>
+        <a href="https://twitter.com/open_build" target="_blank">
+          <img class="logosocialmed bc"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTI4LDYuOTM3Yy0wLjk1NywwLjQyNS0xLjk4NSwwLjcxMS0zLjA2NCwwLjg0YzEuMTAyLTAuNjYsMS45NDctMS43MDUsMi4zNDUtMi45NTFjLTEuMDMsMC42MTEtMi4xNzIsMS4wNTUtMy4zODgsMS4yOTUgYy0wLjk3My0xLjAzNy0yLjM1OS0xLjY4NS0zLjg5My0xLjY4NWMtMi45NDYsMC01LjMzNCwyLjM4OS01LjMzNCw1LjMzNGMwLDAuNDE4LDAuMDQ4LDAuODI2LDAuMTM4LDEuMjE1IGMtNC40MzMtMC4yMjItOC4zNjMtMi4zNDYtMTAuOTk1LTUuNTc0QzMuMzUxLDYuMTk5LDMuMDg4LDcuMTE1LDMuMDg4LDguMDk0YzAsMS44NSwwLjk0MSwzLjQ4MywyLjM3Miw0LjQzOSBjLTAuODc0LTAuMDI4LTEuNjk3LTAuMjY4LTIuNDE2LTAuNjY3YzAsMC4wMjMsMCwwLjA0NCwwLDAuMDY3YzAsMi41ODUsMS44MzgsNC43NDEsNC4yNzksNS4yMyBjLTAuNDQ3LDAuMTIyLTAuOTE5LDAuMTg3LTEuNDA2LDAuMTg3Yy0wLjM0MywwLTAuNjc4LTAuMDM0LTEuMDAzLTAuMDk1YzAuNjc5LDIuMTE5LDIuNjQ5LDMuNjYyLDQuOTgzLDMuNzA1IGMtMS44MjUsMS40MzEtNC4xMjUsMi4yODQtNi42MjUsMi4yODRjLTAuNDMsMC0wLjg1NS0wLjAyNS0xLjI3My0wLjA3NWMyLjM2MSwxLjUxMyw1LjE2NCwyLjM5Niw4LjE3NywyLjM5NiBjOS44MTIsMCwxNS4xNzYtOC4xMjgsMTUuMTc2LTE1LjE3N2MwLTAuMjMxLTAuMDA1LTAuNDYxLTAuMDE1LTAuNjlDMjYuMzgsOC45NDUsMjcuMjg1LDguMDA2LDI4LDYuOTM3eiI+PC9wYXRoPjwvc3ZnPg==" />
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/OpenBuildSTEM/" target="_blank">
+          <img class="logosocialmed sc"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTE1LDNDOC4zNzMsMywzLDguMzczLDMsMTVjMCw2LjAxNiw0LjQzMiwxMC45ODQsMTAuMjA2LDExLjg1MlYxOC4xOGgtMi45Njl2LTMuMTU0aDIuOTY5di0yLjA5OWMwLTMuNDc1LDEuNjkzLTUsNC41ODEtNSBjMS4zODMsMCwyLjExNSwwLjEwMywyLjQ2MSwwLjE0OXYyLjc1M2gtMS45N2MtMS4yMjYsMC0xLjY1NCwxLjE2My0xLjY1NCwyLjQ3M3YxLjcyNGgzLjU5M0wxOS43MywxOC4xOGgtMy4xMDZ2OC42OTcgQzIyLjQ4MSwyNi4wODMsMjcsMjEuMDc1LDI3LDE1QzI3LDguMzczLDIxLjYyNywzLDE1LDN6Ij48L3BhdGg+PC9zdmc+"/>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/company/openbuild/about/" target="_blank">
+          <img class="logosocialmed yt" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTI0LDRINkM0Ljg5NSw0LDQsNC44OTUsNCw2djE4YzAsMS4xMDUsMC44OTUsMiwyLDJoMThjMS4xMDUsMCwyLTAuODk1LDItMlY2QzI2LDQuODk1LDI1LjEwNSw0LDI0LDR6IE0xMC45NTQsMjJoLTIuOTUgdi05LjQ5MmgyLjk1VjIyeiBNOS40NDksMTEuMTUxYy0wLjk1MSwwLTEuNzItMC43NzEtMS43Mi0xLjcyYzAtMC45NDksMC43Ny0xLjcxOSwxLjcyLTEuNzE5YzAuOTQ4LDAsMS43MTksMC43NzEsMS43MTksMS43MTkgQzExLjE2OCwxMC4zOCwxMC4zOTcsMTEuMTUxLDkuNDQ5LDExLjE1MXogTTIyLjAwNCwyMmgtMi45NDh2LTQuNjE2YzAtMS4xMDEtMC4wMi0yLjUxNy0xLjUzMy0yLjUxNyBjLTEuNTM1LDAtMS43NzEsMS4xOTktMS43NzEsMi40MzdWMjJoLTIuOTQ4di05LjQ5MmgyLjgzdjEuMjk3aDAuMDRjMC4zOTQtMC43NDYsMS4zNTYtMS41MzMsMi43OTEtMS41MzMgYzIuOTg3LDAsMy41MzksMS45NjYsMy41MzksNC41MjJWMjJ6Ij48L3BhdGg+PC9zdmc+" />
+        </a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/open_build/" target="_blank">
+          <img class="logosocialmed sc"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABe0lEQVRIie2WPUoDQRTHf9qaYJOk0jqFgjGFUcQjCBo8hjlE8ARRcwhDwMLKwiNoLqGdyu6aIimiFvMWhiE7H+wIFvnDY7O8j9+82TdDYKV/oAZwBUyAKfDjaVPgRXLrodALIAuAFVkKdEOg3xGguS184I1InZqWYGz7ugHuAVXX6jx0DJxo75vApQ18GgGa110Lqe3a5hkwADrAhlgHuAHmjtzMBrYlvgJ7ltyWxNhqBINnGnQbGEsHGXAPNMW37+g8GDzQoB9L/J/iA7iNCT4Q/9gSM5KYw5jgivhtw5dKTNUHbB6nMrJ2ZMoXvCPPJ0vMozx3QxaQq2iLrsXfRA2S6X8HtiRmaKkTDJ6hzimo6R2hvmkK3GnQNpGPU36BtIpTaQNvjhqFcl2Zc9T1eISa9Ir8Hjo61ad+qSaO5DL2rIPMqX6wraqkrLXrqC2J3W0C1Fwr66L+rsSCLoAzF1SHJ5E6PfeF5qoBfdRQfAXAMsnp47G9K/25fgH7R22w5ouqlAAAAABJRU5ErkJggg==">      </a>
+      </div>
+      <div>
+        <a class="text_buttom" href="/inicio/">
+          <img class="logosocialmed sc" src="{% static 'img/flag_COL.png' %}"  alt="Espanol">
+        </a>
+      </div>
+      <div>  
+        <a class="text_buttom" href="/">
+          <img class="logosocialmed sc" src="{% static 'img/flag_USA.png' %}"  alt="English">
+        </a>
+      </div>
+    </aside>
