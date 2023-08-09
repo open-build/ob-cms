@@ -43,6 +43,7 @@
 {% endblock social_share %}
 
 {% block content %}
+<main class="contenedor">
     {% with per_page=blog_page.num_entries_page %}
         {# 'paginate' tag cannot render dotted variables, so we need to create a context var #}
         {% paginate per_page entries %}
@@ -94,4 +95,5 @@
             {% show_paginator %}
         </div>
     {% endwith %}
+</main>    
 {% endblock content %}

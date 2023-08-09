@@ -27,9 +27,7 @@ body {
 
 /** Globals **/
 .contenedor {
-    width: min(90%, 120rem);
-    margin: 0 auto;
-    padding: 50px;
+    padding-top: 50px;
 }
 a {
     text-decoration: none;
