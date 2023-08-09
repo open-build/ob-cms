@@ -42,7 +42,7 @@
 
   /**
    * Scrolls to an element with header offset
-   */
+
   const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
@@ -57,7 +57,7 @@
       behavior: 'smooth'
     })
   }
-
+   */
   /**
    * Header fixed top on scroll
    */
