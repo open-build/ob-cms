@@ -10,6 +10,28 @@
 
 {% block content %}
 <main class="contenedor">
+    <section id="about" class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="{% static 'assets/img/ethics.png' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Ethical AI</h3>
+              <p>We are thrilled to announce the existence of the Standards Body for AI Fairness and Inclusivity, a dynamic and independent organization 
+                working tirelessly to ensure a future where AI and ML models are devoid of gender and cultural biases. As part of this critical mission, 
+                we invite enthusiastic experts and dedicated companies to collaborate with us in refining and evolving the standards that drive 
+                AI fairness and inclusivity forward. Moreover, we extend a warm invitation to businesses seeking recognition for their commitment to 
+                ethical AI practices to apply for our esteemed certification.
+              </p>
+
+              <a href="/signature" class="btn btn-lg btn-primary">Sign Up </a>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End About Section -->
+    
   <!-- Main Content Section -->
   <section id="main-content" class="container">
 
@@ -89,25 +111,23 @@
             <div class="carousel-inner">
                 <!-- Signatory 1 -->
                 <div class="carousel-item active">
-                    <img src="signatory1.jpg" class="d-block rounded-circle mx-auto" alt="Signatory 1">
+                    <img src="{% static 'assets/img/signatory.png' %}" class="d-block rounded-circle mx-auto" alt="Signatory 1">
                     <p class="mt-2 text-center">John Doe</p>
                     <div class="text-center">
-                        <a href="https://www.linkedin.com/in/johndoe" target="_blank"><i
-                                class="fab fa-linkedin fa-lg mx-2"></i></a>
-                        <a href="https://twitter.com/johndoe" target="_blank"><i
-                                class="fab fa-twitter fa-lg mx-2"></i></a>
+                        Company: HP Inc. <br/>
+                        <a href="https://www.linkedin.com/in/johndoe" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://twitter.com/johndoe" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
                     </div>
                 </div>
 
                 <!-- Signatory 2 -->
                 <div class="carousel-item">
-                    <img src="signatory2.jpg" class="d-block rounded-circle mx-auto" alt="Signatory 2">
+                    <img src="{% static 'assets/img/signatory.png' %}" class="d-block rounded-circle mx-auto" alt="Signatory 2">
                     <p class="mt-2 text-center">Jane Smith</p>
                     <div class="text-center">
-                        <a href="https://www.linkedin.com/in/janesmith" target="_blank"><i
-                                class="fab fa-linkedin fa-lg mx-2"></i></a>
-                        <a href="https://twitter.com/janesmith" target="_blank"><i
-                                class="fab fa-twitter fa-lg mx-2"></i></a>
+                        Company: Apple Inc. <br/>
+                        <a href="https://www.linkedin.com/in/janesmith" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://twitter.com/janesmith" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
                     </div>
                 </div>
 

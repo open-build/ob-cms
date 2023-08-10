@@ -42,6 +42,10 @@ INSTALLED_APPS = [
 
     'modelcluster',
     'taggit',
+    
+    # forms
+    'crispy_forms',
+    'crispy_bootstrap5',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -190,3 +194,7 @@ BASE_URL = 'http://example.com'
 PUPUT_AS_PLUGIN = False
 
 SECRET_KEY = "sdfgerg32g90uadfgjo12!@89u9ergj9249889"
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"

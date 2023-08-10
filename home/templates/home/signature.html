@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+{% block content %}
+<main class="contenedor">
+    <!-- Main Content Section -->
+    <section id="main-content" class="container">
+    {% if form.errors %}
+        <div class="help-block">
+        {% for field in form %}
+            {% for error in field.errors %}
+                    <strong><i>{{ field.label }}</i> - {{ error|escape }}</strong>&nbsp;
+            {% endfor %}
+        {% endfor %}
+        </div>
+        {% for error in form.non_field_errors %}
+            <div class="alert alert-error">
+                <strong>{{ error|escape }}</strong>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <div class="col-lg-6">
+        <div class="alert">
+          {% if messages %}
+            {% for x in messages %}
+              {{ x }}
+            {% endfor %}
+          {% endif %}
+        </div>
+    </div>
+    <!-- Header Section -->
+    <header style="background-color: #f0f0f0; text-align: center; padding: 8px;">
+        <img src="{% static 'img/5.png' %}" alt="Centered Image" style="max-height: 200px; width: 100%; object-fit: cover;">
+        <h1>Sign on to particiapte in a <b>Framework</b></h1>
+    </header>
+    <form method="post" action="{% url 'signature' %}">
+        <br/>
+        <p>The Ethical AI and Radical Transparency frameworks are designed to promote equity, fairness and understand in organizations and how they work, share and collaborate.</p>
+        {% csrf_token %}
+        {{ form|crispy }}
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</section>
+</main>
+{% endblock %}

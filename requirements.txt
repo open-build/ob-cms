@@ -22,3 +22,6 @@ Pillow
 stripe
 wagtail>=2.15,<2.16
 puput==1.1.3
+django-crispy-forms
+django-bootstrap-modal-forms
+crispy-bootstrap5

@@ -2,7 +2,7 @@ from django.conf import settings
 from django.urls import include, path
 from django.contrib import admin
 
-
+from django.conf.urls import url
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
@@ -11,6 +11,8 @@ from search import views as search_views
 
 from puput import urls as puput_urls
 
+from home.views import SignatureCreateView
+
 urlpatterns = [
     path('django-admin/', admin.site.urls),
 
@@ -18,6 +20,8 @@ urlpatterns = [
     path('documents/', include(wagtaildocs_urls)),
 
     path('search/', search_views.search, name='search'),
+
+    url(r'^signature/$', SignatureCreateView.as_view(), name='signature'),
 
 ]
 
