@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib import admin
 
 from wagtail.core.models import Page
 
@@ -52,13 +53,20 @@ class Signature(models.Model):
         ('All', 'All'),
     ]
 
-    linkedin_url = models.URLField()
-    twitter_url = models.URLField()
+    linkedin_url = models.URLField(null=True, blank=True, help_text="Share your LinkedIn Profile")
+    twitter_url = models.URLField(null=True, blank=True, help_text="Share your Twitter Profile")
     framework = models.CharField(max_length=10, choices=FRAMEWORK_CHOICES)
     name = models.CharField(max_length=255)
     email = models.EmailField()
-    company = models.TextField()
+    company = models.CharField(max_length=255)
     is_approved = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.url
+        return self.name
+
+
+class SignatureAdmin(admin.ModelAdmin):
+    list_display = ('company','name','email','framework')
+    search_fields = ('company','name','email','framework')
+    list_filter = ('company','name','email','framework')
+    display = 'User Submitted Signature'

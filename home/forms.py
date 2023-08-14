@@ -17,7 +17,7 @@ class SignatureForm(forms.ModelForm):
     
     class Meta:
         model = Signature
-        fields = ['linkedin_url', 'twitter_url', 'name', 'email', 'company', 'framework', 'company']
+        fields = ['name', 'email', 'company', 'framework', 'company','linkedin_url', 'twitter_url']
     
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
