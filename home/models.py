@@ -55,10 +55,11 @@ class Signature(models.Model):
 
     linkedin_url = models.URLField(null=True, blank=True, help_text="Share your LinkedIn Profile")
     twitter_url = models.URLField(null=True, blank=True, help_text="Share your Twitter Profile")
+    github_url = models.URLField(null=True, blank=True, help_text="Share your Github Profile")
     framework = models.CharField(max_length=10, choices=FRAMEWORK_CHOICES)
     name = models.CharField(max_length=255)
     email = models.EmailField()
-    company = models.CharField(max_length=255)
+    company = models.CharField(max_length=255,null=True, blank=True,)
     is_approved = models.BooleanField(default=False)
 
     def __str__(self):
