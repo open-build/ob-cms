@@ -48,3 +48,5 @@ AWS_DEFAULT_ACL = 'public-read'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+
+SENDGRID_API_KEY = os.environ.get("SENDGRID")

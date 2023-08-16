@@ -25,3 +25,4 @@ puput==1.1.3
 django-crispy-forms
 django-bootstrap-modal-forms
 crispy-bootstrap5
+sendgrid
