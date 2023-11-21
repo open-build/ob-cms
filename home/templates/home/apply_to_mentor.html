@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/octicons@12.1.0/build/build.css">
+
+{% endblock extra_css %}
+
+
+{% block content %}
+<main class="contenedor">
+    <h2>Apply to be a Mentor or as an Intern/Junior Developer</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+    </form>
+</main>
+{% endblock %}
+

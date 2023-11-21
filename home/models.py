@@ -72,3 +72,24 @@ class SignatureAdmin(admin.ModelAdmin):
     search_fields = ('company','name','email','framework')
     list_filter = ('company','name','email','framework')
     display = 'User Submitted Signature'
+
+
+class MentorApplication(models.Model):
+    APPLICATION_CHOICES = [
+        ('mentor', 'Mentor'),
+        ('intern', 'Intern/Junior Developer'),
+    ]
+
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    linkedin_profile = models.URLField(blank=True)
+    resume = models.FileField(upload_to='resumes/')
+    application_type = models.CharField(max_length=6, choices=APPLICATION_CHOICES)
+    experience = models.TextField()
+
+
+class ProjectSubmission(models.Model):
+    submitter_name = models.CharField(max_length=100)
+    submitter_email = models.EmailField()
+    project_title = models.CharField(max_length=200)
+    project_description = models.TextField()

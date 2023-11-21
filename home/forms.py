@@ -1,4 +1,4 @@
-from .models import Signature
+from .models import Signature, MentorApplication, ProjectSubmission
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import *
 from crispy_forms.bootstrap import *
@@ -24,4 +24,20 @@ class SignatureForm(forms.ModelForm):
         self.helper = FormHelper()
         self.helper.form_method = 'POST'
         self.helper.add_input(Submit('submit', 'Submit'))
-        
+
+
+class MentorApplicationForm(forms.ModelForm):
+    class Meta:
+        model = MentorApplication
+        fields = ['name', 'email', 'linkedin_profile', 'resume', 'application_type', 'experience']
+
+    def __init__(self, *args, **kwargs):
+        super(MentorApplicationForm, self).__init__(*args, **kwargs)
+        self.fields['resume'].required = False
+
+
+class ProjectSubmissionForm(forms.ModelForm):
+    class Meta:
+        model = ProjectSubmission
+        fields = ['submitter_name', 'submitter_email', 'project_title', 'project_description']
+

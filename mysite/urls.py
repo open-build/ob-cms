@@ -8,10 +8,8 @@ from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
 from search import views as search_views
-
 from puput import urls as puput_urls
-
-from home.views import SignatureCreateView
+from home.views import SignatureCreateView, apply_to_mentor, submit_project  # Import your new views here
 
 urlpatterns = [
     path('django-admin/', admin.site.urls),
@@ -23,8 +21,11 @@ urlpatterns = [
 
     url(r'^signature/$', SignatureCreateView.as_view(), name='signature'),
 
-]
+    path('apply-to-mentor/', apply_to_mentor, name='apply-to-mentor'),  # New URL pattern for mentor application
+    path('apply-as-student/', apply_to_mentor, name='apply-as-student'),  # New URL pattern for mentor application
+    path('submit-project/', submit_project, name='submit-project'),  # New URL pattern for project submission
 
+]
 
 if settings.DEBUG:
     from django.conf.urls.static import static

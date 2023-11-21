@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/octicons@12.1.0/build/build.css">
+
+{% endblock extra_css %}
+
+{% block content %}
+<main class="contenedor">
+    <h2>Submit a Project Proposal</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Submit Project</button>
+    </form>
+</main>
+{% endblock %}

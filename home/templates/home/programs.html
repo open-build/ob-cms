@@ -4,92 +4,68 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block extra_css %}
-
 <link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
 {% endblock extra_css %}
 
 {% block content %}
-
-
 <main class="contenedor">
+	<h2>Programs</h2>
+    <!-- Primary Jumbotron for Program Description -->
+    <div class="jumbotron bg-light rounded-3 d-flex align-items-center">
+        <div class="image-container me-4">
+            <img src="{% static 'img/join.webp' %}" alt="Program Description" style="max-width: 250px; height: auto;">
+        </div>
+        <div>
+            <h1 class="display-5 fw-bold">Open Build's Global Research Initiative</h1>
+            <ul>
+                <li>Collaborative projects with international tech companies.</li>
+                <li>Opportunities for U.S. students and junior developers to work on real-world problems.</li>
+                <li>Focus on open-source software development and ethical AI practices.</li>
+            </ul>
+        </div>
+    </div>
+    <br/>
+    <!-- Secondary Jumbotron for Mentor Signup -->
+    <div class="jumbotron bg-light rounded-3 d-flex align-items-center">
+        <div>
+            <h2>Become a Mentor</h2>
+            <p>Share your expertise and shape the next generation of tech innovators.</p>
+            <ul>
+                <li>Guide junior developers and students in complex projects.</li>
+                <li>Provide valuable industry insights and technical knowledge.</li>
+                <li>Contribute to nurturing a skilled and diverse tech workforce.</li>
+            </ul>
+            <a href="{% url 'apply-to-mentor' %}" class="btn btn-primary">Apply to Mentor</a>
+        </div>
+        <div class="image-container me-4">
+            <img src="{% static 'img/mentor.webp' %}" alt="Mentor Signup" style="max-width: 250px; height: auto;">
+        </div>
+    </div>
+    <br/>
+    <!-- Secondary Jumbotron for Project Submission -->
+    <div class="jumbotron bg-light rounded-3 d-flex align-items-center">
+        <div class="image-container me-4">
+            <img src="{% static 'img/program.webp' %}" alt="Project Submission" style="max-width: 250px; height: auto;">
+        </div>
+        <div>
+            <h2>Propose a Project</h2>
+            <p>Submit your project ideas for our students to tackle in open-source challenges.</p>
+            <ul>
+                <li>Bring innovative project ideas to life with fresh perspectives.</li>
+                <li>Collaborate with upcoming talents in the tech industry.</li>
+                <li>Contribute to open-source projects with real-world impact.</li>
+            </ul>
+            <a href="{% url 'submit-project' %}" class="btn btn-primary">Submit Your Project</a>
+        </div>
+    </div>
 
-	<div class="sobre-nosotros">
-		<div class="sobre-nosotros__imagen">
-			<nav class="navegation">
-				<a href="/contact/" class="boton boton--secundario">Program #1</a>
-				<a href="/faq/" class="boton boton--secundario">Sign the form</a>
-			  </nav>
-			</br>
-			<p> <strong>Software internships</br>
-				for undeserved  communities in US Rural and Urban</br>
-				Ukraine and Colombia
-			</strong>
-				<p class="sub_text">
-					6 month on job training</p>
-					<nav class="navegacion">
-						<p>{}</p>
-						<p>Courses from Open Build’s LMS syste</p>
-					  </nav>
-					  <nav class="navegacion">
-						<p>{}</p>
-						<p>Front End and UI track, and Backend and Devops Track</p>
-					  </nav>
-					  <nav class="navegacion">
-						<p>{}</p>
-						<p>Cloud Infrastructure and Architecture</p>
-					  </nav>
-					  <nav class="navegacion">
-						<p>{}</p>
-						<p>Customer Support, Triage and Patch and Release Management</p>
-					  </nav>
-					  <nav class="navegacion">
-						<p>{}</p>
-						<p>Business skills</p>
-					  </nav>
-				</br>
-
-				<nav class="navegacion">
-					<a href="/contact/" class="boton boton--secundario">Program #2</a>
-					<a href="/faq/" class="boton boton--secundario">Sign the form</a>
-				  </nav>
-				</br>
-				<p><strong>
-					Corporate Sponsor.</br>
-                    Junior developer training</br>
-                    Learning skills and sertification.</br>
-					Fellowship</strong></p>
-				<p class="sub_text">
-					6-8 weeks training</p>
-						<nav class="navegacion">
-							<p>{}</p>
-							<p>A junior developer from your team get's Cloud Native training </br>and Open Build certification for release management process</br> and tools.</p>
-						  </nav>
-						  <nav class="navegacion">
-							<p>{}</p>
-							<p>A senior developer get Mentoship training and then real </br> world cultural exchange opportunity to Mentor a team of </br> Junior Developers.</p>
-						  </nav>
-		</div>
-
-		<div class="sobre-nosotros__texto">
-			<div class="entrada__contenido">
-			</br></br></br></br><img class="guy" src="{% static 'img/programs.png' %}" alt="imagen nosotros">
-			</div>
-		</div>
-
-
-	</div>
-</br>
-	<nav class="navegacion code">
-		<img class="programs" src="{% static 'img/code.png' %}" alt="img Partners">
-		<p>Contact us to learn more about how our programs work, and the possibility to work together.
-			Also, we are open to perspectives to develop a separate programs together.</p>
-	  </nav>
-	</br>
-	  <div class="bprograms">
-		<a href="/about/contact/" class="buttom_programs">CONTACT US NOW</a>
-	  </div>
+    <br>
+    <div class="container">
+        <p>Contact us to learn more about how our programs work, and the possibility to work together. Also, we are open to perspectives to develop separate programs together.</p>
+    </div>
+    <br>
+    <div class="programs">
+        <a href="/about/contact/" class="btn btn-primary">CONTACT US NOW</a>
+    </div>
 </main>
-
-
-
 {% endblock content %}

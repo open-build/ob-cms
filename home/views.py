@@ -65,3 +65,28 @@ class SignatureCreateView(CreateView):
         message = "A new form has been submitted from " + str(form.cleaned_data['email'])
         send_notification_email(subject, message)
         return HttpResponseRedirect(self.request.META.get('HTTP_REFERER'))
+
+
+from django.shortcuts import render
+from .forms import MentorApplicationForm, ProjectSubmissionForm
+
+def apply_to_mentor(request):
+    if request.method == 'POST':
+        form = MentorApplicationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'application_submitted.html')
+    else:
+        form = MentorApplicationForm()
+    return render(request, 'home/apply_to_mentor.html', {'form': form})
+
+def submit_project(request):
+    if request.method == 'POST':
+        form = ProjectSubmissionForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'submission_success.html')
+    else:
+        form = ProjectSubmissionForm()
+    return render(request, 'home/submit_project.html', {'form': form})
+
